@@ -21,6 +21,10 @@ body {
   background-color: #e9f0f5;
 }
 
+.light {
+  background: url("../img/light.jpg");
+}
+
 a {
   color: #acb7c0;
   text-decoration: none;

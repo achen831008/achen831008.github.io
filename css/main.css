@@ -94,6 +94,7 @@ h6 {
 
 .img-size {
     float: right;
+    border:1px solid black;
 }
 
 .content-section-a {
