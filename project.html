@@ -119,8 +119,79 @@
     <br>
 
     <div id="overlay"></div>
-    <div id="overlayContent">
-        <img class="imgBig" src="" alt="" width="400"/>
+    <div class="imgBig">
+        <div id="overlayContent_0">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <h2>VPEC Intranet</h2>
+                            <h4>(Confidential project)</h4>
+                            <br>
+                            <div class="col-lg-4">
+                                <span class="fa-stack fa-2x">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-sitemap fa-stack-1x text-primary icon-list"></i>
+                                </span>
+                                <h4>Architecture Overview</h4>
+                                <p>VPEC Intranet is built using HTML, CSS, JavaScript, ASP, and SQL.</p>
+                            </div>
+                            <div class="col-lg-4">
+                                <span class="fa-stack fa-2x">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-cogs fa-stack-1x text-primary icon-list"></i>
+                                </span>
+                                <h4>Tools</h4>
+                                <p>IIS, Oracle Database, SQL Server, Notepad++.</p>
+                            </div>
+                            <div class="col-lg-4">
+                                <span class="fa-stack fa-2x">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-info fa-stack-1x text-primary icon-list"></i>
+                                </span>
+                                <h4>Summary</h4>
+                                <p>VPEC Intranet is designed to improve organizational communication, internal service and management. There are various features implemented such as HR News Feed, IT News Feed, IT Service Request, Meeting Booking Request, and Frequently Asked Questions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="overlayContent_1">
+            <div>
+                <h2>University of Waterloo Monopoly</h2>
+            </div>
+        </div>
+        <div id="overlayContent_2">
+            <div>
+                <h2>DFO Milk Management System</h2>
+            </div>
+        </div>
+        <div id="overlayContent_3">
+            <div>
+                <h2>Chess</h2>
+            </div>
+        </div>
+        <div id="overlayContent_4">
+            <div>
+                <h2>Credential Manager</h2>
+            </div>
+        </div>
+        <div id="overlayContent_5">
+            <div>
+                <h2>Order Manager</h2>
+            </div>
+        </div>
+        <div id="overlayContent_6">
+            <div>
+                <h2>SKU Manager</h2>
+            </div>
+        </div>
+        <div id="overlayContent_7">
+            <div>
+                <h2>Stock Board</h2>
+            </div>
+        </div>
     </div>
 
     <div class="container">
@@ -144,28 +215,52 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4 inline-image">
-                        <img src="img/project2.jpg" class="img-responsive thumbnail img-resize" alt="Image">
-                        <p>DFO Milk Management System</p>
+                        <div class="imgSmall hovereffect">
+                            <img src="img/project2.jpg" class="img-responsive thumbnail img-resize" alt="Image">
+                            <div class="overlay">
+                                <h2>DFO Milk Management System</h2>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4 inline-image">
-                        <img src="img/project3.jpg" class="img-responsive thumbnail img-resize" alt="Image">
-                        <p>Chess</p>
+                        <div class="imgSmall hovereffect">
+                            <img src="img/project3.jpg" class="img-responsive thumbnail img-resize" alt="Image">
+                            <div class="overlay">
+                                <h2>Chess</h2>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4 inline-image">
-                        <img src="img/project4.jpg" class="img-responsive thumbnail img-resize"  alt="Image">
-                        <p>Credential Manager</p>
+                        <div class="imgSmall hovereffect">
+                            <img src="img/project4.jpg" class="img-responsive thumbnail img-resize" alt="Image">
+                            <div class="overlay">
+                                <h2>Credential Manager</h2>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4 inline-image">
-                        <img src="img/project5.jpg" class="img-responsive thumbnail img-resize" alt="Image">
-                        <p>Order Manager</p>
+                        <div class="imgSmall hovereffect">
+                            <img src="img/project5.jpg" class="img-responsive thumbnail img-resize" alt="Image">
+                            <div class="overlay">
+                                <h2>Order Manager</h2>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4 inline-image">
-                        <img src="img/project6.jpg" class="img-responsive thumbnail img-resize" alt="Image">
-                        <p>SKU Manager</p>
+                        <div class="imgSmall hovereffect">
+                            <img src="img/project6.jpg" class="img-responsive thumbnail img-resize" alt="Image">
+                            <div class="overlay">
+                                <h2>SKU Manager</h2>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4 inline-image">
-                        <img src="img/project7.jpg" class="img-responsive thumbnail img-resize" alt="Image">
-                        <p>Stock Board</p>
+                        <div class="imgSmall hovereffect">
+                            <img src="img/project7.jpg" class="img-responsive thumbnail img-resize" alt="Image">
+                            <div class="overlay">
+                                <h2>Stock Board</h2>
+                            </div>
+                        </div>
                     </div>                                   
                 </div> 
             </div>
@@ -191,15 +286,16 @@
     <script src="js/bootstrap.min.js"></script>
 
         <script type="text/javascript">
+        var index;
         $(".imgSmall").click(function(){
-            var index = $(".imgSmall").index(this);
+            index = $(".imgSmall").index(this);
             $("#overlay").show();
-            $("#overlayContent").show();
+            $("#overlayContent_" + index).show();
         });
 
         $(".imgBig").click(function(){
             $("#overlay").hide();
-            $("#overlayContent").hide();
+            $("#overlayContent_" + index).hide();
         });
     </script>
 

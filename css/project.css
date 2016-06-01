@@ -137,18 +137,23 @@ body {
     top: 0px; 
     left: 0px; 
     background-color: #000; 
-    opacity: 0.7;
-    filter: alpha(opacity = 70) !important;
+    opacity: 0.9;
+    filter: alpha(opacity = 90) !important;
     display: none;
     z-index: 100;
 }
 
-#overlayContent{
-    position: fixed; 
+#overlayContent_0, #overlayContent_1, #overlayContent_2, #overlayContent_3, #overlayContent_4, #overlayContent_5, #overlayContent_6, #overlayContent_7{
+    position: fixed;
     width: 100%;
-    top: 100px;
+    
+
+
     text-align: center;
     display: none;
+    background-color: #fff; 
+    opacity: 0.8;
+    filter: alpha(opacity = 80) !important;
     overflow: hidden;
     z-index: 100;
 }
