@@ -62,14 +62,16 @@
         <!-- /.container -->
     </nav>
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
+    <!-- WORK IN PROGRESS SOURCE -->
+    <!--<div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!- - Indicators - ->
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
 
-        <!-- Wrapper for slides -->
+        <!- - Wrapper for slides - ->
         <div class="carousel-inner" role="listbox">
             <div class="item">
                 <img src="img/pic_slider1.jpg" alt="Image">
@@ -93,7 +95,7 @@
             </div>
         </div>
 
-        <!-- Left and right controls -->
+        <!- - Left and right controls - ->
         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
@@ -103,50 +105,83 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-      
-    <div class="container text-center">    
-        <h2>My Portfolio</h2>
-        <br>
-        <div class="row">
-            <div class="col-sm-4">
-                <img src="img/intranet.png" class="img-responsive thumbnail img-resize" alt="Image">
-                <p>VPEC Intranet</p>
-            </div>
-            <div class="col-sm-4"> 
-                <img src="img/monopoly_game.jpg" class="img-responsive thumbnail img-resize" alt="Image">
-                <p>University of Waterloo Monopoly</p>  
-            </div>
-            <div class="col-sm-4">
-                <img src="img/dfo.png" class="img-responsive thumbnail img-resize" alt="Image">
-                <p>DFO Milk Management System</p>
-            </div>
-            <div class="col-sm-4">
-                <img src="img/chess.jpg" class="img-responsive thumbnail img-resize" alt="Image">
-                <p>Chess</p>
-            </div>
-            <div class="col-sm-4">
-                <img src="img/credential_manager.png" class="img-responsive thumbnail img-resize"  alt="Image">
-                <p>CredentialManager</p>
-            </div>
-            <div class="col-sm-4">
-                <img src="img/order_manager.jpg" class="img-responsive thumbnail img-resize" alt="Image">
-                <p>Order Manager</p>
-            </div>
-            <div class="col-sm-4">
-                <img src="img/sku_manager.png" class="img-responsive thumbnail img-resize" alt="Image">
-                <p>SKU Manager</p>
-            </div>
-            <div class="col-sm-4">
-                <img src="img/stockboard.jpg" class="img-responsive thumbnail img-resize" alt="Image">
-                <p>StockBoard</p>
+    -->
+
+    <div class="text-center">
+        <div class="container portfolio-header">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>My Portfolio</h2>
+                </div>
             </div>
         </div>
     </div>
     <br>
 
-    <footer class="container-fluid text-center">
-        <p>Footer Text</p>
-    </footer>
+    <div id="overlay"></div>
+    <div id="overlayContent">
+        <img class="imgBig" src="" alt="" width="400"/>
+    </div>
+
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 inline-image tilt pic">
+                        <div class="imgSmall hovereffect">
+                            <img src="img/project0.jpg" class="img-responsive thumbnail img-resize" alt="Image">
+                            <div class="overlay">
+                                <h2>VPEC Intranet</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 inline-image tilt pic">
+                        <div class="imgSmall hovereffect">
+                            <img src="img/project1.jpg" class="img-responsive thumbnail img-resize" alt="Image">
+                            <div class="overlay">
+                                <h2>University of Waterloo Monopoly</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 inline-image">
+                        <img src="img/project2.jpg" class="img-responsive thumbnail img-resize" alt="Image">
+                        <p>DFO Milk Management System</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 inline-image">
+                        <img src="img/project3.jpg" class="img-responsive thumbnail img-resize" alt="Image">
+                        <p>Chess</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 inline-image">
+                        <img src="img/project4.jpg" class="img-responsive thumbnail img-resize"  alt="Image">
+                        <p>Credential Manager</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 inline-image">
+                        <img src="img/project5.jpg" class="img-responsive thumbnail img-resize" alt="Image">
+                        <p>Order Manager</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 inline-image">
+                        <img src="img/project6.jpg" class="img-responsive thumbnail img-resize" alt="Image">
+                        <p>SKU Manager</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 inline-image">
+                        <img src="img/project7.jpg" class="img-responsive thumbnail img-resize" alt="Image">
+                        <p>Stock Board</p>
+                    </div>                                   
+                </div> 
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="text-center footer-below">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    Copyright &copy; 2016 Alex Chen
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- jQuery -->
@@ -154,6 +189,19 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+        $(".imgSmall").click(function(){
+            var index = $(".imgSmall").index(this);
+            $("#overlay").show();
+            $("#overlayContent").show();
+        });
+
+        $(".imgBig").click(function(){
+            $("#overlay").hide();
+            $("#overlayContent").hide();
+        });
+    </script>
 
 </body>
 
