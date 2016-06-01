@@ -291,11 +291,25 @@
             index = $(".imgSmall").index(this);
             $("#overlay").show();
             $("#overlayContent_" + index).show();
+            $('body').css({
+                'overflow': 'hidden',
+                'height:' : '100%'
+            });
+            $("#overlayContent_" + index).css({
+                'overflow-y': 'scroll'
+            });
         });
 
         $(".imgBig").click(function(){
             $("#overlay").hide();
             $("#overlayContent_" + index).hide();
+            $("#overlayContent_" + index).css({
+                'overflow' : 'hidden'
+            });
+            $('body').css({
+                'overflow': 'auto',
+                'height': 'auto'
+            });
         });
     </script>
 

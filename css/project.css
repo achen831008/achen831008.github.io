@@ -145,10 +145,6 @@ body {
 
 #overlayContent_0, #overlayContent_1, #overlayContent_2, #overlayContent_3, #overlayContent_4, #overlayContent_5, #overlayContent_6, #overlayContent_7{
     position: fixed;
-    width: 100%;
-    
-
-
     text-align: center;
     display: none;
     background-color: #fff; 
@@ -156,6 +152,9 @@ body {
     filter: alpha(opacity = 80) !important;
     overflow: hidden;
     z-index: 100;
+    top: 15%;
+    height: 75%;
+    width: 100%;
 }
 
 #contentGallery{
@@ -165,3 +164,4 @@ body {
 .imgBig, .imgSmall{
     cursor: pointer;
 }
+
