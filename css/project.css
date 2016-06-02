@@ -136,7 +136,7 @@ body {
     height: 100%; 
     top: 0px; 
     left: 0px; 
-    background-color: #000; 
+    background-color: #000000; 
     opacity: 0.9;
     filter: alpha(opacity = 90) !important;
     display: none;
@@ -147,7 +147,7 @@ body {
     position: fixed;
     text-align: center;
     display: none;
-    background-color: #fff; 
+    background-color: #233140; 
     opacity: 0.8;
     filter: alpha(opacity = 80) !important;
     overflow: hidden;
@@ -161,7 +161,26 @@ body {
     margin: 0px auto;
 }
 
-.imgBig, .imgSmall{
+.close-thik, .imgSmall{
     cursor: pointer;
+}
+
+/* Close Button */
+
+[class*='close-'] {
+  color: #fff;
+  font: 14px/100% arial, sans-serif;
+  position: absolute;
+  right: 5px;
+  text-decoration: none;
+  top: 5px;
+}
+
+.close-thik:after {
+  content: '[ Close ]';
+}
+
+.overlay_header {
+  color: #fff;
 }
 
