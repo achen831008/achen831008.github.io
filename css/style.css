@@ -547,4 +547,9 @@ img.displayed {
     height:40px;
 }
 
+.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
 
