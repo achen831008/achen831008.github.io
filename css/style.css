@@ -63,8 +63,6 @@ Main components
 
 -------------------------------- */
 header {
-  height: 200px;
-  line-height: 200px;
   text-align: center;
   background: url("../img/light.jpg");
 }
@@ -78,21 +76,31 @@ header h1 {
   font-size: 1.5rem;
 }
 
+  header img {
+    height: 275px;
+    width:150px;
+    margin-bottom: -60px;
+  }
+
 @media only screen and (min-width: 1170px) {
   header {
-    height: 200px;
-    line-height: 200px;
+
   }
   header h2 {
     font-size: 24px;
     font-size: 1.5rem;
+  }
+
+  header img {
+    height: 275px;
+    width:150px;
+    margin-bottom: -60px;
   }
 }
 
 #cd-timeline {
   position: relative;
   padding: 2em 0;
-  margin-top: 2em;
   margin-bottom: 2em;
 }
 #cd-timeline::before {
@@ -107,7 +115,6 @@ header h1 {
 }
 @media only screen and (min-width: 1170px) {
   #cd-timeline {
-    margin-top: 3em;
     margin-bottom: 3em;
   }
   #cd-timeline::before {
@@ -162,15 +169,30 @@ header h1 {
   margin-left: -12px;
   margin-top: -12px;
 }
-.cd-timeline-img.cd-picture {
+.cd-timeline-img.cd-tennis {
   background: #75ce66;
 }
-.cd-timeline-img.cd-movie {
-  background: #c03b44;
+
+.cd-timeline-img.cd-basketball {
+  background: #FA8320;
 }
-.cd-timeline-img.cd-location {
-  background: #f0ca45;
+
+.cd-timeline-img.cd-math {
+  background: #FF5CEC;
 }
+
+.cd-timeline-img.cd-trophy {
+  background: #FFD700;
+}
+
+.cd-timeline-img.cd-violin {
+  background: #5C6AFF;
+}
+
+.cd-timeline-img.cd-scholarship {
+  background: #70F5FF;
+}
+
 @media only screen and (min-width: 1170px) {
   .cd-timeline-img {
     width: 60px;
