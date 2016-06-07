@@ -143,7 +143,7 @@ body {
     z-index: 100;
 }
 
-#overlayContent_0, #overlayContent_1, #overlayContent_2, #overlayContent_3, #overlayContent_4, #overlayContent_5, #overlayContent_6, #overlayContent_7{
+#overlayContent_0, #overlayContent_1, #overlayContent_2, #overlayContent_3, #overlayContent_4, #overlayContent_5, #overlayContent_6, #overlayContent_7, #overlayContent_8{
     position: fixed;
     text-align: center;
     display: none;
