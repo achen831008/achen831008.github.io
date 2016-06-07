@@ -94,7 +94,7 @@ h6 {
 
 .img-size {
     float: right;
-    border:1px solid black;
+    box-shadow: 3px 5px 5px #888888;
 }
 
 .content-section-a {
@@ -111,6 +111,11 @@ h6 {
 .section-heading {
     display: inline;
     margin-bottom: 30px;
+    text-shadow: 0 0 5px #888888;
+}
+
+.summary_work {
+    font-weight: bold;
 }
 
 .section-heading-spacer {
