@@ -1,15 +1,11 @@
 angular
     .module('myApp', ['ngRoute', 'myApp.controllers'])
-    
+
     .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
         $routeProvider
         .when('/about', {
                 templateUrl : 'views/about.html',
                 controller  : 'aboutController'
-        })
-        .when('/experience', {
-                templateUrl : 'views/experience.html',
-                controller  : 'experienceController'
         })
         .when('/project', {
                 templateUrl : 'views/project.html',
