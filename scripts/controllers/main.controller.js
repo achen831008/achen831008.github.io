@@ -1,0 +1,13 @@
+angular.module('myApp.controllers',['ngRoute'])
+	.config(['$routeProvider', function($routeProvider) {
+		$routeProvider
+        .when('/', {
+                templateUrl : 'views/main.html',
+                controller  : 'mainController'
+        });
+	}])
+
+	.controller('mainController', ['$scope', function($scope) {
+        var vm = this;
+        $scope.role = role = 'Software Engineering';
+    }]);
