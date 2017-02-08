@@ -32,11 +32,9 @@ $(function() {
 });
 
 $("#find_out_more").click(function() {
-    $('#about').show();
     $('#footer').show();
 });
 
 $(document).ready(function() {
-    $('#about').hide();
     $('#footer').hide();
 });
