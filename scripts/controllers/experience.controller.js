@@ -1,4 +1,4 @@
-angular.module('myApp.controllers',['ngRoute'])
+angular.module('myApp.experience',['ngRoute'])
 	.config(['$routeProvider', function($routeProvider) {
 		$routeProvider
         .when('/experience', {
@@ -7,36 +7,36 @@ angular.module('myApp.controllers',['ngRoute'])
         });
 	}])
 
-	.controller('mainController', ['$scope', function($scope) {
+	.controller('experienceController', ['$scope', function($scope) {
 	    var vm = this;
 
-	    var dbrs_description = {
-	        point1: 'To Be Determined'
-	    };
+	    var dbrs_description = [
+	        'To Be Determined'
+	    ];
 
-	    var ashlin_description = {
-	        point1: 'Individually designed, developed, and tested an EDI cloud application using C#, XML, JSON and T-SQL',
-	        point2: 'Implemented and enhanced features of existing products using such as .NET, VBA and SQL',
-	        point3: 'Increased the responsiveness of a core product’s user interface, improving the overall user experience',
-	        point4: 'Resolved electronic data interchanging issues of existing product',
-	        point5: 'Contributed to migration project moving from MS Access to MS Azure'
-	    };
+	    var ashlin_description = [
+	        'Individually designed, developed, and tested an EDI cloud application using C#, XML, JSON and T-SQL',
+	        'Implemented and enhanced features of existing products using such as .NET, VBA and SQL',
+	        'Increased the responsiveness of a core product\'s user interface, improving the overall user experience',
+	        'Resolved electronic data interchanging issues of existing product',
+	        'Contributed to migration project moving from MS Access to MS Azure'
+	    ];
 
-	    var bdo_description = {
-	        point1: 'Excellent understanding of Agile software development and Software Development Life Cycle (SDLC)',
-	        point2: 'Interacted with various stakeholders (Project Manager, Delivery Manager, Dev lead) and team members to ensure quality and on-time delivery of project',
-	        point3: 'Developed test plans and test cases of complex nature from business requirement analysis',
-	        point4: 'Captured software defects in the system by using end-to-end, integration, regression, and user acceptance testing approach',
-	        point5: 'Used SQL skill to compare mock-up data with client’s real data in Microsoft SQL Server'
-	    };
+	    var bdo_description = [
+	        'Excellent understanding of Agile software development and Software Development Life Cycle (SDLC)',
+	        'Interacted with various stakeholders (Project Manager, Delivery Manager, Dev lead) and team members to ensure quality and on-time delivery of project',
+	        'Developed test plans and test cases of complex nature from business requirement analysis',
+	        'Captured software defects in the system by using end-to-end, integration, regression, and user acceptance testing approach',
+	        'Used SQL skill to compare mock-up data with client\'s real data in Microsoft SQL Server'
+	    ];
 
-	    var vpec_description = {
-	        point1: 'Designed, implemented and tested an Intranet with various features (HR News, Meeting Scheduler, Maintenance Order)',
-	        point2: 'Built various web applications using HTML/CSS, PHP and JavaScript',
-	        point3: 'Created and managed SQL relational database, views, and stored procedures',
-	        point4: 'Developed a back-end system in Java to enhance IT department’s maintenance performance',
-	        point5: 'Investigated and resolved existing products issues'
-	    };
+	    var vpec_description = [
+	        'Designed, implemented and tested an Intranet with various features (HR News, Meeting Scheduler, Maintenance Order)',
+	        'Built various web applications using HTML/CSS, PHP and JavaScript',
+	        'Created and managed SQL relational database, views, and stored procedures',
+	        'Developed a back-end system in Java to enhance IT department\'s maintenance performance',
+	        'Investigated and resolved existing products issues'
+	    ];
 
         $scope.experiences = [{
         	company: 'DBRS Limited',
