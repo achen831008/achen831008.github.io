@@ -16,6 +16,7 @@
     <link href="styles/sidebar.css" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
     <link href="styles/about.css" rel="stylesheet">
+    <link href="styles/project.css" rel="stylesheet">
     <!-- Custom Fonts -->
     <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
@@ -34,7 +35,7 @@
 
 <body ng-controller="masterController">
 <!-- Old nav -->
-<!--     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+    <nav ng-show="!navStyle" class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -52,12 +53,12 @@
                 </ul>
             </div>
         </div>
-    </nav> -->
+    </nav>
 
     <!-- New Side -->
-    <nav class="main-menu" role="navigation">
+    <nav ng-show="navStyle" class="main-menu" role="navigation">
         <ul>
-            <li ng-repeat="item in menu">
+            <li ng-class="{'active': isActive == '{{item.label}}'}" ng-click="setActive({{item.label}})" ng-repeat="item in menu">
                 <a href="{{item.route}}">
                     <i class="fa {{item.icon}} fa-2x"></i>
                     <span class="nav-text">
@@ -69,16 +70,16 @@
     </nav>
 
 
-    <div ng-view></div>
+    <div class="body_margin" ng-view></div>
 
-<!--     <div id="copyright" class="text-center footer-below">
+    <div ng-show="!navStyle" id="copyright" class="text-center footer-below">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12" ng-bind-html="copyright">
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
     
 </body>
 

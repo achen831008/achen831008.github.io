@@ -246,3 +246,7 @@ p.copyright {
     background-color: #233140;
     color: #fff;
 }
+
+.body_margin {
+    margin-left: 50px;
+}
