@@ -17,7 +17,6 @@ angular
     }])
 
     .controller('masterController',['$scope', '$rootScope', '$location', '$sce', '$window', function($scope, $rootScope, $location, $sce, $window) {
-        $scope.isActive = 'Home';
         $scope.Name = 'Alex Chen';
         $scope.copyright = $sce.trustAsHtml("Copyright &copy; 2017 Alex Chen");
         $scope.menu = [
@@ -31,7 +30,5 @@ angular
                 $scope.menuActive = $location.path();
         });
         $scope.navStyle = ($window.innerWidth > 600);
-        $scope.setActive = function(label){
-            $scope.isActive = label;
-        }
+        $scope.isActive = 0;
     }]);

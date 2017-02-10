@@ -58,7 +58,7 @@
     <!-- New Side -->
     <nav ng-show="navStyle" class="main-menu" role="navigation">
         <ul>
-            <li ng-class="{'active': isActive == '{{item.label}}'}" ng-click="setActive({{item.label}})" ng-repeat="item in menu">
+            <li ng-repeat="item in menu" ng-class="{active: isActive ==  $index}" ng-click="isActive = $index">
                 <a href="{{item.route}}">
                     <i class="fa {{item.icon}} fa-2x"></i>
                     <span class="nav-text">
@@ -70,7 +70,7 @@
     </nav>
 
 
-    <div class="body_margin" ng-view></div>
+    <div ng-class="{body_margin: navStyle}" ng-view></div>
 
     <div ng-show="!navStyle" id="copyright" class="text-center footer-below">
         <div class="container">
