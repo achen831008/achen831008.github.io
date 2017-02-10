@@ -20,10 +20,10 @@ angular
             $scope.Name = 'Alex Chen';
             $scope.copyright = $sce.trustAsHtml("Copyright &copy; 2017 Alex Chen");
             $scope.menu = [
-                    {label:'Home', route:'/'},
-                    {label:'About', route:'/about'},
-                    {label:'Experience', route:'/experience'},
-                    {label:'Projects', route:'/project'}
+                    {label:'Home', route:'/', icon:'fa-home'},
+                    {label:'About', route:'/about', icon:'fa-user'},
+                    {label:'Experience', route:'/experience', icon:'fa-tasks'},
+                    {label:'Projects', route:'/project', icon:'fa-wpforms'}
             ]
             $scope.menuActive = '/';
             $rootScope.$on('$routeChangeSuccess', function(e, curr, prev) {
