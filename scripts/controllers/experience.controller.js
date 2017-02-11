@@ -38,6 +38,8 @@ angular.module('myApp.experience',['ngRoute'])
 	        'Investigated and resolved existing products issues'
 	    ];
 
+        $scope.templateTitle = 'Experience';
+        
         $scope.experiences = [{
         	company: 'DBRS Limited',
         	companyShort: 'dbrs',
@@ -59,7 +61,7 @@ angular.module('myApp.experience',['ngRoute'])
             time: 'September 2015 - December 2015',
             description: ashlin_description
         }, {
-            company: 'BDO Technology',
+            company: 'BDO IT Solutions',
             companyShort: 'bdo',
             job_title: 'Solution Consultant',
             companyLink: 'http://www.bdo.ca',

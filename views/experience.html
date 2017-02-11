@@ -1,10 +1,16 @@
-<!-- Experience -->
+<div class="templateBackground">
+    <div class="templateTitle">{{ templateTitle }}</div>
+</div>
+<div class="divider"></div>
+
+<h2 class="text-center">Work</h2>
+<hr class="small">
+
 <a  name="experience"></a>
 <div class="content-section-a">
-    <br>
     <div class="container">
         <div class="row">
-            <div class="col-lg-12" ng-repeat="exp in experiences">
+<!--             <div class="col-lg-12" ng-repeat="exp in experiences">
                 <div class="col-lg-12">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
@@ -38,6 +44,14 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div> -->
+            <div ng-repeat="exp in experiences" class="col-lg-3 col-md-3 col-sm-3 inline-image tilt pic">
+                <div class="imgSmall hovereffect">
+                    <img src="{{ exp.logo }}" class="img-responsive thumbnail img-resize" alt="Image">
+                    <div class="overlay">
+                        <h2>{{ exp.company }}</h2>
                     </div>
                 </div>
             </div>

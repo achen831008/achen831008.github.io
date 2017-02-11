@@ -24,5 +24,6 @@ angular.module('myApp.about',['ngRoute'])
             description: 'Passionate in playing sports such as Basketball, Tennis, Rugby, Ping Pong, and Volleyball.'
         }];
 
+        $scope.templateTitle = 'About';
         $scope.categories = categories;
     }]);
