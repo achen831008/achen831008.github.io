@@ -30,5 +30,11 @@ angular
                 $scope.menuActive = $location.path();
         });
         $scope.navStyle = ($window.innerWidth > 600);
-        $scope.isActive = 0;
+
+        $scope.setActive = function(label) {
+            (label == 'Home') ? angular.element('#Home').addClass("active") : angular.element('#Home').removeClass("active");
+            (label == 'About') ? angular.element('#About').addClass("active") : angular.element('#About').removeClass("active");
+            (label == 'Experience') ? angular.element('#Experience').addClass("active") : angular.element('#Experience').removeClass("active");
+            (label == 'Projects') ? angular.element('#Projects').addClass("active") : angular.element('#Projects').removeClass("active");
+        }      
     }]);

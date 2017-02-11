@@ -34,7 +34,7 @@
 </head>
 
 <body ng-controller="masterController">
-<!-- Old nav -->
+    <!-- Top nav show for mobile view -->
     <nav ng-show="!navStyle" class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
             <div class="navbar-header">
@@ -55,10 +55,10 @@
         </div>
     </nav>
 
-    <!-- New Side -->
+    <!-- Sidebar show for desktop view -->
     <nav ng-show="navStyle" class="main-menu" role="navigation">
         <ul>
-            <li ng-repeat="item in menu" ng-class="{active: isActive ==  $index}" ng-click="isActive = $index">
+            <li id="{{item.label}}" ng-repeat="item in menu" ng-class="{active: item.label == 'Home'}" ng-click="setActive(item.label)">
                 <a href="{{item.route}}">
                     <i class="fa {{item.icon}} fa-2x"></i>
                     <span class="nav-text">
@@ -68,7 +68,6 @@
             </li>
         </ul>
     </nav>
-
 
     <div ng-class="{body_margin: navStyle}" ng-view></div>
 
