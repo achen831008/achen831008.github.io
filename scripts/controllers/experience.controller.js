@@ -39,9 +39,9 @@ angular.module('myApp.experience',['ngRoute'])
 	    ];
 
         $scope.templateTitle = 'Experience';
-        
+
         $scope.experiences = [{
-        	company: 'DBRS Limited',
+        	company: 'DBRS Limited, Global Technology',
         	companyShort: 'dbrs',
         	job_title: 'Software Engineering',
         	companyLink: 'http://www.dbrs.com',
