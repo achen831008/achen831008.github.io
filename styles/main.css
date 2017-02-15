@@ -274,3 +274,8 @@ p.copyright {
     color: #fff;
 /*    margin-bottom: 1px;*/
 }
+
+.tableContent {
+    color: #333;
+    cursor: pointer;
+}

@@ -9,6 +9,7 @@ angular.module('myApp.experience',['ngRoute'])
 
 	.controller('experienceController', ['$scope', function($scope) {
 	    var vm = this;
+        $scope.show = false;
 
 	    var dbrs_description = [
 	        'To Be Determined'
@@ -76,10 +77,19 @@ angular.module('myApp.experience',['ngRoute'])
             job_title: 'Web Developer',
             companyLink: 'http://www.vpec.com.tw',
             location: 'Taoyuan County, Taiwan',
-            mapUrl: 'http://maps.google.com/?q=No.16,Kung Yeh 1st Rd.,Ping-Jen Industrial Zone,Ping-Jen Dist.,Taoyuan City 324,Taiwan(R.O.C)',
+            mapUrl: 'https://goo.gl/maps/2vETiRpCMwR2',
             logo: '/assets/img/VPEC_logo.jpg',
             time: 'May 2014 - August 2014',
             description: vpec_description
         }];
+
+        $scope.showDetail = function(exp) {
+            $scope.show = true;
+            $scope.exp = exp;
+        };
+
+        $scope.hideDetail = function() {
+            $scope.show = false;
+        };
 
     }]);

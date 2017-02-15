@@ -3,62 +3,15 @@
 </div>
 <div class="divider"></div>
 
-<h2 class="text-center">Work</h2>
+<h2 ng-show="!show" class="text-center">Work</h2>
+<h2 ng-show="show" class="text-center">{{exp.company}}</h2>
 <hr class="small">
 
 <a  name="experience"></a>
 <div class="content-section-a">
     <div class="container">
         <div class="row">
-<!--             <div class="col-lg-12" ng-repeat="exp in experiences">
-                <div class="col-lg-12">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <div class="col-lg-12">
-                        <div class="row">
-                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-                                <h3 class="section-heading">{{ exp.job_title }}</h3>
-                                <h4><a href="{{ exp.companyLink }}">{{ exp.company }}</a></h4>
-                                <h6><a href="{{ exp.mapUrl }}">{{ exp.location }}</a></h6>
-                                <h6>{{ exp.time }}</h6>
-                            </div>
-                            <div class="col-xs-4">
-                                <img class="img-size" src="{{ exp.logo }}" width="75" height="75">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-10">
-                        <div class="panel-group">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" href="#{{ exp.companyShort }}-detail" class="collapsed">Read More</a>
-                                    </h4>
-                                </div>
-                                <div id="{{ exp.companyShort }}-detail" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <ul ng-repeat="point in exp.description">
-                                            <li>{{ point }}</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-
-<!--             <div ng-repeat="exp in experiences" class="col-lg-3 col-md-3 col-sm-3 inline-image tilt pic">
-                <div class="imgSmall hovereffect">
-                    <img src="{{ exp.logo }}" class="img-responsive thumbnail img-resize" alt="Image">
-                    <div class="overlay">
-                        <h2>{{ exp.company }}</h2>
-                    </div>
-                </div>
-            </div> -->
-
-
-            <table class="table table-striped" wt-responsive-table>
+            <table ng-show="!show" class="table table-striped" wt-responsive-table>
                 <thead>
                     <tr>
                         <th></th>
@@ -72,14 +25,21 @@
                 <tbody>
                     <tr ng-repeat="exp in experiences"">
                         <td><img style="height:30px; width:30px;" src="{{ exp.logo }}" alt="Image"></td>
-                        <td>{{exp.company}}</td>
+                        <td><a class="tableContent" href="{{exp.companyLink}}">{{exp.company}}</a></td>
                         <td>{{exp.job_title}}</td>
-                        <td>{{exp.location}}</td>
+                        <td><a class="tableContent" href="{{exp.mapUrl}}">{{exp.location}}</a></td>
                         <td>{{exp.time}}</td>
-                        <td><i class="fa fa-eye fa-2x"></i></td>
+                        <td><a class="tableContent" ng-click="showDetail(exp)"><i class="fa fa-eye fa-2x"></i></a></td>
                     </tr>
                 </tbody>
             </table>
+
+            <div ng-show="show">
+                <div>
+                    <button ng-click="hideDetail()" type="button" class="btn btn-default">Back</button>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
