@@ -17,8 +17,8 @@
                         <th></th>
                         <th>Company</th>
                         <th>Title</th>
-                        <th>Location</th>
-                        <th>Period</th>
+                        <th ng-show="style">Location</th>
+                        <th ng-show="style">Period</th>
                         <th>View</th>
                     </tr>
                 </thead>
@@ -27,8 +27,8 @@
                         <td><img style="height:30px; width:30px;" src="{{ exp.logo }}" alt="Image"></td>
                         <td><a class="tableContent" href="{{exp.companyLink}}">{{exp.company}}</a></td>
                         <td>{{exp.job_title}}</td>
-                        <td><a class="tableContent" href="{{exp.mapUrl}}">{{exp.location}}</a></td>
-                        <td>{{exp.time}}</td>
+                        <td ng-show="style"><a class="tableContent" href="{{exp.mapUrl}}">{{exp.location}}</a></td>
+                        <td ng-show="style">{{exp.time}}</td>
                         <td><a class="tableContent" ng-click="showDetail(exp)"><i class="fa fa-eye fa-2x"></i></a></td>
                     </tr>
                 </tbody>

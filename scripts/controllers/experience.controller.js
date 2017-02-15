@@ -7,9 +7,11 @@ angular.module('myApp.experience',['ngRoute'])
         });
 	}])
 
-	.controller('experienceController', ['$scope', function($scope) {
+	.controller('experienceController', ['$scope', '$window', function($scope, $window) {
 	    var vm = this;
         $scope.show = false;
+
+        $scope.style = $window.innerWidth > 600;
 
 	    var dbrs_description = [
 	        'To Be Determined'
