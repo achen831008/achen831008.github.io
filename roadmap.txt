@@ -1,0 +1,11 @@
+About:
+- add school program
+- add Udacity online courses
+- add awards/scholarship
+
+Experience:
+- center title in banner when in mobile mode
+- project worked on each term (include tech stack)
+- work term eval from manager
+- relevant experience (i.e. twsa, cs246 (monopoly, chess), cs241 (wlp4 compiler), stat373 regression, stag cafe)
+- hackathon HTN/PENAPPS
