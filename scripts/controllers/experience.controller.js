@@ -166,7 +166,7 @@ angular.module('myApp.experience',['ngRoute'])
         $scope.other = [{
             organization: 'UW Taiwan Student Association',
             shortname: 'twsa',
-            title: 'Event and Operation Vice President',
+            role: 'Event and Operation Vice President',
             link: 'https://www.facebook.com/TWSA.UW',
             location: 'Waterloo, Ontario, Canada',
             mapUrl: 'https://goo.gl/maps/8EM29cMNErP2',
@@ -178,13 +178,37 @@ angular.module('myApp.experience',['ngRoute'])
         }, {
             organization: 'University of Waterloo',
             shortname: 'uw',
-            title: 'Event and Operation Vice President',
-            link: 'https://www.facebook.com/TWSA.UW',
+            role: 'Student',
+            link: '',
             location: 'Waterloo, Ontario, Canada',
             mapUrl: 'https://goo.gl/maps/8EM29cMNErP2',
             logo: '/assets/img/uw.jpg',
             start: 'September 2013',
-            end: 'August 2015',
+            end: 'May 2017',
+            description: '',
+            projects: []
+        }, {
+            organization: 'Hack the North 2016',
+            shortname: 'htn',
+            role: 'Hacker',
+            link: 'https://hackthenorth.com/',
+            location: 'Waterloo, Ontario, Canada',
+            mapUrl: 'https://goo.gl/maps/8EM29cMNErP2',
+            logo: '',
+            start: 'September 2016',
+            end: 'September 2016',
+            description: '',
+            projects: []
+        }, {
+            organization: 'PENNAPPS XV',
+            shortname: 'penn',
+            title: 'Hacker',
+            link: 'https://pennapps.com',
+            location: 'Waterloo, Ontario, Canada',
+            mapUrl: 'https://goo.gl/maps/8EM29cMNErP2',
+            logo: '/assets/img/uw.jpg',
+            start: 'September 2013',
+            end: 'May 2017',
             description: '',
             projects: []
         }];
