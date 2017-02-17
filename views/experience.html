@@ -3,14 +3,14 @@
 </div>
 <div class="divider"></div>
 
-<h2 ng-show="!show" class="text-center">Work</h2>
-<h2 ng-show="show" class="text-center">{{job.company}}</h2>
-<hr class="small">
-
 <a  name="experience"></a>
 <div class="content-section-a">
     <div class="container">
         <div class="row">
+            <h2 ng-show="show" class="text-center">{{job.company}}</h2>
+            
+            <h2 ng-show="!show" class="text-center">Work</h2>
+            <hr class="small">
             <table ng-show="!show" class="table table-striped" wt-responsive-table>
                 <thead>
                     <tr>
@@ -35,6 +35,34 @@
                     </tr>
                 </tbody>
             </table>
+
+            <h2 ng-show="!show" class="text-center">Others</h2>
+            <hr class="small">
+            <table ng-show="!show" class="table table-striped" wt-responsive-table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Organization</th>
+                        <th>Role</th>
+                        <th ng-show="style">Location</th>
+                        <th ng-show="style">Start Period</th>
+                        <th ng-show="style">End Period</th>
+                        <th>View</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="exp in others"">
+                        <td><img style="height:30px; width:30px;" src="{{ exp.logo }}" alt="Image"></td>
+                        <td><a class="tableContent" href="{{exp.link}}">{{exp.organization}}</a></td>
+                        <td>{{exp.role}}</td>
+                        <td ng-show="style"><a class="tableContent" href="{{exp.mapUrl}}">{{exp.location}}</a></td>
+                        <td ng-show="style">{{exp.start}}</td>
+                        <td ng-show="style">{{exp.end}}</td>
+                        <td><a class="tableContent" ng-click="showDetail(exp)"><i class="fa fa-eye fa-2x"></i></a></td>
+                    </tr>
+                </tbody>
+            </table>
+
             <div ng-show="show">
                 <div>
                     <button ng-click="hideDetail()" type="button" class="btn btn-default">Back</button>

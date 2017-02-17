@@ -163,30 +163,18 @@ angular.module('myApp.experience',['ngRoute'])
             projects: [vpec_intranet]
         }];
 
-        $scope.other = [{
-            organization: 'UW Taiwan Student Association',
-            shortname: 'twsa',
-            role: 'Event and Operation Vice President',
-            link: 'https://www.facebook.com/TWSA.UW',
-            location: 'Waterloo, Ontario, Canada',
-            mapUrl: 'https://goo.gl/maps/8EM29cMNErP2',
-            logo: '/assets/img/twsa.jpg',
-            start: 'September 2013',
-            end: 'August 2015',
-            description: '',
-            projects: []
-        }, {
+        $scope.others = [{
             organization: 'University of Waterloo',
             shortname: 'uw',
             role: 'Student',
-            link: '',
+            link: 'https://uwaterloo.ca/',
             location: 'Waterloo, Ontario, Canada',
             mapUrl: 'https://goo.gl/maps/8EM29cMNErP2',
             logo: '/assets/img/uw.jpg',
             start: 'September 2013',
-            end: 'May 2017',
-            description: '',
-            projects: []
+            end: 'May 2018',
+            description: 'As a student in Computing and Financial Management co-op honour program, I take various courses...',
+            projects: [monopoly,chess,wlp4Complier]
         }, {
             organization: 'Hack the North 2016',
             shortname: 'htn',
@@ -194,22 +182,34 @@ angular.module('myApp.experience',['ngRoute'])
             link: 'https://hackthenorth.com/',
             location: 'Waterloo, Ontario, Canada',
             mapUrl: 'https://goo.gl/maps/8EM29cMNErP2',
-            logo: '',
+            logo: '/assets/img/hackthenorth.png',
             start: 'September 2016',
             end: 'September 2016',
-            description: '',
+            description: 'I participate in 2016 hack the north, ...',
             projects: []
         }, {
-            organization: 'PENNAPPS XV',
+            organization: 'PENNAPPS XIV',
             shortname: 'penn',
-            title: 'Hacker',
+            role: 'Hacker',
             link: 'https://pennapps.com',
+            location: 'Philadelphia, PA',
+            mapUrl: 'https://goo.gl/maps/8EM29cMNErP2',
+            logo: '/assets/img/pennapps.png',
+            start: 'September 2016',
+            end: 'September 2016',
+            description: 'I participate in PENNAPPS XV, ...',
+            projects: [finalytics]
+        }, {
+            organization: 'UW Taiwan Student Association',
+            shortname: 'twsa',
+            role: 'Event Planning Vice President',
+            link: 'https://www.facebook.com/TWSA.UW',
             location: 'Waterloo, Ontario, Canada',
             mapUrl: 'https://goo.gl/maps/8EM29cMNErP2',
-            logo: '/assets/img/uw.jpg',
+            logo: '/assets/img/twsa.jpg',
             start: 'September 2013',
-            end: 'May 2017',
-            description: '',
+            end: 'August 2015',
+            description: 'As an executive in TWSA, I participate in ...',
             projects: []
         }];
 
