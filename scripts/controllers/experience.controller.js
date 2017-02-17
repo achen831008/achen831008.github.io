@@ -6,26 +6,26 @@ angular.module('myApp.experience', ['ngRoute', 'myApp.services'])
                 controller  : 'experienceController'
             });
 	}])
-	.controller('experienceController', ['$scope', '$window', 'experienceService', function($scope, $window, experienceService) {
+	.controller('experienceController', ['$scope', '$window', 'experienceService', function ($scope, $window, experienceService) {
 	    var vm = this;
         $scope.show = false;
         $scope.style = $window.innerWidth > 600;
         
-        $scope.showDetail = function(job) {
+        $scope.showDetail = function (job) {
             $scope.show = true;
             $scope.job = job;
         };
 
-        $scope.hideDetail = function() {
+        $scope.hideDetail = function () {
             $scope.show = false;
         };
         
-        $scope.initScope = function() {                     
+        $scope.initScope = function () {
             experienceService.get('scripts/experience.json').then(function (rsp) {
                 $scope.jobs = rsp.data.Jobs;
                 $scope.others = rsp.data.others;
             });
-        }
+        };
         
         $scope.initScope();
     }]);

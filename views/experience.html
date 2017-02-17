@@ -22,8 +22,8 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="job in jobs"">
-                        <td><img style="height:30px; width:30px;" src="{{ job.logo }}" alt="Image"></td>
+                    <tr ng-repeat="job in jobs">
+                        <td><img class="logo" src="{{ job.logo }}" alt="Image"></td>
                         <td><a class="tableContent" href="{{job.companyLink}}">{{job.company}}</a></td>
                         <td>{{job.job_title}}</td>
                         <td ng-show="style"><a class="tableContent" href="{{job.mapUrl}}">{{job.location}}</a></td>
@@ -49,8 +49,8 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="exp in others"">
-                        <td><img style="height:30px; width:30px;" src="{{ exp.logo }}" alt="Image"></td>
+                    <tr ng-repeat="exp in others">
+                        <td><img class="logo" src="{{ exp.logo }}" alt="Image"></td>
                         <td><a class="tableContent" href="{{exp.link}}">{{exp.organization}}</a></td>
                         <td>{{exp.role}}</td>
                         <td ng-show="style"><a class="tableContent" href="{{exp.mapUrl}}">{{exp.location}}</a></td>

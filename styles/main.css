@@ -279,3 +279,8 @@ p.copyright {
     color: #333;
     cursor: pointer;
 }
+
+.logo {
+    height:30px; 
+    width:30px;
+}
