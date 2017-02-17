@@ -4,5 +4,4 @@ About:
 - add awards/scholarship
 
 Experience:
-- center title in banner when in mobile mode
 - work term eval from manager

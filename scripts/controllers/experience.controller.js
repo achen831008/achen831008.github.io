@@ -10,6 +10,7 @@ angular.module('myApp.experience', ['ngRoute', 'myApp.services'])
 	    var vm = this;
         $scope.show = false;
         $scope.style = $window.innerWidth > 600;
+        $scope.templateTitle = "Experience";
         
         $scope.showDetail = function (job) {
             $scope.show = true;
