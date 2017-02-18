@@ -7,53 +7,28 @@
 <div class="content-section-a">
     <div class="container">
         <div class="row">
+<!--
             <h2 ng-show="!show" class="text-center">Work</h2>
             <hr ng-show="!show" class="small">
-            <table ng-show="!show" class="table table-striped" wt-responsive-table>
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>Company</th>
-                        <th>Title</th>
-                        <th ng-show="style">Location</th>
-                        <th ng-show="style">Start Period</th>
-                        <th ng-show="style">End Period</th>
-                        <th>View</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr ng-repeat="job in jobs">
-                        <td><img class="logo" src="{{ job.logo }}" alt="Image"></td>
-                        <td><a class="tableContent" href="{{job.companyLink}}">{{job.company}}</a></td>
-                        <td>{{job.job_title}}</td>
-                        <td ng-show="style"><a class="tableContent" href="{{job.mapUrl}}">{{job.location}}</a></td>
-                        <td ng-show="style">{{job.start}}</td>
-                        <td ng-show="style">{{job.end}}</td>
-                        <td><a class="tableContent" ng-click="showDetail(job)"><i class="fa fa-eye fa-2x"></i></a></td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h2 ng-show="!show" class="text-center">Others</h2>
-            <hr ng-show="!show" class="small">
+-->
             <table ng-show="!show" class="table table-striped" wt-responsive-table>
                 <thead>
                     <tr>
                         <th></th>
                         <th>Organization</th>
                         <th>Role</th>
-                        <th ng-show="style">Location</th>
-                        <th ng-show="style">Start Period</th>
-                        <th ng-show="style">End Period</th>
+                        <th>Type</th>
+                        <th ng-show="style">Start Date</th>
+                        <th ng-show="style">End Date</th>
                         <th>View</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="exp in others">
+                    <tr ng-repeat="exp in exps | orderBy:'-start'">
                         <td><img class="logo" src="{{ exp.logo }}" alt="Image"></td>
                         <td><a class="tableContent" href="{{exp.link}}">{{exp.organization}}</a></td>
                         <td>{{exp.role}}</td>
-                        <td ng-show="style"><a class="tableContent" href="{{exp.mapUrl}}">{{exp.location}}</a></td>
+                        <td>{{exp.type}}</td>
                         <td ng-show="style">{{exp.start}}</td>
                         <td ng-show="style">{{exp.end}}</td>
                         <td><a class="tableContent" ng-click="showDetail(exp)"><i class="fa fa-eye fa-2x"></i></a></td>
@@ -62,7 +37,7 @@
             </table>
 
             <div ng-show="show">
-                <h2 class="text-center">{{job.company}}</h2>
+                <h2 class="text-center">{{job.organization}}</h2>
                 <hr class="small">
                 <div>
                     <button ng-click="hideDetail()" type="button" class="btn btn-default">Back</button>

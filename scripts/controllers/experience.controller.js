@@ -23,8 +23,8 @@ angular.module('myApp.experience', ['ngRoute', 'myApp.services'])
         
         $scope.initScope = function () {
             experienceService.get('scripts/experience.json').then(function (rsp) {
-                $scope.jobs = rsp.data.Jobs;
-                $scope.others = rsp.data.others;
+                $scope.exps = rsp.data.Experiences;
+                
             });
         };
         
