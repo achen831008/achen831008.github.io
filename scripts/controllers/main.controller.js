@@ -9,5 +9,5 @@ angular.module('myApp.main',['ngRoute'])
 
 	.controller('mainController', ['$scope', function($scope) {
         var vm = this;
-        $scope.role = 'Software Engineering';
+        $scope.program = 'Computing and Financial Management';
     }]);

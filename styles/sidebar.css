@@ -28,7 +28,7 @@
   bottom:0;
   height:100%;
   left:0;
-  width:50px;
+  width:60px;
   overflow:auto;
   -webkit-transition:width .05s linear;
   transition:width .05s linear;
@@ -37,7 +37,7 @@
 }
 
 .main-menu>ul {
-  margin:7px 0;
+/*  margin:7px 0;*/
 }
 
 .main-menu li {
@@ -59,7 +59,6 @@
   -webkit-transform:translateZ(0) scale(1,1);
   -webkit-transition:all .1s linear;
   transition:all .1s linear;
-  
 }
 
 .main-menu .nav-icon {
@@ -130,8 +129,20 @@ nav.main-menu li.active>a,
 }
 
 .main-menu li {
+/*
   padding-top: 15px;
   padding-bottom: 15px;
+*/
+}
+
+.bigger {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.lefty {
+  margin-right: 10px;
+    margin-left: 5px;
 }
 
 @font-face {
