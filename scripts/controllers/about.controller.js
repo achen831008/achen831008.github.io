@@ -1,15 +1,13 @@
-angular.module('myApp.about',['ngRoute'])
-	.config(['$routeProvider', function($routeProvider) {
+angular.module('myApp.about', ['ngRoute'])
+	.config(['$routeProvider', function ($routeProvider) {
 		$routeProvider
-        .when('/about', {
+            .when('/about', {
                 templateUrl : 'views/about.html',
                 controller  : 'aboutController'
-        });
+            });
 	}])
 
-	.controller('aboutController', ['$scope', function($scope) {
-        var vm = this;
-
+	.controller('aboutController', ['$scope', '$window', function ($scope, $window) {
         var categories = [{
             icon: 'fa-university',
             description: 'Third year into Computing and Financial Management at University of Waterloo. Started working at DBRS limited as a software engineering for my fourth co-op internship.'
@@ -26,4 +24,5 @@ angular.module('myApp.about',['ngRoute'])
 
         $scope.templateTitle = 'About';
         $scope.categories = categories;
+        $scope.style = $window.innerWidth > 600;
     }]);
