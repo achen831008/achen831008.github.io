@@ -39,7 +39,7 @@ body {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(/assets/img/background/background.jpg) no-repeat center center;
+    background: url(/assets/img/background/backgournd2.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -52,7 +52,7 @@ body {
 .intro-message > h1 {
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 5em;
+    font-size: 8em;
 }
 
 .intro-divider {
@@ -63,6 +63,7 @@ body {
 
 .intro-message > h3 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 2em;
 }
 
 @media(max-width:850px) {
