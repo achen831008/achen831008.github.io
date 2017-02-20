@@ -23,7 +23,9 @@ angular
             {label: 'Home', route: '/', icon: 'fa-home'},
             {label: 'About', route: '/about', icon: 'fa-user'},
             {label: 'Experience', route: '/experience', icon: 'fa-tasks'},
-            {label: 'Projects', route: '/project', icon: 'fa-wpforms'}
+            {label: 'Projects', route: '/project', icon: 'fa-wpforms'},
+            {label: 'Github', route: 'https://github.com/achen831008', icon: 'fa-github'},
+            {label: 'LinkedIn', route: 'https://ca.linkedin.com/in/achen831008', icon: 'fa-linkedin'}
         ];
         
         $scope.menuActive = '/';
