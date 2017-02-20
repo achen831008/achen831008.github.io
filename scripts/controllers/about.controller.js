@@ -8,7 +8,7 @@ angular.module('myApp.about', ['ngRoute', 'myApp.services'])
 	}])
 	.controller('aboutController', ['$scope', '$window', 'experienceService', function ($scope, $window, experienceService) {
         $scope.initScope = function () {
-            experienceService.get('scripts/about.json').then(function (rsp) {
+            experienceService.get('/data/about.json').then(function (rsp) {
                 $scope.categories = rsp.data.categories;
                 $scope.quote = rsp.data.quote;
                 $scope.quoteFrom = rsp.data.quoteFrom;
