@@ -1,22 +1,32 @@
+<!--
 <div class="templateBackground">
     <div class="templateTitle" ng-class="{'text-center': !style, 'banner-margin': !style}">{{ templateTitle }}</div>
 </div>
-<div class="divider"></div>
+-->
+
+<div class="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="banner-message">
+                    <div class="text-center">{{ quote }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <section id="about" class="about bg-info">
     <div class="container">
         <div class="row text-center">
-            <div class="col-lg-12">
-                <div class="row">
-                    <div class="col-md-3 col-sm-3" ng-repeat="item in categories">
-                        <div class="about-item">
-                            <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa {{ item.icon }} fa-stack-1x text-primary icon-list"></i>
-                            </span>
-                            <br>
-                            <p>{{ item.description }}</p>
-                        </div>
-                    </div>
+           <div class="col-md-12 col-sm-3" ng-repeat="item in categories">
+                <div class="about-item">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa {{ item.icon }} fa-stack-1x text-primary icon-list"></i>
+                    </span>
+                    <br>
+                    <p>{{ item.description }}</p>
                 </div>
             </div>
         </div>

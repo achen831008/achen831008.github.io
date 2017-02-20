@@ -25,4 +25,5 @@ angular.module('myApp.about', ['ngRoute'])
         $scope.templateTitle = 'About';
         $scope.categories = categories;
         $scope.style = $window.innerWidth > 600;
+        $scope.quote = 'Some people want it to happen, some wish it would happen, others make it happen.';
     }]);
