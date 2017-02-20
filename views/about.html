@@ -46,11 +46,17 @@
             <img class="img-center" src="{{item.img}}">
         </div>
         <span class="col-lg-6">
-            <p class="paragraph">{{ item.description }}</p>
+            <div class="paragraph">
+                {{ item.description }}
+                <ul>
+                    <li class="award" ng-repeat="award in item.listOfAwards">{{award}}</li>
+                </ul>
+            </div>
         </span>
     </div>
 </div>
 
+<!--
 <div id="footer" class="text-center footer-above">
     <div class="container">
         <div class="row text-center">
@@ -85,3 +91,4 @@
         </div>
     </div>
 </div>
+-->

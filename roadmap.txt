@@ -1,7 +1,6 @@
-About:
-- add school program
-- add Udacity online courses
-- add awards/scholarship
+About
+- find img for awards
 
 Experience:
 - work term eval from manager
+- view detail

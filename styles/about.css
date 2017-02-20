@@ -13,7 +13,15 @@ body {
 }
 
 body {
-    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
 }
 
 .text-vertical-center {
@@ -201,9 +209,18 @@ hr.small {
 
 .paragraph {
     margin-left: 5px;
-    font-size: 1.5em;
+    font-size: 1.2em;
+    color:darkgray;
+    font-family: 'open sans',arial,sans-serif;
+    margin-top: 15%;
+    margin-bottom: 15%;
 }
 
 .bottom {
     padding-bottom: 80px;
+}
+
+.award {
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
