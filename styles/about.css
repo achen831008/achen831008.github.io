@@ -68,7 +68,7 @@ body {
 /* Custom Horizontal Rule */
 
 hr.small {
-    max-width: 200px;
+    max-width: 250px;
 }
 
 /* Side Menu */
@@ -196,8 +196,8 @@ hr.small {
 }
 
 .title {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 60px;
+/*    padding-bottom: 50px;*/
 }
 
 .img-center {
