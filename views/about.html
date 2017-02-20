@@ -10,12 +10,14 @@
             <div class="col-lg-12">
                 <div class="banner-message">
                     <div class="text-center">{{ quote }}</div>
+                    <span> - {{ quoteFrom }}</span>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
+<!--
 <section id="about" class="about bg-info">
     <div class="container">
         <div class="row text-center">
@@ -32,6 +34,22 @@
         </div>
     </div>
 </section>
+-->
+
+<div class="container bottom" ng-repeat="item in categories">
+    <div class="row text-center">
+        <h1 class="title">{{item.topic}}</h1>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-lg-6">
+            <img class="img-center" src="{{item.img}}">
+        </div>
+        <span class="col-lg-6">
+            <p class="paragraph">{{ item.description }}</p>
+        </span>
+    </div>
+</div>
 
 <div id="footer" class="text-center footer-above">
     <div class="container">

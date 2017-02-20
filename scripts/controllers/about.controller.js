@@ -1,4 +1,4 @@
-angular.module('myApp.about', ['ngRoute'])
+angular.module('myApp.about', ['ngRoute', 'myApp.services'])
 	.config(['$routeProvider', function ($routeProvider) {
 		$routeProvider
             .when('/about', {
@@ -6,24 +6,15 @@ angular.module('myApp.about', ['ngRoute'])
                 controller  : 'aboutController'
             });
 	}])
+	.controller('aboutController', ['$scope', '$window', 'experienceService', function ($scope, $window, experienceService) {
+        $scope.initScope = function () {
+            experienceService.get('scripts/about.json').then(function (rsp) {
+                $scope.categories = rsp.data.categories;
+                $scope.quote = rsp.data.quote;
+                $scope.quoteFrom = rsp.data.quoteFrom;
+            });
+        };
 
-	.controller('aboutController', ['$scope', '$window', function ($scope, $window) {
-        var categories = [{
-            icon: 'fa-university',
-            description: 'Third year into Computing and Financial Management at University of Waterloo. Started working at DBRS limited as a software engineering for my fourth co-op internship.'
-        }, {
-            icon: 'fa-laptop',
-            description: 'UI/UX design using HTML, CSS, JavaScript, jQuery. Experienced with C, C++, C#, JAVA, SQL, JSON, XML, ASP, and Shell Scripting.'
-        }, {
-            icon: 'fa-music',
-            description: 'Passionate in playing violin and piano from a young age. Love to compete in music festival and share music around the world.'
-        }, {
-            icon: 'fa-dribbble',
-            description: 'Passionate in playing sports such as Basketball, Tennis, Rugby, Ping Pong, and Volleyball.'
-        }];
-
-        $scope.templateTitle = 'About';
-        $scope.categories = categories;
         $scope.style = $window.innerWidth > 600;
-        $scope.quote = 'Some people want it to happen, some wish it would happen, others make it happen.';
+        $scope.initScope();
     }]);

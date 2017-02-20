@@ -1,0 +1,31 @@
+{
+    "quote" : "Some people want it to happen, some wish it would happen, others make it happen.",
+    "quoteFrom" : "Michael Jordan",
+    "categories" :
+    [
+        {
+            "topic": "Education",
+            "icon": "fa-university",
+            "description": "Fourth year into Computing and Financial Management Honours Co-op Program at University of Waterloo. I have worked 5 internships pertaining to web and software development at DBRS, Ashlin-BPG, BDO, and VPEC. On the side, I also take various online courses in Machine Learing for Trading, full-stack development, and Introduction to AI. I am also preparing to take on CFA exams as I have completed courses in Global Financial Markets, Corportate Finance, Fix-income Securities, and Derivatives.",
+            "img": "/assets/img/about/education.jpg"
+        },
+        {
+            "topic": "Software Development",
+            "icon": "fa-laptop",
+            "description": "On this site you can find various projects I worked on both in school and co-op. These emphasize some of the skills I have as a developer. Some of my strong front-end skills including HTML5, CSS3, Bootstrap, JavaScript, jQuery, Angular. Also, I have sharp back-end experience in C# (MVC, Entity Framework, ORM), C++, Python (Flask), JAVA, T-SQL, MySQL, noSQL, and ASP. In addition, I am familiar with Git, SVN, and TFS.",
+            "img": "/assets/img/about/dev.jpg"
+        },
+        {
+            "topic": "Music",
+            "icon": "fa-music",
+            "description": "Passionate in playing violin and piano from a young age. Love to compete in music festivals and share music around the world. I have ...",
+            "img": "/assets/img/about/dev.jpg"
+        },
+        {
+            "topic": "Sports",
+            "icon": "fa-dribbble",
+            "description": "Passionate in playing sports such as Basketball, Tennis, Rugby, Ping Pong, and Volleyball.",
+            "img": "/assets/img/about/dev.jpg"
+        }
+    ]
+}
