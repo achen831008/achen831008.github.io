@@ -1,13 +1,14 @@
-angular.module('myApp.main',['ngRoute'])
-	.config(['$routeProvider', function($routeProvider) {
-		$routeProvider
-        .when('/', {
-                templateUrl : 'views/main.html',
-                controller  : 'mainController'
-        });
-	}])
+(function () {
+    'use strict';
 
-	.controller('mainController', ['$scope', function($scope) {
+    angular
+        .module('app')
+        .controller('mainController', mainController);
+
+    mainController.$inject = ['$scope'];
+
+    function mainController($scope) {
         var vm = this;
         $scope.program = 'Computing and Financial Management';
-    }]);
+    }
+})();

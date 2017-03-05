@@ -1,12 +1,13 @@
-angular.module('myApp.about', ['ngRoute', 'myApp.services'])
-	.config(['$routeProvider', function ($routeProvider) {
-		$routeProvider
-            .when('/about', {
-                templateUrl : 'views/about.html',
-                controller  : 'aboutController'
-            });
-	}])
-	.controller('aboutController', ['$scope', '$window', 'experienceService', function ($scope, $window, experienceService) {
+(function () {
+    'use strict';
+
+    angular
+        .module('app')
+        .controller('aboutController', aboutController);
+
+    aboutController.$inject = ['$scope', '$window', 'experienceService'];
+
+    function aboutController($scope, $window, experienceService) {
         $scope.initScope = function () {
             experienceService.get('/data/about.json').then(function (rsp) {
                 $scope.categories = rsp.data.categories;
@@ -17,4 +18,5 @@ angular.module('myApp.about', ['ngRoute', 'myApp.services'])
 
         $scope.style = $window.innerWidth > 600;
         $scope.initScope();
-    }]);
+    }
+})();

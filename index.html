@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="myApp" lang="en">
+<html ng-app="app" lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -33,14 +33,15 @@
 
     <script src="scripts/common/features.js"></script>
     <script src="scripts/app.js"></script>
-    <script src="scripts/controllers/main.controller.js"></script>
-    <script src="scripts/controllers/experience.controller.js"></script>
-    <script src="scripts/controllers/about.controller.js"></script>
     <script src="scripts/services/service.js"></script>
+    <script src="scripts/controllers/app.controller.js"></script>
+    <script src="scripts/controllers/main.controller.js"></script>
+    <script src="scripts/controllers/about.controller.js"></script>
+    <script src="scripts/controllers/experience.controller.js"></script>
 
 </head>
 
-<body ng-controller="masterController">
+<body ng-controller="appController">
     <!-- Top nav show for mobile view -->
     <nav ng-show="!navStyle" class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">

@@ -1,12 +1,13 @@
-angular.module('myApp.experience', ['ngRoute', 'myApp.services'])
-	.config(['$routeProvider', function ($routeProvider) {
-		$routeProvider
-            .when('/experience', {
-                templateUrl : 'views/experience.html',
-                controller  : 'experienceController'
-            });
-	}])
-	.controller('experienceController', ['$scope', '$window', 'experienceService', function ($scope, $window, experienceService) {
+(function () {
+    'use strict';
+
+    angular
+        .module('app')
+        .controller('experienceController', experienceController);
+
+    experienceController.$inject = ['$scope', '$window', 'experienceService'];
+
+    function experienceController($scope, $window, experienceService) {
 	    var vm = this;
         $scope.show = false;
         $scope.style = $window.innerWidth > 600;
@@ -29,4 +30,5 @@ angular.module('myApp.experience', ['ngRoute', 'myApp.services'])
         };
         
         $scope.initScope();
-    }]);
+    }
+})();

@@ -1,14 +1,15 @@
 (function () {
-    'user strict';
-    angular.module('myApp.services',[])
-    .factory('experienceService', experienceServcie);
+    'use strict';
     
-    function experienceServcie($http) {
+    angular.module('app.services', [])
+        .factory('experienceService', experienceService);
+
+    function experienceService($http) {
         return {
             get: get
         };
         
-        function get(filename){
+        function get(filename) {
             return $http.get(filename);
         }
     }
