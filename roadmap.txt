@@ -4,3 +4,18 @@ About
 Experience:
 - work term eval from manager
 - view detail
+- design modal with header and tabs, setup openModal (set up services)
+- http://angular-ui.github.io/bootstrap/versioned-docs/2.4.0/#/tabs (import ui.bootstrap)
+- "Helvetica Neue", Helvetica, Arial, sans-serif
+
+        function createModal() {
+            var config = {
+                templateUrl: 'Content/App/Sections/CriteriaCommittee/views/CommitteeMinutes.html',
+                windowClass: 'large',
+                controller: 'gtCreateModalCtrl as vm',
+                backdrop: 'static',
+                resolve: {}
+            };
+
+            var createModalInstance = ModalService.open(config);
+        }

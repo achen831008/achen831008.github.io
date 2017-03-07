@@ -16,7 +16,9 @@
             [
                 "To Be Determined"
             ],
-            "projects": []
+            "projects": [],
+			"techstack": ["C#", "MVC.NET", "Entity Framework", "Linq", "ORM", "HTML", "CSS", "Bootstrap", "TypeScriptJS", "UnderscoreJS", "AngularJS", "JavaScript", "T-SQL", "MongoDB", "Git", "PowerShell"],
+			"tools": []
         },
         {
             "organization": "Ashlin-BPG Marketing Inc.",
@@ -57,7 +59,9 @@
                     "tools": "MS Access, MS Azure, and MS SQL Server.",
                     "summary": "SKU Manager is designed for managing data such as products specification, designs, color code, inventory, and barcode."
                 }
-            ]
+            ],
+			"techstack": [],
+			"tools": []
         },
         {
             "organization": "BDO IT Solutions",
@@ -86,7 +90,9 @@
                     "tools": "MS Visual Studio, TFS, MS SQL Server, and MS Test Manager.",
                     "summary": "This application is built not only to replace the existing DFO Milk Management System but also for the 9 Provinces across Canada. There is different features based on users type (Producers/Transporter/Processor) such as Quota Exchange, Milk Inspection, etc."
                 }
-            ]
+            ],
+			"techstack": [],
+			"tools": []
         },
         {
             "organization": "Visual Photonic Expitaxy Co., Ltd",
@@ -115,7 +121,9 @@
                     "tools": "IIS, Oracle Database, SQL Server, Notepad++",
                     "summary": "VPEC Intranet is designed to improve organizational communication, internal service and management. There are various features implemented such as HR News Feed, IT News Feed, IT Service Request, Meeting Booking Request, and Frequently Asked Questions."
                 }
-            ]
+            ],
+			"techstack": [],
+			"tools": []
         },
         {
             "organization": "University of Waterloo",
@@ -149,7 +157,9 @@
                     "tools": "Github, Linux, and Sublime",
                     "summary": "Context-free language, building automata, etc."
                 }
-            ]
+            ],
+			"techstack": [],
+			"tools": []
         },
         {
             "organization": "Hack the North 2016",
@@ -163,7 +173,9 @@
             "start": "2016-09-16",
             "end": "2016-09-18",
             "description": "I participate in 2016 hack the north, ...",
-            "projects": []
+            "projects": [],
+			"techstack": [],
+			"tools": []
         },
         {
             "organization": "PENNAPPS XIV",
@@ -185,7 +197,9 @@
                     "tools": "Github, Linux, and Sublime",
                     "summary": "blah blah"
                 }
-            ]
+            ],
+			"techstack": [],
+			"tools": []
         },
         {
             "organization": "UW Taiwan Student Association",
@@ -199,7 +213,9 @@
             "start": "2013-09-09",
             "end": "2015-08-14",
             "description": "As an executive in TWSA, I participate in ...",
-            "projects": []
+            "projects": [],
+			"techstack": [],
+			"tools": []
         }
     ]
 }
