@@ -28,7 +28,7 @@
   bottom:0;
   height:100%;
   left:0;
-  width:60px;
+  width:65px;
   overflow:auto;
   -webkit-transition:width .05s linear;
   transition:width .05s linear;
@@ -117,8 +117,8 @@ nav.main-menu li.active>a,
 .no-touch .dashboard-page nav.dashboard-menu ul li:hover a
 ,.dashboard-page nav.dashboard-menu ul li.active a {
   color:#222;
-  background-color:#f8f8f8;
-  border-left: 2px solid #298cd8;
+  background-color:#efefef;
+  border-left: 3px solid #298cd8;
 }
 
 .area {
