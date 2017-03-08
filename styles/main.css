@@ -130,6 +130,7 @@ body {
 
 .content-section-a {
     background-color: #fff;
+    padding: 30px;
 }
 
 .content-section-b {
@@ -271,8 +272,10 @@ p.copyright {
 }
 
 .templateBackground {
+/*
     background-color: #222;
     color: #fff;
+*/
 /*    margin-bottom: 1px;*/
 }
 
