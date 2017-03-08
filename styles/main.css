@@ -292,3 +292,15 @@ p.copyright {
 .banner-margin {
     margin-top: 50px;
 }
+
+
+.close-btn{
+    height:12px;
+    width:12px;
+    display:block;
+    position:absolute;
+    top:25px;
+    right:20px;
+    background: transparent url("../imgs/icons/close-icon.png")no-repeat center center;
+    cursor:pointer;
+}
