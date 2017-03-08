@@ -7,7 +7,8 @@
             $routeProvider
                 .when('/', {
                     templateUrl : 'views/main.html',
-                    controller  : 'mainController'
+                    controller  : 'mainController',
+                    controllerAs : 'vm'
                 })
                 .when('/about', {
                     templateUrl : 'views/about.html',
@@ -15,11 +16,13 @@
                 })
                 .when('/experience', {
                     templateUrl : 'views/experience.html',
-                    controller  : 'experienceController'
+                    controller  : 'experienceController',
+                    controllerAs : 'vm'
                 })
                 .when('/project', {
                     templateUrl : 'views/project.html',
-                    controller  : 'projectController'
+                    controller  : 'projectController',
+                    controllerAs : 'vm'
                 })
                 .otherwise({ redirectTo: '/' });
 

@@ -3,14 +3,10 @@
 </div>
 <div class="divider"></div>
 
-<a  name="experience"></a>
+<a name="experience"></a>
 <div class="content-section-a">
     <div class="container">
         <div class="row">
-<!--
-            <h2 ng-show="!show" class="text-center">Work</h2>
-            <hr ng-show="!show" class="small">
--->
             <table ng-show="!show" class="table table-striped" wt-responsive-table>
                 <thead>
                     <tr>
@@ -31,7 +27,7 @@
                         <td>{{exp.type}}</td>
                         <td ng-show="style">{{exp.start}}</td>
                         <td ng-show="style">{{exp.end}}</td>
-                        <td><a class="tableContent" ng-click="showDetail(exp)"><i class="fa fa-eye fa-2x"></i></a></td>
+                        <td><a class="tableContent" ng-click="vm.createModal()"><i class="fa fa-eye fa-2x"></i></a></td>
                     </tr>
                 </tbody>
             </table>
