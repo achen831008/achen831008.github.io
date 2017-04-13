@@ -27,7 +27,7 @@
                         <td>{{exp.type}}</td>
                         <td ng-show="style">{{exp.start}}</td>
                         <td ng-show="style">{{exp.end}}</td>
-                        <td><a class="tableContent" ng-click="vm.createModal()"><i class="fa fa-eye fa-2x"></i></a></td>
+                        <td><a class="tableContent" ng-click="vm.view(exp.shortname)"><i class="fa fa-eye fa-2x"></i></a></td>
                     </tr>
                 </tbody>
             </table>

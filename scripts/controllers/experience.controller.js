@@ -5,35 +5,30 @@
         .module('app')
         .controller('experienceController', experienceController);
 
-    experienceController.$inject = ['$scope', '$window', 'experienceService', 'modalService'];
+    experienceController.$inject = ['$scope', '$rootScope', '$window', 'experienceService', 'modalService'];
 
-    function experienceController($scope, $window, experienceService, modalService) {
+    function experienceController($scope, $rootScope, $window, experienceService, modalService) {
 	    var vm = this;
-        $scope.show = false;
-        $scope.style = $window.innerWidth > 600;
-        $scope.templateTitle = "Experience";
-        
-        $scope.showDetail = function (job) {
-            $scope.show = true;
-            $scope.job = job;
-        };
-
-        $scope.hideDetail = function () {
-            $scope.show = false;
-        };
         
         $scope.initScope = function () {
+            $scope.show = false;
+            $scope.style = $window.innerWidth > 600;
+            $scope.templateTitle = "Experience";
+
             experienceService.get('/data/experience.json').then(function (rsp) {
                 $scope.exps = rsp.data.Experiences;
-                
             });
         };
         
-        vm.createModal = function () {
+        vm.view = function (shortname) {
+            experienceService.get('/data/experience/' + shortname + '.json').then(function (rsp) {
+                $rootScope.exp = rsp.data;
+            });
+
             var config = {
                 templateUrl: '/views/experience.modal.html',
-                windowClass: 'large',
-                //controller: 'experienceController as vm',
+                size: 'lg',
+                controller: 'experienceModalController as vm',
                 backdrop: 'static',
                 resolve: {}
             };

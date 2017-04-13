@@ -10,17 +10,12 @@
             "listOfAwards": []
         },
         {
-            "topic": "Software Development",
-            "description": "On this site you can find various projects I worked on both in school and co-op. These emphasize some of the skills I have as a developer. Some of my strong front-end skills including HTML5, CSS3, Bootstrap, JavaScript, jQuery, Angular. Also, I have sharp back-end experience in C# (MVC, Entity Framework, ORM), C++, Python (Flask), JAVA, T-SQL, MySQL, noSQL, and ASP. In addition, I am familiar with Git, SVN, and TFS.",
-            "img": "/assets/img/about/dev.jpg",
-            "listOfAwards": []
-        },
-        {
             "topic": "Awards",
             "description": "I am passionate in playing violin and piano from a young age, and love to compete in music festivals and share music around the world. I also like to play basketball and tennis, and have joined the school team every year to compete in provincials. The following are some awards I received from past years:",
             "img": "/assets/img/about/dev.jpg",
             "listOfAwards":
             [
+                "Top Financial Hacks and Data Visualization at PENNAPPS XIV",
                 "Performing Arts BC Provincials",
                 "BC High School Sr. Tennis Provincials",
                 "The Ward Music Trophy"

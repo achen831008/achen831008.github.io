@@ -1,0 +1,39 @@
+{
+    "organization": "Ashlin-BPG Marketing Inc.",
+    "logo": "/assets/img/logo/ashlin.png",
+    "role": "eCommerce Developer",
+    "location": "Mississauga, Ontario, Canada",
+    "start": "2015-09-07",
+    "end": "2015-12-18",
+    "summary":
+    [
+        "Individually designed, developed, and tested an EDI cloud application using C#, XML, JSON and T-SQL",
+        "Implemented and enhanced features of existing products using such as .NET, VBA and SQL",
+        "Increased the responsiveness of a core product's user interface, improving the overall user experience",
+        "Resolved electronic data interchanging issues of existing product",
+        "Contributed to migration project moving from MS Access to MS Azure"
+    ],
+    "projects":
+    [
+        {
+            "name": "Credential Manager",
+            "techstack": "Credential Manager is a Cloud Web Form Application in Visual C#, and it is integrated with MS Azure.",
+            "tools": "MS Visual Studio, MS Azure, and MS SQL Server",
+            "summary": "This application is designed for storing various business credentials. User is able to see his or her own credentials stored under company; moreover, certain permission is assigned to each user based on his or her authority. Also, a DashBoard was designed for Administrators to have an overview of system and to control all users."
+        },
+        {
+            "name": "Order Manager",
+            "techstack": "Order Manager is a Cloud Web Application in C#. It is integrated with various eCommerce APIs and Transportation APIs. The Electronic Data Interexchange process is designed by sending HTTP Get/Post Request and stored necessary data in MS Azure using T-SQL. Moreover, this application also accesses files on SFTP Server to check for XML feeds, and process it.",
+            "tools": "Linux, MS Visual Studio, MS Azure, and MS SQL Server.",
+            "summary": "This application is designed for processing order placement within one platform from various eCommerce sites and send notifications to transporters for shipments. There is various features designed such as analyzing profitability and top selling items, generating financial report, order dashboard."
+        },
+        {
+            "name": "SKU Manager",
+            "techstack": "SKU Manager is a Cloud MS Access Form. VBA and SQL are mainly used for storing, updating, and deleting data to the cloud.",
+            "tools": "MS Access, MS Azure, and MS SQL Server.",
+            "summary": "SKU Manager is designed for managing data such as products specification, designs, color code, inventory, and barcode."
+        }
+    ],
+    "recommendation": "hi",
+    "recommendedBy": "Joanne K."
+}

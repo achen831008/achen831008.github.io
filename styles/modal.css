@@ -1,0 +1,16 @@
+.modal-header-style {
+    background: rgb(0, 109, 220);
+    color: white;
+}
+
+.modal-body-margin {
+    margin-left: 5px;
+}
+
+.form-group {
+    margin-top: 20px;
+}
+
+.summary-card {
+    border-left: 3px solid rgb(0, 109, 220);
+}

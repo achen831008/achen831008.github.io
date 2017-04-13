@@ -1,0 +1,13 @@
+{
+    "organization": "DBRS Limited, Global Technology",
+    "logo": "/assets/img/logo/DBRS_logo.svg",
+    "role": "Software Engineering",
+    "location": "Toronto, Ontario, Canada",
+    "start": "2016-05-09",
+    "end": "2017-04-28",
+    "summary": "",
+    "projects": [],
+    "techstack": ["C#", "MVC.NET", "Entity Framework", "Linq", "ORM", "HTML", "CSS", "Bootstrap", "TypeScriptJS", "UnderscoreJS", "AngularJS", "JavaScript", "T-SQL", "MongoDB", "Git", "PowerShell"],
+    "recommendation": "",
+    "recommendedBy": "Denys B."
+}
