@@ -12,6 +12,7 @@
 
 .modal-body-margin {
     margin-left: 5px;
+    margin-right: 10px;
 }
 
 .form-group {
@@ -41,4 +42,17 @@
 
 .font-light {
     font-weight: 300;
+}
+
+.float-right {
+    float: right;
+}
+
+.font-sm {
+    font-size: 10px;
+}
+
+.tab-content-overflow {
+    max-height: 350px;
+    overflow-y: auto;
 }

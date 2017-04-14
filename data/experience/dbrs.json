@@ -5,7 +5,15 @@
     "location": "Toronto, Ontario, Canada",
     "start": "2016-05-09",
     "end": "2017-04-28",
-    "summary": "",
+    "summary":
+    [
+        "Followed rapid development process to continuously deliver high-quality low-latency solution to clients",
+        "Built high-performance rating search that displays all historical rating and related data in a timeline stream",
+        "Limited number of jobs consumed by RabbitMQ to control the resource used by task/notification server",
+        "Set up daily process to sync platform usage data from Intercom to DOMO for data visualization and analysis",
+        "Set up a project for Helpdesk and customer success to help 'manage production web services' and 'manage production servers'",
+        "Implement state machines and workflow processes using factory design pattern in fluent API"
+    ],
     "projects": [],
     "techstack": ["C#", "MVC.NET", "Entity Framework", "Linq", "ORM", "HTML", "CSS", "Bootstrap", "TypeScriptJS", "UnderscoreJS", "AngularJS", "JavaScript", "T-SQL", "MongoDB", "Git", "PowerShell"],
     "recommendation": "",
