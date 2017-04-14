@@ -1,5 +1,5 @@
 {
-    "organization": "DBRS Limited, Global Technology",
+    "organization": "DBRS Limited",
     "logo": "/assets/img/logo/DBRS_logo.svg",
     "role": "Software Engineering",
     "location": "Toronto, Ontario, Canada",
@@ -17,5 +17,6 @@
     "projects": [],
     "techstack": ["C#", "MVC.NET", "Entity Framework", "Linq", "ORM", "HTML", "CSS", "Bootstrap", "TypeScriptJS", "UnderscoreJS", "AngularJS", "JavaScript", "T-SQL", "MongoDB", "Git", "PowerShell"],
     "recommendation": "",
+    "recommendedRole": "Assisnt Vice President, Software Engineer",
     "recommendedBy": "Denys B."
 }

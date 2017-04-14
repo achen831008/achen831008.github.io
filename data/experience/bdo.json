@@ -1,0 +1,28 @@
+{
+    "organization": "BDO IT Solutions",
+    "logo": "/assets/img/logo/BDO_logo.jpg",
+    "role": "Solution Consultant",
+    "location": "Mississauga, Ontario, Canada",
+    "start": "2015-01-05",
+    "end": "2015-05-01",
+    "summary":
+    [
+        "Excellent understanding of Agile software development and Software Development Life Cycle (SDLC)",
+        "Interacted with various stakeholders (Project Manager, Delivery Manager, Dev lead) and team members to ensure quality and on-time delivery of project",
+        "Developed test plans and test cases of complex nature from business requirement analysis",
+        "Captured software defects in the system by using end-to-end, integration, regression, and user acceptance testing approach",
+        "Used SQL skill to compare mock-up data with client's real data in Microsoft SQL Server"
+    ],
+    "projects":
+    [
+        {
+            "name": "DFO Milke Management System",
+            "tools": "MS Visual Studio, TFS, MS SQL Server, and MS Test Manager.",
+            "language": ["MVC.NET", "TFS", "SQL", "Test Manager"],
+            "summary": "This application is built not only to replace the existing DFO Milk Management System but also for the 9 Provinces across Canada. There is different features based on users type (Producers/Transporter/Processor) such as Quota Exchange, Milk Inspection, etc."
+        }
+    ],
+    "recommendation": "Alex displayed excellent work ethic, was punctual and well-organized in completed his tasks, and proactively sought feedback and guidance to improve the qualify of his work. He showed willingness to follow instructions and was proactive in taking extra responsibilities to ensure deliverables are met.",
+    "recommendedRole": "Manager of Solutions Technology",
+    "recommendedBy": "Alex Ng"
+}

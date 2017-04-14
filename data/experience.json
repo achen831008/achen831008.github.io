@@ -2,7 +2,7 @@
     "Experiences":
     [
         {
-            "organization": "DBRS Limited, Global Technology",
+            "organization": "DBRS Limited",
             "shortname": "dbrs",
             "type": "work",
             "role": "Software Engineering",
@@ -35,57 +35,19 @@
             "mapUrl": "http://maps.google.com/?q=6701 Financial Drive, Mississauga, Ontario, Canada L5N 7J7",
             "logo": "/assets/img/logo/BDO_logo.jpg",
             "start": "2015-01-05",
-            "end": "2015-05-01",
-            "description":
-            [
-                "Excellent understanding of Agile software development and Software Development Life Cycle (SDLC)",
-                "Interacted with various stakeholders (Project Manager, Delivery Manager, Dev lead) and team members to ensure quality and on-time delivery of project",
-                "Developed test plans and test cases of complex nature from business requirement analysis",
-                "Captured software defects in the system by using end-to-end, integration, regression, and user acceptance testing approach",
-                "Used SQL skill to compare mock-up data with client's real data in Microsoft SQL Server"
-            ],
-            "projects":
-            [
-                {
-                    "name": "DFO Milke Management System",
-                    "techstack": "MMS is designed using Microsoft ASP.NET MVC framework in C#. Also, JavaScript, jQuery, and SQL Store Procedures are used to enhence various features for the application.",
-                    "tools": "MS Visual Studio, TFS, MS SQL Server, and MS Test Manager.",
-                    "summary": "This application is built not only to replace the existing DFO Milk Management System but also for the 9 Provinces across Canada. There is different features based on users type (Producers/Transporter/Processor) such as Quota Exchange, Milk Inspection, etc."
-                }
-            ],
-			"techstack": [],
-			"tools": []
+            "end": "2015-05-01"
         },
         {
             "organization": "Visual Photonic Expitaxy Co., Ltd",
             "shortname": "vpec",
             "type": "work",
-            "role": "Web Developer",
+            "role": "Financial Analyst and Developer",
             "link": "http://www.vpec.com.tw",
             "location": "Taoyuan County, Taiwan",
             "mapUrl": "https://goo.gl/maps/2vETiRpCMwR2",
             "logo": "/assets/img/logo/VPEC_logo.jpg",
             "start": "2014-05-05",
-            "end": "2014-08-29",
-            "description":
-            [
-                "Designed, implemented and tested an Intranet with various features (HR News, Meeting Scheduler, Maintenance Order)",
-                "Built various web applications using HTML/CSS, PHP and JavaScript",
-                "Created and managed SQL relational database, views, and stored procedures",
-                "Developed a back-end system in Java to enhance IT department's maintenance performance",
-                "Investigated and resolved existing products issues"
-            ],
-            "projects":
-            [
-                {
-                    "name": "VPEC Intranet",
-                    "techstack": "VPEC Intranet is built using HTML, CSS, JavaScript, ASP, and SQL.",
-                    "tools": "IIS, Oracle Database, SQL Server, Notepad++",
-                    "summary": "VPEC Intranet is designed to improve organizational communication, internal service and management. There are various features implemented such as HR News Feed, IT News Feed, IT Service Request, Meeting Booking Request, and Frequently Asked Questions."
-                }
-            ],
-			"techstack": [],
-			"tools": []
+            "end": "2014-08-29"
         },
         {
             "organization": "University of Waterloo",
