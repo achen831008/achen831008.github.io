@@ -52,7 +52,7 @@
         {
             "organization": "University of Waterloo",
             "shortname": "uw",
-            "type": "other",
+            "type": "education",
             "role": "Student",
             "link": "https://uwaterloo.ca/",
             "location": "Waterloo, Ontario, Canada",
@@ -60,7 +60,6 @@
             "logo": "/assets/img/logo/uw.jpg",
             "start": "2013-09-09",
             "end": "2018-08-10",
-            "description": "As a student in Computing and Financial Management co-op honour program, I take various courses...",
             "projects":
             [
                 {
@@ -88,7 +87,7 @@
         {
             "organization": "Hack the North 2016",
             "shortname": "htn",
-            "type": "other",
+            "type": "hackathon",
             "role": "Hacker",
             "link": "https://hackthenorth.com/",
             "location": "Waterloo, Ontario, Canada",
@@ -104,7 +103,7 @@
         {
             "organization": "PENNAPPS XIV",
             "shortname": "penn",
-            "type": "other",
+            "type": "hackathon",
             "role": "Hacker",
             "link": "https://pennapps.com",
             "location": "Philadelphia, PA",
@@ -128,7 +127,7 @@
         {
             "organization": "UW Taiwan Student Association",
             "shortname": "twsa",
-            "type": "other",
+            "type": "education",
             "role": "Event Planning Vice President",
             "link": "https://www.facebook.com/TWSA.UW",
             "location": "Waterloo, Ontario, Canada",

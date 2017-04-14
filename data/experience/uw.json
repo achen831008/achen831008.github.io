@@ -1,0 +1,42 @@
+{
+    "organization": "University of Waterloo",
+    "logo": "/assets/img/logo/uw.jpg",
+    "role": "Student",
+    "location": "Waterloo, Ontario, Canada",
+    "start": "2013-09-09",
+    "end": "2018-08-10",
+    "summary": [],
+    "projects":
+    [
+        {
+            "name": "UW Monopoly",
+            "language": ["C++", "Git", "Bash"],
+            "summary": "UW Monopoly is built as part of School Project practicing C++ Object Oriented Programming and Design Pattern. This game follows the standard monopoly game rules; however, there is various features designed based on UW campus such as Timmy line up, Goose Nesting, etc."
+        },
+        {
+            "name": "Chess",
+            "language": ["C++", "Git", "Bash", "XWindows GUI"],
+            "summary": "Chess is implemented using C++ MVC pattern. XWindows library is used to visualize the game movement. This game follows the standard chess game rules, and it keeps track the score of players. The computer player is implemented using randomized algorithm. It would calculate all possible moves and randomly pick one."
+        },
+        {
+            "name": "WLP4 Compiler",
+            "language": ["C++", "MIPS"],
+            "summary": "WLP4 Compiler is a compiler, assembler and linker for C-like language. This school project is to practice and understand Parsing, Linking, DFA construction, Semantic Analysis, Context-free languages, code generation, memory management."
+        },
+        {
+            "name": "Regression and Forecasting Method in Finance",
+            "language": ["R", "Thompson Reuter", "Excel"],
+            "summary": "The project is to test the Empirical Validity of the CAPM using SPTSX60 data using Stochastic Time Series Regression and Cross Section Regression. As part of this project, I construct ANOVA table by computing TSS, ESS, RSS and estimating the variance of error term. Lastly, test the existence of autocorrelation of order 1 (AR1) using Durbin-Watson test."
+        },
+        {
+            "name": "TMX Options Trading Simulation",
+            "language": [],
+            "summary": "Managed a portfolio of derivatives securities and generated 15% return over 3 months of period. This project is mainly focusing on understanding Black-Scholes model and different trading strategies such as butterfly spread, straddle, strangle, and hedging."
+        },
+        {
+            "name": "Stock Pitch - Rogers",
+            "language": [],
+            "summary": "Prepare a stock pitch by presenting Recommendation (Buy/Hold/Sell), Business and Industry Overview, Competitive Positioning, Revenues Distribution, DCF Mdoel and Forecast, Financial Analysis and Projection, and Investment Risks."
+        }
+    ]
+}
