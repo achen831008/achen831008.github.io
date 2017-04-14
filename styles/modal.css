@@ -52,6 +52,14 @@
     font-size: 10px;
 }
 
+.font-md {
+    font-size: 15px;
+}
+
+.font-lg {
+    font-size: 20px;
+}
+
 .tab-content-overflow {
     max-height: 350px;
     overflow-y: auto;

@@ -207,12 +207,17 @@ hr.small {
 }
 
 .paragraph {
-    margin-left: 5px;
-    font-size: 1.2em;
-    color:darkgray;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 1.5em;
+    color: darkgray;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+/*
     margin-top: 15%;
     margin-bottom: 15%;
+*/
+    font-weight: 200;
+    line-height: 2em;
 }
 
 .bottom {

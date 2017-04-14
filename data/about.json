@@ -1,24 +1,51 @@
 {
-    "quote" : "Some people want it to happen, some wish it would happen, others make it happen.",
-    "quoteFrom" : "Michael Jordan",
     "categories" :
     [
         {
             "topic": "Education",
-            "description": "Fourth year into Computing and Financial Management Honours Co-op Program at University of Waterloo. I have worked 5 internships pertaining to web and software development at DBRS, Ashlin-BPG, BDO, and VPEC. On the side, I also take various online courses in Machine Learing for Trading, full-stack development, and Introduction to AI. I am also preparing to take on CFA exams as I have completed courses in Global Financial Markets, Corportate Finance, Fix-income Securities, and Derivatives.",
-            "img": "/assets/img/about/education.jpg",
-            "listOfAwards": []
+            "description": "Fourth year into Computing and Financial Management Honours Co-op Program at University of Waterloo. I have worked 5 internships pertaining to web and software development at DBRS, Ashlin-BPG, BDO, and VPEC. On the side, I also take various Udacity online courses in Machine Learing for Trading, Full-stack Development, and Introduction to Artificial Intelligence. I am also preparing to take on CFA exams as I have completed courses in Microeconomics, Macroeconomics, Global Financial Markets, Corportate Finance, Regression and Forecasting, Fix-income Securities, and Derivatives."
         },
         {
             "topic": "Awards",
             "description": "I am passionate in playing violin and piano from a young age, and love to compete in music festivals and share music around the world. I also like to play basketball and tennis, and have joined the school team every year to compete in provincials. The following are some awards I received from past years:",
-            "img": "/assets/img/about/dev.jpg",
             "listOfAwards":
             [
-                "Top Financial Hacks and Data Visualization at PENNAPPS XIV",
-                "Performing Arts BC Provincials",
-                "BC High School Sr. Tennis Provincials",
-                "The Ward Music Trophy"
+                {
+                    "name": "Top Financial Hacks and Data Visualization at PENNAPPS XIV",
+                    "category": "Hackathon"
+                },
+                {
+                    "name": "Performing Arts BC Provincials",
+                    "category": "Arts"
+                },
+                {
+                    "name": "BC High School Sr. Tennis Provincials",
+                    "category": "Sports"
+                },
+                {
+                    "name":"BC ISA Jr. Tennis Gold Medalists",
+                    "category": "Sports"
+                },
+                {
+                    "name": "The Ward Music Trophy",
+                    "category": "Arts"
+                },
+                {
+                    "name": "University of Waterloo Fermat Math Contest 99 percentile",
+                    "category": "Academics"
+                },
+                {
+                    "name": "BC Dogwood Scholarship",
+                    "category": "Academics"
+                },
+                {
+                    "name":"University of Waterloo President's Scholarship",
+                    "category": "Sports"
+                },
+                {
+                    "name": "University of Waterloo Intramural Basketball Champions (Beginner and Advanced Level)",
+                    "category": "Sports"
+                }
             ]
         }
     ]

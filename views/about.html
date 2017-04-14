@@ -1,41 +1,19 @@
-<!--
-<div class="templateBackground">
-    <div class="templateTitle" ng-class="{'text-center': !style, 'banner-margin': !style}">{{ templateTitle }}</div>
-</div>
--->
-
-<!--
-<div class="banner">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="banner-message">
-                    <div class="text-center">{{ quote }}</div>
-                    <span> - {{ quoteFrom }}</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
--->
 <div class="container bottom" ng-repeat="item in categories">
-    <div class="row text-center">
+    <div class="text-center">
         <h1 class="title">{{item.topic}}</h1>
         <hr class="small">
     </div>
     <br>
-    <div class="row">
-        <div class="col-lg-6">
-            <img class="img-center" src="{{item.img}}">
-        </div>
-        <span class="col-lg-6">
-            <div class="paragraph">
-                {{ item.description }}
-                <ul>
-                    <li class="award" ng-repeat="award in item.listOfAwards">{{award}}</li>
-                </ul>
+    <div class="paragraph">
+        {{ item.description }}
+        <div class="form-group" ng-repeat="award in item.listOfAwards">
+            <div class="panel panel-default summary-card">
+                <div class="panel-body font-md">
+                    {{award.name}}
+                    <span class="label label-success project-badge">{{award.category}}</span>
+                </div>
             </div>
-        </span>
+        </div>
     </div>
 </div>
 
