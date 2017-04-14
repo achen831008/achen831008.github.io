@@ -18,25 +18,26 @@
         {
             "name": "Credential Manager",
             "techstack": "Credential Manager is a Cloud Web Form Application in Visual C#, and it is integrated with MS Azure.",
-            "language": ["C#", "MS Azure", "SQL"],
+            "language": ["C# WinForm", "MS Azure", "SQL"],
             "tools": "MS Visual Studio, MS Azure, and MS SQL Server",
             "summary": "This application is designed for storing various business credentials. User is able to see his or her own credentials stored under company; moreover, certain permission is assigned to each user based on his or her authority. Also, a DashBoard was designed for Administrators to have an overview of system and to control all users."
         },
         {
             "name": "Order Manager",
             "techstack": "Order Manager is a Cloud Web Application in C#. It is integrated with various eCommerce APIs and Transportation APIs. The Electronic Data Interexchange process is designed by sending HTTP Get/Post Request and stored necessary data in MS Azure using T-SQL. Moreover, this application also accesses files on SFTP Server to check for XML feeds, and process it.",
-            "language": ["C#", "MS Azure", "SQL"],
+            "language": ["C# API", "HTML5", "CSS3", "JavaScript", "jQuery", "SQL"],
             "tools": "Linux, MS Visual Studio, MS Azure, and MS SQL Server.",
             "summary": "This application is designed for processing order placement within one platform from various eCommerce sites and send notifications to transporters for shipments. There is various features designed such as analyzing profitability and top selling items, generating financial report, order dashboard."
         },
         {
             "name": "SKU Manager",
-            "language": ["C#", "MS Azure", "SQL"],
+            "language": ["VBA", "Access", "SQL"],
             "techstack": "SKU Manager is a Cloud MS Access Form. VBA and SQL are mainly used for storing, updating, and deleting data to the cloud.",
             "tools": "MS Access, MS Azure, and MS SQL Server.",
             "summary": "SKU Manager is designed for managing data such as products specification, designs, color code, inventory, and barcode."
         }
     ],
-    "recommendation": "hi",
-    "recommendedBy": "Joanne K."
+    "recommendation": "Alex has been involved in creating a very complex web applications for e-commerce. He is very good at multi-tasking on various projects, and has been a great contributor to our ASHLIN team. His work has been well documented for the next student that will be joining us. The application that he has developed has an excellent user interface. He is always very thorough in creating it, and mindful of the users interaction with the application.",
+    "recommendedRole": "Vice President",
+    "recommendedBy": "Juanne E. Kochhar"
 }

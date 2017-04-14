@@ -23,17 +23,16 @@
         vm.view = function (shortname) {
             experienceService.get('/data/experience/' + shortname + '.json').then(function (rsp) {
                 $rootScope.exp = rsp.data;
+
+                var config = {
+                    templateUrl: '/views/experience.modal.html',
+                    size: 'lg',
+                    controller: 'experienceModalController as vm',
+                    backdrop: 'static',
+                    resolve: {}
+                };
+                var createModalInstance = modalService.open(config);
             });
-
-            var config = {
-                templateUrl: '/views/experience.modal.html',
-                size: 'lg',
-                controller: 'experienceModalController as vm',
-                backdrop: 'static',
-                resolve: {}
-            };
-
-            var createModalInstance = modalService.open(config);
         }
 
         $scope.initScope();

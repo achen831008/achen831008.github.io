@@ -8,37 +8,41 @@
             <tabset>
                 <tab heading="Overview">
                     <div class="modal-body-margin row">
-                        <div class="form-group">
-                            <label>Role: </label>
-                            <span>{{exp.role}}</span>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Role: </label>
+                                <span>{{exp.role}}</span>
+                            </div>
+                            <div class="form-group">
+                                <label>Location: </label>
+                                <span>{{exp.location}}</span>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label>Location: </label>
-                            <span>{{exp.location}}</span>
-                        </div>
-                        <div class="form-group">
-                            <label>Start Date: </label>
-                            <span>{{exp.start}}</span>
-                        </div>
-                        <div class="form-group">
-                            <label>End Date: </label>
-                            <span>{{exp.end}}</span>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Start Date: </label>
+                                <span>{{exp.start}}</span>
+                            </div>
+                            <div class="form-group">
+                                <label>End Date: </label>
+                                <span>{{exp.end}}</span>
+                            </div>
                         </div>
                     </div>
                 </tab>
-                <tab heading="Work Summary">
+                <tab ng-if="exp.summary" heading="Work Summary">
                     <div class="modal-body-margin">
                         <div class="form-group" ng-repeat="point in exp.summary">
-                            <div class="panel summary-card">
+                            <div class="panel panel-default summary-card">
                                 <div class="panel-body">{{point}}</div>
                             </div>
                         </div>
                     </div>
                 </tab>
-                <tab heading="Projects">
+                <tab ng-if="exp.projects" heading="Projects">
                     <div class="modal-body-margin">
                         <div class="form-group" ng-repeat="project in exp.projects">
-                            <div class="panel summary-card">
+                            <div class="panel panel-default summary-card">
                                 <div class="panel-body">
                                     {{project.name}}
                                     <span class="label label-success project-badge" ng-repeat="x in project.language">{{x}}</span>
@@ -47,9 +51,13 @@
                         </div>
                     </div>
                 </tab>
-                <tab heading="Recommendation">
+                <tab ng-if="exp.recommendation" heading="Recommendation">
                     <div class="modal-body-margin row">
-                        <div class="col-lg-12">
+                        <div class="form-group font-light">
+                            {{exp.recommendation}}
+                        </div>
+                        <div class="recommendation">
+                            {{exp.recommendedRole}} - {{exp.recommendedBy}}
                         </div>
                     </div>
                 </tab>

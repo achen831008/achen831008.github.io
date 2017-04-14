@@ -33,3 +33,12 @@
 .project-badge {
     margin-left: 5px;
 }
+
+.recommendation {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.font-light {
+    font-weight: 300;
+}
