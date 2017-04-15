@@ -7,12 +7,20 @@
         },
         {
             "topic": "Awards",
-            "description": "I am passionate in playing violin and piano from a young age, and love to compete in music festivals and share music around the world. I also like to play basketball and tennis, and have joined the school team every year to compete in provincials. The following are some awards I received from past years:",
+            "description": "I am dedicated a lot of my life time in Sports, Music, and various Academic competitions. For music, I have strong interest playing violin and piano from a young age, and love to compete in music festivals and share music around the world. For sports, I like to play basketball and tennis, and have joined my high school team every year to compete in tournaments and provincials. The following are some awards I received from past years:",
             "listOfAwards":
             [
                 {
                     "name": "Top Financial Hacks and Data Visualization at PENNAPPS XIV",
                     "category": "Hackathon"
+                },
+                {
+                    "name": "University of Waterloo Intramural Basketball Champions (Beginner and Advanced Level)",
+                    "category": "Sports"
+                },
+                {
+                    "name":"University of Waterloo President's Scholarship",
+                    "category": "Academics"
                 },
                 {
                     "name": "Performing Arts BC Provincials",
@@ -23,14 +31,6 @@
                     "category": "Sports"
                 },
                 {
-                    "name":"BC ISA Jr. Tennis Gold Medalists",
-                    "category": "Sports"
-                },
-                {
-                    "name": "The Ward Music Trophy",
-                    "category": "Arts"
-                },
-                {
                     "name": "University of Waterloo Fermat Math Contest 99 percentile",
                     "category": "Academics"
                 },
@@ -39,11 +39,11 @@
                     "category": "Academics"
                 },
                 {
-                    "name":"University of Waterloo President's Scholarship",
-                    "category": "Academics"
+                    "name": "The Ward Music Trophy",
+                    "category": "Arts"
                 },
                 {
-                    "name": "University of Waterloo Intramural Basketball Champions (Beginner and Advanced Level)",
+                    "name":"BC ISA Jr. Tennis Gold Medalists",
                     "category": "Sports"
                 }
             ]
