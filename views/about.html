@@ -1,16 +1,24 @@
-<div class="container bottom" ng-repeat="item in categories">
-    <div class="text-center">
-        <h1 class="title">{{item.topic}}</h1>
-        <hr class="small">
-    </div>
-    <br>
-    <div class="paragraph">
-        {{ item.description }}
-        <div class="form-group" ng-repeat="award in item.listOfAwards">
-            <div class="panel panel-default summary-card">
-                <div class="panel-body font-md">
-                    {{award.name}}
-                    <span class="label label-success project-badge">{{award.category}}</span>
+<div class="container" ng-repeat="item in categories">
+    <div ng-if="activePage == $index">
+        <div class="text-center">
+            <h1 class="title">
+                <a ng-click="previous()"><i class="fa fa-angle-double-left arrow" aria-hidden="true"></i></a>
+                {{item.topic}}
+                <a ng-click="next()"><i class="fa fa-angle-double-right arrow" aria-hidden="true"></i></a>
+            </h1>
+            <div class="line-sm" ng-class="activePage == 0 ? 'active-page' : ''"></div>
+            <div class="line-sm" ng-class="activePage == 1 ? 'active-page' : ''"></div>
+<!--            <div class="line-sm" ng-class="activePage == 2 ? 'active-page' : ''"></div>-->
+        </div>
+        <br>
+        <div class="paragraph">
+            {{ item.description }}
+            <div class="form-group" ng-repeat="award in item.listOfAwards">
+                <div class="panel panel-default summary-card">
+                    <div class="panel-body font-md">
+                        {{award.name}}
+                        <span class="label label-success project-badge float-right">{{award.category}}</span>
+                    </div>
                 </div>
             </div>
         </div>

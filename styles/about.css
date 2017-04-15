@@ -228,3 +228,21 @@ hr.small {
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
+.arrow {
+    vertical-align: baseline;
+    font-size: 20px !important;
+    color: #777777;
+    cursor: pointer;
+}
+
+.line-sm {
+    border: 1px solid #c6c6c6;
+    width: 50px;
+    height: 1px;
+    display: inline-block;
+}
+
+.active-page {
+    border: 1px solid black;
+}
