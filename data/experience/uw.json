@@ -30,12 +30,12 @@
         },
         {
             "name": "TMX Options Trading Simulation",
-            "language": [],
+            "language": ["Black-Scholes", "Investment Strategies", "Derivatives Securities"],
             "summary": "Managed a portfolio of derivatives securities and generated 15% return over 3 months of period. This project is mainly focusing on understanding Black-Scholes model and different trading strategies such as butterfly spread, straddle, strangle, and hedging."
         },
         {
             "name": "Stock Pitch - Rogers",
-            "language": [],
+            "language": ["CAPM", "Forecasting", "Risk Analysis"],
             "summary": "Prepare a stock pitch by presenting Recommendation (Buy/Hold/Sell), Business and Industry Overview, Competitive Positioning, Revenues Distribution, DCF Mdoel and Forecast, Financial Analysis and Projection, and Investment Risks."
         }
     ]
