@@ -228,8 +228,9 @@ p.copyright {
 }
 
 #footer {
-    padding: 50px;
     color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .footer-h3 {
@@ -237,7 +238,6 @@ p.copyright {
 }
 
 .footer-above {
-    padding-top: 30px;
     background-color: #2c3e50;
 }
 
