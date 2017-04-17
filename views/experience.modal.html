@@ -8,24 +8,45 @@
             <tabset>
                 <tab heading="Overview">
                     <div class="tab-content-overflow modal-body-margin row">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <div class="form-group">
-                                <label>Role: </label>
-                                <span class="font-light">{{exp.role}}</span>
-                            </div>
-                            <div class="form-group">
-                                <label>Location: </label>
-                                <span class="font-light">{{exp.location}}</span>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading panel-primary">
+                                        <h3 class="panel-title">Organization Description</h3>
+                                    </div>
+                                    <div class="panel-body font-light">{{exp.organizationDescription}}</div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <div class="form-group">
-                                <label>Start Date: </label>
-                                <span class="font-light">{{exp.start}}</span>
-                            </div>
-                            <div class="form-group">
-                                <label>End Date: </label>
-                                <span class="font-light">{{exp.end}}</span>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading panel-primary">
+                                        <h3 class="panel-title">Position Detail</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Role: </label>
+                                                <span class="font-light">{{exp.role}}</span>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Location: </label>
+                                                <span class="font-light">{{exp.location}}</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Start Date: </label>
+                                                <span class="font-light">{{exp.start}}</span>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>End Date: </label>
+                                                <span class="font-light">{{exp.end}}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -34,7 +55,7 @@
                     <div class="tab-content-overflow modal-body-margin">
                         <div class="form-group" ng-repeat="point in exp.summary">
                             <div class="panel panel-default summary-card">
-                                <div class="panel-body">{{point}}</div>
+                                <div class="panel-body font-light">{{point}}</div>
                             </div>
                         </div>
                     </div>
