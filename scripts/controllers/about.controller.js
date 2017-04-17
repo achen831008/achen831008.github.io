@@ -5,15 +5,15 @@
         .module('app')
         .controller('aboutController', aboutController);
 
-    aboutController.$inject = ['$scope', '$window', 'experienceService'];
+    aboutController.$inject = ['$scope', '$window', 'queryService'];
 
-    function aboutController($scope, $window, experienceService) {
+    function aboutController($scope, $window, queryService) {
         $scope.initScope = function () {
             $scope.activePage = 0;
             $scope.maxPage = 1;
             $scope.style = $window.innerWidth > 600;
 
-            experienceService.get('/data/about.json').then(function (rsp) {
+            queryService.get('/data/about.json').then(function (rsp) {
                 $scope.categories = rsp.data.categories;
                 $scope.quote = rsp.data.quote;
                 $scope.quoteFrom = rsp.data.quoteFrom;

@@ -2,10 +2,10 @@
     'use strict';
     
     angular.module('app.services', [])
-        .factory('experienceService', experienceService)
+        .factory('queryService', queryService)
         .factory('modalService', modalService);
 
-    function experienceService($http) {
+    function queryService($http) {
         return {
             get: get
         };

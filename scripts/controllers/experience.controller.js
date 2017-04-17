@@ -5,9 +5,9 @@
         .module('app')
         .controller('experienceController', experienceController);
 
-    experienceController.$inject = ['$scope', '$rootScope', '$window', 'experienceService', 'modalService'];
+    experienceController.$inject = ['$scope', '$rootScope', '$window', 'queryService', 'modalService'];
 
-    function experienceController($scope, $rootScope, $window, experienceService, modalService) {
+    function experienceController($scope, $rootScope, $window, queryService, modalService) {
 	    var vm = this;
         
         $scope.initScope = function () {
@@ -15,13 +15,13 @@
             $scope.style = $window.innerWidth > 600;
             $scope.templateTitle = "Experience";
 
-            experienceService.get('/data/experience.json').then(function (rsp) {
+            queryService.get('/data/experience.json').then(function (rsp) {
                 $scope.exps = rsp.data.Experiences;
             });
         };
         
         vm.view = function (shortname) {
-            experienceService.get('/data/experience/' + shortname + '.json').then(function (rsp) {
+            queryService.get('/data/experience/' + shortname + '.json').then(function (rsp) {
                 $rootScope.exp = rsp.data;
 
                 var config = {
