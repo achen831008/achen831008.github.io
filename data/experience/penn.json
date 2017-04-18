@@ -5,7 +5,10 @@
     "location": "Philadelphia, PA",
     "start": "2016-09-09",
     "end": "2016-09-11",
+    "status": "Complete",
     "summary": [],
+    "industry": "Hackathon",
+    "organizationDescription":"PennApps XIV is scheduled for September 9th-11th, 2016 at the the Penn Engineering Campus in Philadelphia. The fourteenth iteration of the nation's first college hackathon is upping the hackathon to new extremes, with the world's top and most promising hackers coming together to tackle real world problems using the latest in hardware and software. Teams start working on their hacks (at 8 PM) after the Friday evening kickoff and continue working till Sunday morning (9:00 AM).",
     "projects":
     [
         {

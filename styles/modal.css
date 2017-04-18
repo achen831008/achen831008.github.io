@@ -70,6 +70,16 @@
     margin-bottom: 10px;
 }
 
-.blue {
-    color: rgb(0, 109, 220);
+.inProgress {
+    color: rgb(0, 220, 51);
+    vertical-align: baseline ;
+    height: 30px ;
+    width: 30px ;
+}
+
+.complete {
+    color: #f0ad4e;
+    vertical-align: baseline ;
+    height: 30px ;
+    width: 30px ;
 }

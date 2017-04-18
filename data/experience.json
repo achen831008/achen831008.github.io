@@ -11,7 +11,8 @@
             "mapUrl": "http://maps.google.com/?q=181 University Avenue, Toronto, Ontario, Canada",
             "logo": "/assets/img/logo/DBRS_logo.svg",
             "start": "2016-05-09",
-            "end": "2017-04-28"
+            "end": "2017-04-28",
+            "status": "In Progress"
         },
         {
             "organization": "Ashlin-BPG Marketing Inc.",
@@ -23,7 +24,8 @@
             "mapUrl": "http://maps.google.com/?q=2351 Royal Windsor Dr, Mississauga, ON L5J 4S7",
             "logo": "/assets/img/logo/ashlin.png",
             "start": "2015-09-07",
-            "end": "2015-12-18"
+            "end": "2015-12-18",
+            "status": "Complete"
         },
         {
             "organization": "BDO IT Solutions",
@@ -35,7 +37,8 @@
             "mapUrl": "http://maps.google.com/?q=6701 Financial Drive, Mississauga, Ontario, Canada L5N 7J7",
             "logo": "/assets/img/logo/BDO_logo.jpg",
             "start": "2015-01-05",
-            "end": "2015-05-01"
+            "end": "2015-05-01",
+            "status": "Complete"
         },
         {
             "organization": "Visual Photonic Expitaxy Co., Ltd",
@@ -47,7 +50,8 @@
             "mapUrl": "https://goo.gl/maps/2vETiRpCMwR2",
             "logo": "/assets/img/logo/VPEC_logo.jpg",
             "start": "2014-05-05",
-            "end": "2014-08-29"
+            "end": "2014-08-29",
+            "status": "Complete"
         },
         {
             "organization": "University of Waterloo",
@@ -60,29 +64,7 @@
             "logo": "/assets/img/logo/uw.jpg",
             "start": "2013-09-09",
             "end": "2018-08-10",
-            "projects":
-            [
-                {
-                    "name": "UW Monopoly",
-                    "techstack": "UW Monopoly is built using C++ Object Oriented Programming and Singliton Pattern Design",
-                    "tools": "Sublime, GitLab, Mac Terminal (Bash), and SSH",
-                    "summary": "This game follows the standard monopoly game rules; however, there is various features designed based on UW campus such as Timmy line up, and Goose Nesting."
-                },
-                {
-                    "name": "Chess",
-                    "techstack": "Chess is implemented using C++ MVC pattern. Also, Xwindows lib was used to help visualizing the game movement.",
-                    "tools": "Sublime, GitLab, and Mac Terminal (Bash).",
-                    "summary": "blah blah"
-                },
-                {
-                    "name": "WLP4 Compiler",
-                    "techstack": "C++, MIPS",
-                    "tools": "Github, Linux, and Sublime",
-                    "summary": "Context-free language, building automata, etc."
-                }
-            ],
-			"techstack": [],
-			"tools": []
+            "status": "In Progress"
         },
         {
             "organization": "Hack the North 2016",
@@ -95,10 +77,7 @@
             "logo": "/assets/img/logo/hackthenorth.png",
             "start": "2016-09-16",
             "end": "2016-09-18",
-            "description": "I participate in 2016 hack the north, ...",
-            "projects": [],
-			"techstack": [],
-			"tools": []
+            "status": "Complete"
         },
         {
             "organization": "PENNAPPS XIV",
@@ -111,18 +90,7 @@
             "logo": "/assets/img/logo/pennapps.png",
             "start": "2016-09-09",
             "end": "2016-09-11",
-            "description": "I participate in PENNAPPS XV, ...",
-            "projects":
-            [
-                {
-                    "name": "Finalytics",
-                    "techstack": "Python, git, HTML5, CSS3, Bootstrap, jQuery, JavaScript, AJAX.",
-                    "tools": "Github, Linux, and Sublime",
-                    "summary": "blah blah"
-                }
-            ],
-			"techstack": [],
-			"tools": []
+            "status": "Complete"
         },
         {
             "organization": "UW Taiwan Student Association",
@@ -135,10 +103,7 @@
             "logo": "/assets/img/logo/twsa.jpg",
             "start": "2013-09-09",
             "end": "2015-08-14",
-            "description": "As an executive in TWSA, I participate in ...",
-            "projects": [],
-			"techstack": [],
-			"tools": []
+            "status": "Complete"
         }
     ]
 }
