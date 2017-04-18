@@ -1,6 +1,4 @@
 Experience:
 - hack the north data
 - twsa data
-- company description
 - performance rating
-- make panel group in modal overview
