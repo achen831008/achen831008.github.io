@@ -64,3 +64,12 @@
     max-height: 350px;
     overflow-y: auto;
 }
+
+.custom-margin {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.blue {
+    color: rgb(0, 109, 220);
+}
