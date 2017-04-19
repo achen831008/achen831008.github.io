@@ -2,3 +2,9 @@ Experience:
 - hack the north data
 - twsa data
 - performance rating
+
+About:
+- add awards presented by
+- add skills section (programming, framework tools, environments)
+- add courses taken in uw and udacity in education section
+- add interest section

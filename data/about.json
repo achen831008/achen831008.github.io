@@ -12,39 +12,48 @@
             [
                 {
                     "name": "Top Financial Hacks and Data Visualization at PENNAPPS XIV",
-                    "category": "Hackathon"
+                    "category": "Hackathon",
+                    "presentedBy": "BlackRock Inc."
                 },
                 {
                     "name": "University of Waterloo Intramural Basketball Champions (Beginner and Advanced Level)",
-                    "category": "Sports"
+                    "category": "Sports",
+                    "presentedBy": "University of Waterloo"
                 },
                 {
                     "name":"University of Waterloo President's Scholarship",
-                    "category": "Academics"
+                    "category": "Academics",
+                    "presentedBy": "University of Waterloo"
                 },
                 {
                     "name": "Performing Arts BC Provincials",
-                    "category": "Arts"
+                    "category": "Arts",
+                    "presentedBy": "Performing Arts BC"
                 },
                 {
                     "name": "BC High School Sr. Tennis Provincials",
-                    "category": "Sports"
+                    "category": "Sports",
+                    "presentedBy": "BC School Sports"
                 },
                 {
                     "name": "University of Waterloo Fermat Math Contest 99 percentile",
-                    "category": "Academics"
+                    "category": "Academics",
+                    "presentedBy": "University of Waterloo"
                 },
                 {
                     "name": "BC Dogwood Scholarship",
-                    "category": "Academics"
+                    "category": "Academics",
+                    "presentedBy": "Province of British Columbia"
                 },
                 {
                     "name": "The Ward Music Trophy",
-                    "category": "Arts"
+                    "category": "Arts",
+                    "presentedBy": "Shawnigan Lake School"
                 },
                 {
                     "name":"BC ISA Jr. Tennis Gold Medalists",
-                    "category": "Sports"
+                    "category": "Sports",
+                    "presentedBy": "Independent Schools Association of British Columbia"
                 }
             ]
         }

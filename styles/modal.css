@@ -87,3 +87,11 @@
 .badge-complete {
     background-color: #f0ad4e;
 }
+
+.vertical-align {
+    vertical-align: baseline;
+}
+
+.gold {
+    color: gold;
+}
