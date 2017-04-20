@@ -56,6 +56,16 @@
                     "presentedBy": "Independent Schools Association of British Columbia"
                 }
             ]
+        },
+        {
+            "topic": "Skills",
+            "description": "",
+            "skills":
+            {
+                "languages": ["C#", "C++", "Java", "Python", "R", "AngularJS", "TypeScript", "ExpressJS", "NodeJS", "jQuery", "JavaScript", "HTML5", "CSS3", "T-SQL", "MySQL", "MongoDB", "ASP", "PowerShell", "Bash", "VBA"],
+                "frameworkAndTools": ["MVC.NET", "Entity Framework", "MS Azure", "Visual Studio", "SQL Server", "TFS", "MS Office", "SFTP", "TCP/IP", "SVN", "Git", "IIS", "AWS", "TeamCity", "Loggly", "DOMO", "RabbitMQ", "Bloomberg", "Reuters"],
+                "environments": ["Windows", "Mac OS", "UNIX", "LINUX (Ubuntu/Cygwin)"]
+            }
         }
     ]
 }

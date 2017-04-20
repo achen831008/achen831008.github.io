@@ -10,7 +10,7 @@
     function aboutController($scope, $window, queryService) {
         $scope.initScope = function () {
             $scope.activePage = 0;
-            $scope.maxPage = 1;
+            $scope.maxPage = 2;
             $scope.style = $window.innerWidth > 600;
 
             queryService.get('/data/about.json').then(function (rsp) {

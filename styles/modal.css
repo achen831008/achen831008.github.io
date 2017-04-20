@@ -95,3 +95,15 @@
 .gold {
     color: gold;
 }
+
+.badges-inline {
+    display: inline-block;
+}
+
+.label-tools {
+    background-color: #f0ad4e;
+}
+
+.label-environments {
+    background-color: #734ef0;
+}

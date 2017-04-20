@@ -8,10 +8,13 @@
             </h1>
             <div class="line-sm" ng-class="activePage == 0 ? 'active-page' : ''"></div>
             <div class="line-sm" ng-class="activePage == 1 ? 'active-page' : ''"></div>
+            <div class="line-sm" ng-class="activePage == 2 ? 'active-page' : ''"></div>
         </div>
         <br>
         <div class="paragraph">
             {{ item.description }}
+
+            <!--      Show awards if exists      -->
             <div class="form-group" ng-repeat="award in item.listOfAwards">
                 <div class="panel panel-default summary-card">
                     <div class="panel-body font-md">
@@ -19,6 +22,32 @@
                         {{award.name}}
                         <span class="float-right">{{award.presentedBy}}</span>
                         <span class="label label-success project-badge">{{award.category}}</span>
+                    </div>
+                </div>
+            </div>
+
+            <div ng-show="item.skills">
+                <i class="fa fa-language" aria-hidden="true"></i>
+                Languages:
+                <div class="panel panel-default summary-card">
+                    <div class="panel-body font-md horizontal-overflow">
+                        <span class="label label-success project-badge badges-inline" ng-repeat="language in item.skills.languages">{{language}}</span>
+                    </div>
+                </div>
+
+                <i class="fa fa-sitemap" aria-hidden="true"></i>
+                Framework and Tools:
+                <div class="panel panel-default summary-card">
+                    <div class="panel-body font-md horizontal-overflow">
+                        <span class="label label-tools project-badge badges-inline" ng-repeat="tool in item.skills.frameworkAndTools">{{tool}}</span>
+                    </div>
+                </div>
+
+                <i class="fa fa-cogs" aria-hidden="true"></i>
+                Environments:
+                <div class="panel panel-default summary-card">
+                    <div class="panel-body font-md horizontal-overflow">
+                        <span class="label label-environments project-badge badges-inline" ng-repeat="environment in item.skills.environments">{{environment}}</span>
                     </div>
                 </div>
             </div>
