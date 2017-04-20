@@ -14,12 +14,12 @@
         {
             "name": "Finalytics",
             "language": ["Python", "git", "HTML5", "CSS3", "JavaScript", "Bootstrap", "React", "AJAX"],
-            "summary": "Finalytics is an all-in-one dashboard for financial portfolio visualization, analytics, and optimization. The platform assists everyday investors to see live adjustment impacts and quantifiable data from Yahoo Finance, NY Times, and BlackRock Alladin API."
+            "summary": "Finalytics is an all-in-one dashboard for financial portfolio visualization, analytics, and optimization. The platform assists everyday investors to see live adjustment impacts and quantifiable data from Yahoo Finance, NY Times, and BlackRock Alladin API.",
+            "Awards":
+            [
+                "Best Financial Hack using Alladin API",
+                "Best Data Visualization Hack"
+            ]
         }
-    ],
-    "Awards":
-    [
-        "Best Financial Hack using Alladin API",
-        "Best Data Visualization Hack"
     ]
 }

@@ -1,8 +1,0 @@
-Experience:
-- hack the north data
-- twsa data
-- performance rating
-
-About:
-- add courses taken in uw and udacity in education section
-- add interest section
