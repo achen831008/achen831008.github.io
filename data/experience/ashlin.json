@@ -31,8 +31,6 @@
         {
             "name": "SKU Manager",
             "language": ["VBA", "Access", "SQL"],
-            "techstack": "SKU Manager is a Cloud MS Access Form. VBA and SQL are mainly used for storing, updating, and deleting data to the cloud.",
-            "tools": "MS Access, MS Azure, and MS SQL Server.",
             "summary": "SKU Manager is a tool built for managing data such as products specification, product design, color code, pricing model, inventory management, and barcode generator."
         }
     ],

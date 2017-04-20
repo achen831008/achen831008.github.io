@@ -13,12 +13,39 @@
         "Followed rapid development process to continuously deliver high-quality low-latency solution to clients",
         "Built high-performance rating search that displays all historical rating and related data in a timeline stream",
         "Limited number of jobs consumed by RabbitMQ to control the resource used by task/notification server",
+        "Implemented state machines and entity workflow processes for new rating management tool",
+        "Created document generator to process JSON/XML data into various data format for reporting",
         "Set up daily process to sync platform usage data from Intercom to DOMO for data visualization and analysis",
-        "Set up a project for Helpdesk and customer success to help 'manage production web services' and 'manage production servers'",
-        "Implement state machines and workflow processes using factory design pattern in fluent API"
+        "Set up a project for Helpdesk and customer success to help 'manage production web services' and 'manage production servers'"
     ],
-    "projects": [],
-    "techstack": ["C#", "MVC.NET", "Entity Framework", "Linq", "ORM", "HTML", "CSS", "Bootstrap", "TypeScriptJS", "UnderscoreJS", "AngularJS", "JavaScript", "T-SQL", "MongoDB", "Git", "PowerShell"],
+    "projects":
+    [
+        {
+            "name": "Entity Timeline",
+            "language": ["C# API", "AngularJS", "SQL"],
+            "summary": "Entity Timeline is a project build during the DBRS Data Visualization Hackathon. The purpose of this application is to help visualizing all elements and components such as rating actions, obligations, analysts, and data files associated with the entity. It helps to see all events attached to the rating with a great user interface."
+        },
+        {
+            "name": "Criteria Committee",
+            "language": ["C# API", "AngularJS", "SQL"],
+            "summary": ""
+        },
+        {
+            "name": "Intercom-DOMO",
+            "language": ["C# Console App", "SQL"],
+            "summary": "The purpose of this project is to sync all DBRS rating platform usage data from Intercom (third party tool) to internal database on a daily basis. Moreover, setup DOMO to visualize data in various charts and reports by pushing the data set from SQL."
+        },
+        {
+            "name": "Emergency Switch",
+            "language": ["PowerShell", "TeamCity"],
+            "summary": "This project is to help the helpdesk and customer support team handling emergency issues with DBRS rating platform by configuring a project in TeamCity for managing production web services and servers. A documentation is provided with proper instructions and steps on how to proceed the task."
+        },
+        {
+            "name": "RabbitMQ Jobs Limitation",
+            "language": ["C#", "RabbitMQ"],
+            "summary": ""
+        }
+    ],
     "recommendation": "As part of software engineering team Alex shown good teamwork and collaboration skills. We at DBRS set high expectations for our coops, as they become truly part of our team and work on the same assignments as our full time employees would. Alex proved himself as a quick learner, and was able to meet all our expectations. Alex participated in our internal Hackathon and showed himself as a reliable team member that can be extremely productive under pressure of short deadline.",
     "recommendedRole": "Assisnt Vice President, Software Engineer",
     "recommendedBy": "Denys Besedynskyy"
