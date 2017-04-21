@@ -111,6 +111,8 @@
 .img-center {
     display: block;
     margin: 0 auto;
-    max-width:50%;
-    max-height:50%;
+    height: 250px;
+    width: 250px;
+    padding: 30px;
+    margin-right: 20px;
 }

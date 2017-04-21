@@ -2,9 +2,9 @@
     <div ng-if="activePage == $index">
         <div class="text-center">
             <h1 class="title">
-                <a ng-click="previous()"><i class="fa fa-angle-double-left arrow" aria-hidden="true"></i></a>
+                <a ng-click="previous()"><i class="fa fa-angle-left arrow" aria-hidden="true"></i></a>
                 {{item.topic}}
-                <a ng-click="next()"><i class="fa fa-angle-double-right arrow" aria-hidden="true"></i></a>
+                <a ng-click="next()"><i class="fa fa-angle-right arrow" aria-hidden="true"></i></a>
             </h1>
             <div class="line-sm" ng-class="activePage == 0 ? 'active-page' : ''"></div>
             <div class="line-sm" ng-class="activePage == 1 ? 'active-page' : ''"></div>
@@ -15,10 +15,14 @@
             {{ item.description }}
 
             <!--      Show institutions images      -->
-            <div ng-show="item.institutions">
+            <div class="form-group" ng-show="item.institutions">
+                <hr>
                 <div class="row form-group">
-                    <div class="col-md-4" ng-repeat="institution in item.institutions">
-                        <img class="img-center" src="{{institution.image}}">
+                    <div class="headline">Instatution Reference</div>
+                    <div class="row content">
+                        <div class="inline-block" ng-repeat="institution in item.institutions">
+                            <img class="img-center" src="{{institution.image}}">
+                        </div>
                     </div>
                 </div>
             </div>

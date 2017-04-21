@@ -17,6 +17,18 @@
                 {
                     "name": "CFA Institute",
                     "image": "/assets/img/about/cfa.jpg"
+                },
+                {
+                    "name": "DBRS Limited",
+                    "image": "/assets/img/logo/DBRS_logo.svg"
+                },
+                {
+                    "name": "Ashlin-BPG Marketing Inc.",
+                    "image": "/assets/img/logo/ashlin.png"
+                },
+                {
+                    "name": "BDO IT Solutions",
+                    "image": "/assets/img/logo/BDO_logo.jpg"
                 }
             ]
         },
