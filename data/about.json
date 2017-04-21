@@ -3,7 +3,22 @@
     [
         {
             "topic": "Education",
-            "description": "Fourth year into Computing and Financial Management Honours Co-op Program at University of Waterloo. I have worked 5 internships pertaining to web and software development at DBRS, Ashlin-BPG, BDO, and VPEC. On the side, I also take various Udacity online courses in Machine Learing for Trading, Full-stack Development, and Introduction to Artificial Intelligence. I am also preparing to take on CFA exams as I have completed courses in Microeconomics, Macroeconomics, Global Financial Markets, Corportate Finance, Regression and Forecasting, Fixed Income Securities, and Derivatives."
+            "description": "I am currently a 4th-year student in Computing and Financial Management Honours Co-op Program at University of Waterloo. I have worked 5 internships pertaining to web and software development at DBRS, Ashlin-BPG, BDO, and VPEC. On the side, I also take various Udacity online courses in Machine Learing for Trading, Full-stack Development, and Introduction to Artificial Intelligence. I am also preparing to take on CFA exams as I have completed courses in Microeconomics, Macroeconomics, Global Financial Markets, Corportate Finance, Regression and Forecasting, Fixed Income Securities, and Derivatives.",
+            "institutions":
+            [
+                {
+                    "name": "University of Waterloo",
+                    "image": "/assets/img/about/uw.jpg"
+                },
+                {
+                    "name": "Udacity",
+                    "image": "/assets/img/about/udacity.png"
+                },
+                {
+                    "name": "CFA Institute",
+                    "image": "/assets/img/about/cfa.jpg"
+                }
+            ]
         },
         {
             "topic": "Awards",

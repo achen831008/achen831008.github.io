@@ -14,6 +14,15 @@
         <div class="paragraph">
             {{ item.description }}
 
+            <!--      Show institutions images      -->
+            <div ng-show="item.institutions">
+                <div class="row form-group">
+                    <div class="col-md-4" ng-repeat="institution in item.institutions">
+                        <img class="img-center" src="{{institution.image}}">
+                    </div>
+                </div>
+            </div>
+
             <!--      Show awards if exists      -->
             <div class="form-group" ng-repeat="award in item.listOfAwards">
                 <div class="panel panel-default summary-card">
@@ -26,6 +35,7 @@
                 </div>
             </div>
 
+            <!--      Show Skills if exists     -->
             <div ng-show="item.skills">
                 <i class="fa fa-language" aria-hidden="true"></i>
                 Languages:
