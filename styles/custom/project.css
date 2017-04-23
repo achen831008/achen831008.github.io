@@ -1,4 +1,4 @@
-/* Remove the navbar's default margin-bottom and rounded borders */ 
+/* Remove the navbar's default margin-bottom and rounded borders */
 .navbar {
   margin-bottom: 0;
   border-radius: 0;
@@ -19,7 +19,7 @@ footer {
 /* Hide the carousel text when the screen is less than 600 pixels wide */
 @media (max-width: 600px) {
   .carousel-caption {
-    display: none; 
+    display: none;
   }
 }
 
@@ -33,7 +33,7 @@ body {
     height:250px;
     display: block;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
 }
 
 .inline-image img, .inline-image p{
@@ -131,12 +131,12 @@ body {
 }
 
 #overlay{
-    position: fixed; 
-    width: 100%; 
-    height: 100%; 
-    top: 0px; 
-    left: 0px; 
-    background-color: #000000; 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: #000000;
     opacity: 0.9;
     filter: alpha(opacity = 90) !important;
     display: none;
@@ -147,7 +147,7 @@ body {
     position: fixed;
     text-align: center;
     display: none;
-    background-color: #233140; 
+    background-color: #233140;
     opacity: 0.8;
     filter: alpha(opacity = 80) !important;
     overflow: hidden;

@@ -1,4 +1,4 @@
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
@@ -39,7 +39,7 @@ h2 {
   font-weight: bold;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Modules - reusable parts of our design
 
@@ -57,9 +57,9 @@ Modules - reusable parts of our design
   clear: both;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-Main components 
+Main components
 
 -------------------------------- */
 header {
@@ -548,7 +548,7 @@ input::-moz-focus-inner {
 img.displayed {
     display: block;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
 }
 
 .button-float-right {
@@ -557,11 +557,11 @@ img.displayed {
 
 .cd-timeline-content .cd-date {
   font-size: 20px;
-  
+
 }
 
 .topnav {
-    font-size: 14px; 
+    font-size: 14px;
 }
 
 .img-resize {
@@ -572,6 +572,6 @@ img.displayed {
 .displayed {
     display: block;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
 }
 

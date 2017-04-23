@@ -26,7 +26,7 @@ body {
 }
 
 .topnav {
-    font-size: 14px; 
+    font-size: 14px;
 }
 
 .lead {
@@ -257,7 +257,7 @@ p.copyright {
 
 
 /* for top divider */
-.divider { 
+.divider {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -285,7 +285,7 @@ p.copyright {
 }
 
 .logo {
-    height:30px; 
+    height:30px;
     width:30px;
 }
 
