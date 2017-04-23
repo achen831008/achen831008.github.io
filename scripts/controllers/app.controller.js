@@ -5,9 +5,9 @@
         .module('app')
         .controller('appController', appController);
 
-    appController.$inject = ['$scope', '$rootScope', '$location', '$sce', '$window', 'queryService'];
+    appController.$inject = ['$scope', '$rootScope', '$location', '$sce', '$window'];
 
-    function appController($scope, $rootScope, $location, $sce, $window, queryService) {
+    function appController($scope, $rootScope, $location, $sce, $window) {
         $scope.initScope = function () {
             $scope.Name = 'Alex Chen';
             $scope.copyright = $sce.trustAsHtml("Copyright &copy; 2017 Alex Chen");

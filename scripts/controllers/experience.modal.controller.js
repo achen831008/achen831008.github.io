@@ -5,9 +5,9 @@
         .module('app')
         .controller('experienceModalController', experienceModalController);
 
-    experienceModalController.$inject = ['$scope', '$modalInstance', '$window', 'queryService', 'modalService', '$rootScope'];
+    experienceModalController.$inject = ['$scope', '$modalInstance', '$window', 'modalService', '$rootScope'];
 
-    function experienceModalController($scope, $modalInstance, $window, queryService, modalService, $rootScope) {
+    function experienceModalController($scope, $modalInstance, $window, modalService, $rootScope) {
 	    var vm = this;
 
         $scope.initScope = function () {

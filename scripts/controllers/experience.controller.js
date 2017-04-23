@@ -21,7 +21,7 @@
         };
         
         vm.view = function (shortname) {
-            queryService.get('/data/experience/' + shortname + '.json').then(function (rsp) {
+            queryService.get('/data/experience.' + shortname + '.json').then(function (rsp) {
                 $rootScope.exp = rsp.data;
 
                 var config = {
