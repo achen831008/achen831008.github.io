@@ -26,9 +26,19 @@
             "summary": "Entity Timeline is a project build during the DBRS Data Visualization Hackathon. The purpose of this application is to help visualizing all elements and components such as rating actions, obligations, analysts, and data files associated with the entity. It helps to see all events attached to the rating with a great user interface."
         },
         {
+            "name": "Document Generator",
+            "language": ["C#.NET", "AngularJS", "OpenXML", "LibreOffice", "XML", "JSON"],
+            "summary": "Implemented a document generation service for compliance reports, data reports, etc. This project is to standardize the way the platform generate documents."
+        },
+        {
+            "name": "Contentful Sync",
+            "language": ["Python", "Contentful", "AWS Elastic Search", "NodeJS"],
+            "summary": "Built a syncing process from Contentful database to AWS Elastic Search, and used the search engine for the new company site."
+        },
+        {
             "name": "Criteria Committee",
             "language": ["C# API", "AngularJS", "SQL"],
-            "summary": ""
+            "summary": "Built a new Angular app with C#.NET API as part of the DBRS rating platform to store all criteria committee meeting minutes and requirements. This new application is to help users having e-meetings and stop the paper work process."
         },
         {
             "name": "Intercom-DOMO",
@@ -43,7 +53,7 @@
         {
             "name": "RabbitMQ Jobs Limitation",
             "language": ["C#", "RabbitMQ"],
-            "summary": ""
+            "summary": "This project is to limit amount of jobs picked up by the workers in the queue, so the worker does not pick up everything in the queue and process it all at once."
         }
     ],
     "recommendation": "As part of software engineering team Alex shown good teamwork and collaboration skills. We at DBRS set high expectations for our coops, as they become truly part of our team and work on the same assignments as our full time employees would. Alex proved himself as a quick learner, and was able to meet all our expectations. Alex participated in our internal Hackathon and showed himself as a reliable team member that can be extremely productive under pressure of short deadline.",
