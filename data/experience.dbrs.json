@@ -28,12 +28,17 @@
         {
             "name": "Document Generator",
             "language": ["C#.NET", "AngularJS", "OpenXML", "LibreOffice", "XML", "JSON"],
-            "summary": "Implemented a document generation service for compliance reports, data reports, etc. This project is to standardize the way the platform generate documents."
+            "summary": "This project is to standardize the way the rating platform generate documents. The process takes a JSON object or an entity object as input, and then generate desired document based on the XML mapping template and document type."
         },
         {
-            "name": "Contentful Sync",
-            "language": ["Python", "Contentful", "AWS Elastic Search", "NodeJS"],
-            "summary": "Built a syncing process from Contentful database to AWS Elastic Search, and used the search engine for the new company site."
+            "name": "CMS Syncing Pipeline",
+            "language": ["Python", "Contentful", "Elastic Search", "NodeJS"],
+            "summary": "Built a syncing pipeline to process data from Contentful (Content Management System) API to Elastic Search. Then, hook up the search engine with the new company site."
+        },
+		{
+            "name": "Entity State Machine Workflow",
+            "language": ["C#.NET", "Stateless", "SQL"],
+            "summary": "Introduce a standard way to link workflow process with existing entities. A open-source library, Stateless, is used to help configuring the state machines with permitted states. This workflow service has clear separation with all entities, so there is no dependencies with existing API services."
         },
         {
             "name": "Criteria Committee",
@@ -41,7 +46,7 @@
             "summary": "Built a new Angular app with C#.NET API as part of the DBRS rating platform to store all criteria committee meeting minutes and requirements. This new application is to help users having e-meetings and stop the paper work process."
         },
         {
-            "name": "Intercom-DOMO",
+            "name": "Intercom-DOMO Syncing Pipeline",
             "language": ["C# Console App", "SQL"],
             "summary": "The purpose of this project is to sync all DBRS rating platform usage data from Intercom (third party tool) to internal database on a daily basis. Moreover, setup DOMO to visualize data in various charts and reports by pushing the data set from SQL."
         },
