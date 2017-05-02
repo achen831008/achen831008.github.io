@@ -5,7 +5,7 @@
     "location": "Toronto, Ontario, Canada",
     "start": "2016-05-09",
     "end": "2017-04-28",
-    "status": "In Progress",
+    "status": "Complete",
     "industry": "Credit Rating",
     "organizationDescription": "DBRS is an independent, privately held, globally recognized credit ratings agency with offices in Toronto, New York, London, Chicago and Mexico City. We strive to differentiate ourselves from competitors through a more pragmatic rather than mechanistic approach, in-depth research and unequalled mandate execution. Our approach and our size as the world's fourth-largest ratings agency allow us to be nimble enough to respond to customers' needs in their local markets, but large enough to provide the necessary expertise and resources they require. We build meaningful relations, which contribute to a convincing value proposition for investors and issuers to choose us a globally accepted alternative to other ratings agencies.",
     "summary":
@@ -61,7 +61,7 @@
             "summary": "This project is to limit amount of jobs picked up by the workers in the queue, so the worker does not pick up everything in the queue and process it all at once."
         }
     ],
-    "recommendation": "As part of software engineering team Alex shown good teamwork and collaboration skills. We at DBRS set high expectations for our coops, as they become truly part of our team and work on the same assignments as our full time employees would. Alex proved himself as a quick learner, and was able to meet all our expectations. Alex participated in our internal Hackathon and showed himself as a reliable team member that can be extremely productive under pressure of short deadline.",
-    "recommendedRole": "Assisnt Vice President, Software Engineer",
+    "recommendation": "Current term was the second term Alex joined out team at DBRS. As with previous term Alex showed high level of professionalism and dependability. Throughout the term he worked on couple of critical deliverables with tight deadlines, as well as took part in research of experimental modules for our platform. I had a chance to personally work on the project with Alex during our end of the term hackathon / workathon, and was impressed with his ability to research complex systems independently and then work closely with the team to incorporate his findings with overall solution. He takes all the feedback he can get from our senior engineers and uses it to improve his technical skills, which tells me that he will be successful in any position in his future career.",
+    "recommendedRole": "Assisnt Vice President, Global Technology",
     "recommendedBy": "Denys Besedynskyy"
 }
