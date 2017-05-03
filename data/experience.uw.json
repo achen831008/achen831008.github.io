@@ -9,6 +9,15 @@
     "summary": [],
     "industry": "University",
     "organizationDescription": "Waterloo is a member of the U15, a group of research-intensive universities in Canada. University of Waterloo is most famous for its cooperative education (co-op) programs, which allow the students to integrate their education with applicable work experiences. University of Waterloo operates the largest post secondary co-op program of its kind in the world, with over 19,000 co-op students and 5,200 employers",
+    "currentTerm": "4A",
+    "courses":
+    [
+        "Numerical Computation",
+        "Introduction to Business Analytics",
+        "Derivative Securities",
+        "Microeconomic Theory for Business",
+        "Principles of Marketing and Consumer Economics"
+    ],
     "projects":
     [
         {

@@ -7,101 +7,16 @@
         <div class="modal-body">
             <tabset>
                 <tab heading="Overview">
-                    <div class="tab-content-overflow modal-body-margin row">
-
-                       <!--      Organization Description                   -->
-                       <div class="col-md-12">
-                            <div class="form-group">
-                                <div class="panel panel-default">
-                                    <div class="panel-body">
-                                        <label>
-                                            Organization Description
-                                        </label>
-                                        <span class="label label-success float-right">{{exp.industry}}</span>
-                                        <hr class="custom-margin">
-                                        <div class="font-light">
-                                            {{exp.organizationDescription}}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--      Position Detail                  -->
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <div class="panel panel-default">
-                                    <div class="panel-body">
-                                        <label>Position Detail</label>
-                                        <hr class="custom-margin">
-                                        <div>
-                                            <label>Role: </label>
-                                            <span class="font-light">{{exp.role}}</span>
-                                        </div>
-                                        <div>
-                                            <label>Location: </label>
-                                            <span class="font-light">{{exp.location}}</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--      Employment Period                  -->
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <div class="panel panel-default">
-                                    <div class="panel-body">
-                                        <label>Employment Period</label>
-                                            <span class="label label-success float-right" ng-class="{'badge-complete': exp.status == 'Complete'}">{{exp.status}}</span>
-                                        <hr class="custom-margin">
-                                        <div>
-                                            <label>Start Date: </label>
-                                            <span class="font-light">{{exp.start}}</span>
-                                        </div>
-                                        <div>
-                                            <label>End Date: </label>
-                                            <span class="font-light">{{exp.end}}</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div ng-include="'/views/partials/experience.overview.html'"></div>
                 </tab>
                 <tab ng-if="exp.summary" heading="Work Summary">
-                    <div class="tab-content-overflow modal-body-margin">
-                        <div class="form-group" ng-repeat="point in exp.summary">
-                            <div class="panel panel-default summary-card">
-                                <div class="panel-body font-light">{{point}}</div>
-                            </div>
-                        </div>
-                    </div>
+                    <div ng-include="'/views/partials/experience.summary.html'"></div>
                 </tab>
                 <tab ng-if="exp.projects" heading="Projects">
-                    <div class="tab-content-overflow modal-body-margin">
-                        <div class="form-group" ng-repeat="project in exp.projects">
-                            <div class="panel panel-default summary-card">
-                                <div class="panel-body">
-                                    {{project.name}}
-                                    <span class="label label-success project-badge" ng-repeat="x in project.language">{{x}}</span>
-                                    <button type="button" class="btn btn-default float-right font-sm" ng-model="view" btn-checkbox btn-checkbox-true="1" btn-checkbox-false="0">View</button>
-                                </div>
-                                <div ng-show="view" class="panel-body font-light">{{project.summary}}</div>
-                            </div>
-                        </div>
-                    </div>
+                    <div ng-include="'/views/partials/experience.projects.html'"></div>
                 </tab>
                 <tab ng-if="exp.recommendation" heading="Recommendation">
-                    <div class="tab-content-overflow modal-body-margin">
-                        <div class="form-group font-light">
-                            {{exp.recommendation}}
-                        </div>
-                        <div class="recommendation">
-                            <div>- {{exp.recommendedRole}},</div>
-                            <div>{{exp.recommendedBy}}</div>
-                        </div>
-                    </div>
+                    <div ng-include="'/views/partials/experience.recommendation.html'"></div>
                 </tab>
             </tabset>
         </div>
