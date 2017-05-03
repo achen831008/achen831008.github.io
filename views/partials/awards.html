@@ -1,0 +1,11 @@
+<!--      Show awards if exists      -->
+<div class="form-group" ng-repeat="award in item.listOfAwards">
+    <div class="panel panel-default summary-card">
+        <div class="panel-body font-md">
+            <i class="fa fa-trophy vertical-align gold" aria-hidden="true"></i>
+            {{award.name}}
+            <span class="float-right">{{award.presentedBy}}</span>
+            <span class="label label-success project-badge">{{award.category}}</span>
+        </div>
+    </div>
+</div>

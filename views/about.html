@@ -14,57 +14,9 @@
         <div class="paragraph">
             {{ item.description }}
 
-            <!--      Show institutions images      -->
-            <div class="form-group" ng-show="item.institutions">
-                <hr>
-                <div class="row form-group">
-                    <div class="headline">Instatution Reference</div>
-                    <div class="row content">
-                        <div class="inline-block" ng-repeat="institution in item.institutions">
-                            <img class="img-center" src="{{institution.image}}">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!--      Show awards if exists      -->
-            <div class="form-group" ng-repeat="award in item.listOfAwards">
-                <div class="panel panel-default summary-card">
-                    <div class="panel-body font-md">
-                        <i class="fa fa-trophy vertical-align gold" aria-hidden="true"></i>
-                        {{award.name}}
-                        <span class="float-right">{{award.presentedBy}}</span>
-                        <span class="label label-success project-badge">{{award.category}}</span>
-                    </div>
-                </div>
-            </div>
-
-            <!--      Show Skills if exists     -->
-            <div ng-show="item.skills">
-                <i class="fa fa-language" aria-hidden="true"></i>
-                Languages:
-                <div class="panel panel-default summary-card">
-                    <div class="panel-body font-md horizontal-overflow">
-                        <span class="label label-success project-badge badges-inline" ng-repeat="language in item.skills.languages">{{language}}</span>
-                    </div>
-                </div>
-
-                <i class="fa fa-sitemap" aria-hidden="true"></i>
-                Framework and Tools:
-                <div class="panel panel-default summary-card">
-                    <div class="panel-body font-md horizontal-overflow">
-                        <span class="label label-tools project-badge badges-inline" ng-repeat="tool in item.skills.frameworkAndTools">{{tool}}</span>
-                    </div>
-                </div>
-
-                <i class="fa fa-cogs" aria-hidden="true"></i>
-                Environments:
-                <div class="panel panel-default summary-card">
-                    <div class="panel-body font-md horizontal-overflow">
-                        <span class="label label-environments project-badge badges-inline" ng-repeat="environment in item.skills.environments">{{environment}}</span>
-                    </div>
-                </div>
-            </div>
+<!--            <div ng-include="'/views/partials/references.html'"></div>-->
+            <div ng-include="'/views/partials/awards.html'"></div>
+            <div ng-include="'/views/partials/skills.html'"></div>
         </div>
     </div>
 </div>

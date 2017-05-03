@@ -1,0 +1,26 @@
+<!--      Show Skills if exists     -->
+<div ng-show="item.skills">
+    <i class="fa fa-language" aria-hidden="true"></i>
+    Languages:
+    <div class="panel panel-default summary-card">
+        <div class="panel-body font-md horizontal-overflow">
+            <span class="label label-success project-badge badges-inline" ng-repeat="language in item.skills.languages">{{language}}</span>
+        </div>
+    </div>
+
+    <i class="fa fa-sitemap" aria-hidden="true"></i>
+    Framework and Tools:
+    <div class="panel panel-default summary-card">
+        <div class="panel-body font-md horizontal-overflow">
+            <span class="label label-tools project-badge badges-inline" ng-repeat="tool in item.skills.frameworkAndTools">{{tool}}</span>
+        </div>
+    </div>
+
+    <i class="fa fa-cogs" aria-hidden="true"></i>
+    Environments:
+    <div class="panel panel-default summary-card">
+        <div class="panel-body font-md horizontal-overflow">
+            <span class="label label-environments project-badge badges-inline" ng-repeat="environment in item.skills.environments">{{environment}}</span>
+        </div>
+    </div>
+</div>
