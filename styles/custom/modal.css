@@ -72,16 +72,17 @@
 
 .inProgress {
     color: rgb(0, 220, 51);
-    vertical-align: baseline ;
-    height: 30px ;
-    width: 30px ;
 }
 
 .complete {
     color: #f0ad4e;
-    vertical-align: baseline ;
-    height: 30px ;
-    width: 30px ;
+}
+
+.status {
+    vertical-align: baseline;
+    height: auto !important;
+    height: 30px;
+    width: 30px;
 }
 
 .badge-complete {
