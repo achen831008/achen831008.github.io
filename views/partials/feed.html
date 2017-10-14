@@ -1,0 +1,11 @@
+<section id="feed" class="background-light">
+    <div class="header text-center">#InstaFeeds</div>
+    <div class="container bottom-space">
+        <div class="instafeed" ng-repeat="feed in feeds">
+            <img ng-src="{{feed.images.standard_resolution.url}}">
+            <a ng-href="{{feed.link}}">
+                <p class="feed-text">{{ feed.caption.text }}</p>
+            </a>
+        </div>
+    </div>
+</section>

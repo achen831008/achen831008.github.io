@@ -1,86 +1,48 @@
 <!DOCTYPE html>
 <html ng-app="app" lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="Alex, Chen, University of Waterloo, Web Development, Software Engineering, Shawnigan Lake School, DBRS, Ashlin-BPG, BDO, VPEC, Basketball, Violin">
-    <meta name="author" content="Alex Yu-Ming Chen">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Alex Yu-Ming Chen">
 
-    <title>Alex Chen</title>
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon/favicon.ico">
+        <title>Alex Chen</title>
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon/favicon.ico">
+        <link href="styles/common/bootstrap.min.css" rel="stylesheet">
+        <link href="styles/custom/style.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="styles/common/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+        <script src="scripts/common/jquery.js"></script>
+        <script src="scripts/common/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+        <script src="https://code.angularjs.org/1.6.6/angular-animate.min.js"></script>
+        <script src="scripts/common/angular-route.min.js"></script>
+        
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/app.controller.js"></script>
+    </head>
+
+    <body ng-controller="appController">
+        
+        <!--    Introduction/Landing    -->
+        <div ng-include src="'views/partials/intro.html'"></div>
+        
+        <!--    About Me    -->
+        <div ng-include src="'views/partials/about.html'"></div>
+        
+        <!--    Recommendation    -->
+        <div ng-include src="'views/partials/recommendation.html'"></div>
+        
+        <!--    Instagram Feeds    -->
+        <div ng-include src="'views/partials/feed.html'"></div>
+        
+        <!--    Contact Me    -->
+        <div ng-include src="'views/partials/contact.html'"></div>
     
-    <link href="styles/common/bootstrap.min.css" rel="stylesheet">
-    <link href="styles/common/angular-responsive-tables.min.css" rel="stylesheet">
-
-    <link href="styles/custom/sidebar.css" rel="stylesheet">
-    <link href="styles/custom/main.css" rel="stylesheet">
-    <link href="styles/custom/about.css" rel="stylesheet">
-    <link href="styles/custom/project.css" rel="stylesheet">
-    <link href="styles/custom/modal.css" rel="stylesheet">
-    
-    <!-- Custom Fonts -->
-    <link href="styles/common/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel="stylesheet">
-
-    <script src="scripts/common/jquery.js"></script>
-    <script src="scripts/common/bootstrap.min.js"></script>
-    <script src="scripts/common/angular.min.js"></script>
-    <script src="scripts/common/angular-route.min.js"></script>
-    <script src="scripts/common/angular-responsive-tables.min.js"></script>
-    <script src="scripts/common/ui-bootstrap-tpls-0.12.0.min.js"></script>
-
-    <script src="scripts/common/features.js"></script>
-    <script src="scripts/app.js"></script>
-    <script src="scripts/services/service.js"></script>
-    <script src="scripts/controllers/app.controller.js"></script>
-    <script src="scripts/controllers/main.controller.js"></script>
-    <script src="scripts/controllers/about.controller.js"></script>
-    <script src="scripts/controllers/experience.modal.controller.js"></script>
-    <script src="scripts/controllers/experience.controller.js"></script>
-
-</head>
-
-<body ng-controller="appController">
-    <!-- Top nav show for mobile view -->
-    <nav ng-show="!navStyle" class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-        <div class="container topnav">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand topnav" href="/">{{ Name }}</a>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li ng-repeat="item in menu">
-                        <a href="{{ item.route }}">{{ item.label }}</a> 
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Sidebar show for desktop view -->
-    <nav ng-show="navStyle" class="main-menu" role="navigation">
-        <ul>
-            <li id="{{item.label}}" ng-repeat="item in menu" ng-class="{active: item.label == 'Home'}" ng-click="setActive(item.label)">
-                <a href="{{item.route}}">
-                    <i class="bigger lefty fa {{item.icon}} fa-2x"></i>
-                    <span class="bigger nav-text">
-                        {{item.label}}
-                    </span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-    
-    <div ng-class="{body_margin: navStyle}" ng-view></div>
-    
-</body>
-
+    </body>
 </html>

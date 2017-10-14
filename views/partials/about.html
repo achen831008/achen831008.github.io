@@ -1,0 +1,22 @@
+<section id="about" class="background-light">
+    <div class="header text-center">About Me</div>
+    <div class="container">
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+            <img class="img-responsive img-center profile-img" src="assets/img/profile/me.jpg">
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-8">
+            <p class="text-content text-justify">{{ data.about.content }}</p>
+        </div>
+    </div>
+    
+    <hr class="dashed">
+
+    <div class="header text-center">What I Do</div>
+    <div class="container bottom-space">
+        <div ng-repeat="service in data.about.services" class="col-xs-12 col-sm-4 col-lg-4">
+            <img class="img-responsive img-center icon" ng-src="{{service.src}}">
+            <div class="text-center sub-heading">{{ service.title }}</div>
+        </div>
+        <button class="btn btn-blue col-xs-6 col-sm-2 col-xs-offset-3 col-sm-offset-5">View My Resume</button>
+    </div>
+</section>
