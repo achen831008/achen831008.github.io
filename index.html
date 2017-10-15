@@ -25,9 +25,12 @@
         
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/app.controller.js"></script>
+        <script src="scripts/directives/app.directive.js"></script>
     </head>
 
     <body ng-controller="appController">
+        <!--    Navbar    -->
+        <div ng-include src="'views/partials/navbar.html'"></div>
         
         <!--    Introduction/Landing    -->
         <div ng-include src="'views/partials/intro.html'"></div>
