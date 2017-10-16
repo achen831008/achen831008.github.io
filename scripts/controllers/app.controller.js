@@ -54,6 +54,7 @@
             $scope.instagram.feeds = rsp.data.data;
         });
 
+        //loading github data
         $http.get($scope.github.repos_url + $scope.github.authenticate).then(function (rsp){
             $scope.github.repos = rsp.data;
 

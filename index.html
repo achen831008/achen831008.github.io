@@ -40,14 +40,16 @@
         <!--    About Me    -->
         <div ng-include src="'views/partials/about.html'"></div>
         
-        <!--    Recommendation    -->
-        <div ng-include src="'views/partials/recommendation.html'"></div>
-        
-        <!--    Github Projects    -->
-        <div ng-include src="'views/partials/project.html'"></div>
+        <div class="flex">
+            <!--    Recommendation    -->
+            <div class="column" ng-include src="'views/partials/recommendation.html'"></div>
+
+            <!--    Github Projects    -->
+            <div class="column" ng-include src="'views/partials/project.html'"></div>
+        </div>
 
         <!--    Blog Posts    -->
-        <div ng-include src="'views/partials/blog.html'"></div>
+<!--        <div ng-include src="'views/partials/blog.html'"></div>-->
 
         <!--    Instagram Feeds    -->
         <div ng-include src="'views/partials/feed.html'"></div>
