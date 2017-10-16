@@ -1,0 +1,11 @@
+<section id="project" class="background-light">
+    <div class="header text-center">#Projects</div>
+    <div class="container bottom-space">
+        <div>Recent Projects</div>
+        <div ng-repeat="repo in github.repos | orderBy:'-pushed_at' | limitTo:6">
+            {{repo.name}} - {{repo.latest_push_date}}
+        </div>
+
+        <div>total commits: {{github.commits.length}}</div>
+    </div>
+</section>
