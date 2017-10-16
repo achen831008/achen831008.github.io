@@ -1,11 +1,13 @@
-<section id="project" class="background-light">
-    <div class="header text-center">#Projects</div>
-    <div class="container bottom-space">
-        <div>Recent Projects</div>
-        <div ng-repeat="repo in github.repos | orderBy:'-pushed_at' | limitTo:6">
-            {{repo.name}} - {{repo.latest_push_date}}
+<section id="project" class="col-xs-12 background-dark border-left border-right">
+    <div class="header white text-center underline">Projects</div>
+    <div class="container bottom-space col-xs-12">
+        <div class="sub-heading white text-center">- Weekly Commits: <b>{{github.commits.length}}</b> -</div>
+        <div class="github-repo" ng-repeat="repo in github.repos | orderBy:'-pushed_at' | limitTo:6">
+            <div>
+                <a class="white" ng-href="{{repo.html_url}}">{{repo.name}}</a>
+                <span class="label label-default float-right blue-badge badge-margin">{{repo.latest_push_date}}</span>
+                <span class="label label-default float-right yellow-badge badge-margin">{{repo.language}}</span>
+            </div>
         </div>
-
-        <div>total commits: {{github.commits.length}}</div>
     </div>
 </section>

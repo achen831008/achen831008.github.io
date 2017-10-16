@@ -1,7 +1,7 @@
-<section id="recommendation" class="background-dark">
-    <div class="header text-center white">Employers Said</div>
-    <div class="container bottom-space">
-        <div ng-repeat="rec in data.recommendations" class="col-xs-12 col-sm-4 col-lg-4 bottom-space white">
+<section id="recommendation" class="col-xs-12 background-dark border-left border-right">
+    <div class="header text-center white">Recommendation</div>
+    <div class="container bottom-space col-xs-12">
+        <div ng-repeat="rec in data.recommendations" class="col-xs-12 bottom-space white">
             <p class="sm-text white">{{ rec.text }}</p>
             <div class="right-text">- {{ rec.position }}</div>
             <div class="right-text">{{ rec.recBy }}</div>
