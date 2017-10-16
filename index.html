@@ -22,6 +22,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
         <script src="https://code.angularjs.org/1.6.6/angular-animate.min.js"></script>
         <script src="scripts/common/angular-route.min.js"></script>
+        <script src="scripts/common/underscore-min.js"></script>
         
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/app.controller.js"></script>
@@ -29,6 +30,7 @@
     </head>
 
     <body ng-controller="appController">
+
         <!--    Navbar    -->
         <div ng-include src="'views/partials/navbar.html'"></div>
         
@@ -41,6 +43,12 @@
         <!--    Recommendation    -->
         <div ng-include src="'views/partials/recommendation.html'"></div>
         
+        <!--    Github Projects    -->
+        <div ng-include src="'views/partials/project.html'"></div>
+
+        <!--    Blog Posts    -->
+        <div ng-include src="'views/partials/blog.html'"></div>
+
         <!--    Instagram Feeds    -->
         <div ng-include src="'views/partials/feed.html'"></div>
         
