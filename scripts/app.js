@@ -7,19 +7,26 @@
             $routeProvider
             .when('/', {
                 templateUrl : 'views/home.html',
-				controller  : 'homeController'
+				controller  : 'homeController',
+                controllerAs: 'vm'
             })
             .when('/home', {
-                templateUrl : 'views/home.html'
+                templateUrl : 'views/home.html',
+				controller  : 'homeController',
+                controllerAs: 'vm'
             })
             .when('/project', {
-                templateUrl: '/views/partials/project.html'
+                templateUrl : '/views/partials/project.html',
+                controller  : 'projectController',
+                controllerAs: 'vm'
             })
             .when('/photography', {
-                templateUrl: '/views/partials/feed.html'
+                templateUrl : '/views/partials/photography.html',
+                controller  : 'photographyController',
+                controllerAs: 'vm'
             })
             .when('/contact', {
-                templateUrl: '/views/contact.html'
+                templateUrl : '/views/contact.html'
             })
             .otherwise({
                 redirectTo: "/"

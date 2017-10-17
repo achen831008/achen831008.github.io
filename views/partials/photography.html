@@ -1,15 +1,15 @@
 <div id="feed" class="col-xs-12 background-light">
     <div class="header text-center">Photography</div>
     <div class="container bottom-space">
-        <div class="instafeed col-xs-12 col-sm-4 col-md-4" ng-repeat="feed in instagram.feeds | limitTo:instagram.limit">
-            <img ng-src="{{feed.images.standard_resolution.url}}">
+        <div class="instafeed col-xs-12 col-sm-4 col-md-4" ng-repeat="feed in vm.instagram.feeds | limitTo: vm.instagram.limit">
+            <img ng-src="{{ feed.images.standard_resolution.url }}">
             <a ng-href="{{feed.link}}">
                 <p class="feed-text">{{ feed.caption.text }}</p>
             </a>
         </div>
 
         <div class="col-xs-12 bottom-space">
-            <button class="btn btn-blue btn-center text-center" ng-click="loadMoreFeeds()" ng-hide="instagram.limit == instagram.max">Load More</button>
+            <button class="btn btn-blue btn-center text-center" ng-click="vm.loadMoreFeeds()" ng-hide="vm.instagram.limit == vm.instagram.max">Load More</button>
         </div>
 
         <div class="col-xs-12 text-center ">
