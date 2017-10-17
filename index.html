@@ -37,37 +37,16 @@
         <script src="scripts/common/underscore-min.js"></script>
         
         <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/app.controller.js"></script>
-        <script src="scripts/directives/app.directive.js"></script>
+        <script src="scripts/controllers/controller.home.js"></script>
+        <script src="scripts/directives/directive.js"></script>
     </head>
 
-    <body ng-controller="appController">
-
-        <!--    Navbar    -->
-        <div ng-include src="'views/partials/navbar.html'"></div>
+    <body ng-controller="homeController">
         
-        <!--    Introduction/Landing    -->
-        <div ng-include src="'views/partials/intro.html'"></div>
+        <!--    NAVBAR    -->
+        <div ng-include src="'/views/partials/navbar.html'"></div>
         
-        <!--    About Me    -->
-        <div ng-include src="'views/partials/about.html'"></div>
-        
-        <div class="flex">
-            <!--    Recommendation    -->
-            <div class="column" ng-include src="'views/partials/recommendation.html'"></div>
-
-            <!--    Github Projects    -->
-            <div class="column" ng-include src="'views/partials/project.html'"></div>
-        </div>
-
-        <!--    Blog Posts    -->
-<!--        <div ng-include src="'views/partials/blog.html'"></div>-->
-
-        <!--    Instagram Feeds    -->
-        <div ng-include src="'views/partials/feed.html'"></div>
-        
-        <!--    Contact Me    -->
-        <div ng-include src="'views/partials/contact.html'"></div>
+        <div ng-view></div>
     
     </body>
 </html>

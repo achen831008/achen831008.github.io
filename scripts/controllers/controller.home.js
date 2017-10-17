@@ -3,15 +3,16 @@
 
     angular
         .module('app')
-        .controller('appController', appController);
+        .controller('homeController', homeController);
 
-    appController.$inject = ['$scope', '$http', '$sce'];
+    homeController.$inject = ['$scope', '$http', '$sce'];
 
-    function appController($scope, $http, $sce) {
-        
+    function homeController($scope, $http, $sce) {
+
         var initInstagram = function() {
             $scope.instagram = {};
             $scope.instagram.limit = 6;
+            $scope.instagram.max = 18;
             $scope.instagram.endpoint = 'https://api.instagram.com/v1/users/self/media/recent/';
             $scope.instagram.api_access_token = '214634784.8a868cf.f7f8c489d0b64ecaa966e24cd1b4538b';
             $scope.instagram.url = $scope.instagram.endpoint + '?access_token=' + $scope.instagram.api_access_token;
@@ -40,15 +41,14 @@
         init();
 
         $scope.loadMoreFeeds = function() {
-            var incremented = $scope.instagram.limit + 6;
-            $scope.instagram.limit = incremented > $scope.instagram.feeds.length ? $scope.instagram.feeds.length : incremented;
+            $scope.instagram.limit += 6;
         };
 
         //loading personal data
         $http.get('/data/v2/app.json').then(function(rsp){
             $scope.data = rsp.data;
         });
-        
+
         //loading instagram data
         $http.jsonp($scope.instagram.url).then(function (rsp){
             $scope.instagram.feeds = rsp.data.data;

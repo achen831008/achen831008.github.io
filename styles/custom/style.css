@@ -2,14 +2,14 @@
 /* SECTION INTRO */
 
 #intro {
-    background-image: url('/assets/img/background/top-background.jpg'); 
+/*    background-image: url('/assets/img/background/top-background.jpg'); */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     display: block !important;
     align-items: center;
     position: relative;
-    z-index: 10;
+/*    z-index: 10;*/
     overflow: hidden;
     width: 100%;
     min-height: 100vh;
@@ -32,7 +32,7 @@
 }
 
 .intro-name {
-    font-size: 8rem;
+    font-size: 7rem;
     color: dodgerblue;
     font-family: 'Beon';
 }
@@ -76,7 +76,7 @@
 }
 
 .sub-heading {
-    padding-bottom: 10%;
+    padding-bottom: 5rem;
     font-weight: 200;
     font-size: 3rem;
     color: #3a4c4a;
@@ -103,6 +103,11 @@
     border: 2px solid #fff;
     border-radius: 5px;
     background: #1e90ff;
+}
+
+.btn-center {
+    display: block;
+    margin: 0 auto;
 }
 
 .bottom-space {
@@ -152,20 +157,25 @@ div.social-media a {
 /* Github Projects */
 
 .github-repo {
-    padding: 10px;
-    color: white;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid white;
-    border-left: 5px solid white;
-    margin-bottom: 26px;
+    color: #252839;
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
 }
 
+.github-repo:hover {
+    border-left: 10px solid #252839;
+}
+
+.description {
+    font-size: 2rem;
+    color: #3a4c4a;
+}
 
 /* Instagram photo frame */
 
 .instafeed {
-/*    float: left;*/
     padding: 10px;
 }
 
@@ -199,26 +209,54 @@ div.social-media a {
 /* NAVBAR */
 
 .navbar-custom {
-    color: white;
+    color: #3a4c4a;
     font-family: Lato;
+    font-size: 2rem !important;
     background-color: transparent !important;
+    border-top: 2px solid #f3b733;
+    margin-left: 20px;
+    padding: 10px;
 }
 
 .navbar-custom:hover {
-    color: white !important;
     font-family: Lato;
+    color: #3a4c4a;
     background-color: transparent !important;
-    border-bottom: 2px solid white;
-}
-
-.transparent {
-    background-color: transparent;
-    color: white;
+    border-bottom: 2px solid #f3b733;
 }
 
 .color {
     background-color: #252839;
     opacity: 0.8;
+}
+
+.transparent {
+    background-color: transparent;
+}
+
+.navbar .navbar-nav {
+    display: inline-block !important;
+    float: none !important;
+}
+
+.navbar {
+    text-align: center !important;
+}
+
+.navbar-toggle {
+    background-color: #252839;
+}
+
+@media only screen and (max-width: 766px) {
+    .collapsing, .in {
+        background-color: #252839;
+    }
+    .collapsing ul li a, .in ul li a {
+        color: #f7f6f6 !important;
+    }
+    .collapsing ul li a:hover, .in ul li a:hover {
+        color: white !important;
+    }
 }
 
 /*****************/
@@ -242,6 +280,7 @@ div.social-media a {
     color: #3a4c4a;
     padding-top: 3rem;
     padding-bottom: 2rem;
+    margin-top: 4rem;
 }
 
 .sub-header {
@@ -255,8 +294,20 @@ div.social-media a {
     padding-bottom: 0px;
 }
 
-.white {
+.white, .white:hover {
     color: #fff;
+}
+
+.grey {
+    color: lightgrey;
+}
+
+.yellow {
+    color: #f3b733;
+}
+
+.dark, .dark:hover {
+    color: #252839;
 }
 
 section {
@@ -299,4 +350,8 @@ section {
 
 .badge-margin {
     margin-right: 10px;
+}
+
+.text-small {
+    font-size: 2rem;
 }
