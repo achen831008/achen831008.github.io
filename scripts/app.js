@@ -6,27 +6,27 @@
         .config(function($routeProvider) {
             $routeProvider
             .when('/', {
-                templateUrl : 'views/home.html',
+                templateUrl : 'views/home/home.html',
 				controller  : 'homeController',
                 controllerAs: 'vm'
             })
             .when('/home', {
-                templateUrl : 'views/home.html',
+                templateUrl : 'views/home/home.html',
 				controller  : 'homeController',
                 controllerAs: 'vm'
             })
             .when('/project', {
-                templateUrl : '/views/partials/project.html',
+                templateUrl : '/views/project/project.html',
                 controller  : 'projectController',
                 controllerAs: 'vm'
             })
             .when('/photography', {
-                templateUrl : '/views/partials/photography.html',
+                templateUrl : '/views/photography/photography.html',
                 controller  : 'photographyController',
                 controllerAs: 'vm'
             })
             .when('/contact', {
-                templateUrl : '/views/contact.html'
+                templateUrl : '/views/contact/contact.html'
             })
             .otherwise({
                 redirectTo: "/"

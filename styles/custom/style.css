@@ -289,6 +289,10 @@ div.polaroid {
 /*****************/
 /* COMMON STYLES */
 
+body {
+   background-color: #f7f6f6;
+}
+
 .background-light {
     background-color: #f7f6f6;
 }
@@ -393,4 +397,8 @@ div.polaroid {
 
 .margin-top-sm {
     margin-top: 2rem;
+}
+
+.cursor-pt {
+    cursor: pointer;
 }
