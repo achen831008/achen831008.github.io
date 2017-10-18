@@ -1,15 +1,13 @@
 /*****************/
 /* SECTION INTRO */
 
-#intro {
-/*    background-image: url('/assets/img/background/top-background.jpg'); */
+#home {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     display: block !important;
     align-items: center;
     position: relative;
-/*    z-index: 10;*/
     overflow: hidden;
     width: 100%;
     min-height: 100vh;
@@ -43,8 +41,9 @@
     font-family: Lato;
 }
 
-
-
+.profile {
+    min-height: 85vh;
+}
 
 /*****************/
 /* SECTION ABOUT */
@@ -257,6 +256,9 @@ div.social-media a {
     .collapsing ul li a:hover, .in ul li a:hover {
         color: white !important;
     }
+    nav.navbar {
+        background: #252839 !important;
+    }
 }
 
 /*****************/
@@ -302,7 +304,7 @@ div.social-media a {
     color: lightgrey;
 }
 
-.yellow {
+.yellow, .yellow:hover {
     color: #f3b733;
 }
 
@@ -310,8 +312,8 @@ div.social-media a {
     color: #252839;
 }
 
-section {
-    margin-bottom: 10px;
+.orange {
+    color: darkorange;
 }
 
 .border-left {
@@ -354,4 +356,16 @@ section {
 
 .text-small {
     font-size: 2rem;
+}
+
+.tab {
+    margin-left: 2rem;
+}
+
+.tab-2 {
+    margin-left: 4rem;
+}
+
+.margin-top-sm {
+    margin-top: 2rem;
 }
