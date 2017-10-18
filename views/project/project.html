@@ -1,4 +1,7 @@
-<div id="project" class="col-xs-12 background-light">
+<!--  Loading  -->
+<div ng-include src="'views/partials/loading.html'"></div>
+
+<div ng-show="!vm.loading" id="project" class="col-xs-12 background-light">
     <div class="header text-center">Recent Projects</div>
     <div class="container bottom-space">
         <div class="text-center sub-heading">Weekly Commits: <b>{{ vm.github.commits.length }}</b></div>
