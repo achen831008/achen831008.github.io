@@ -201,27 +201,33 @@ div.social-media a {
 }
 
 .instafeed .feed-text {
-    position:relative;
+    position: relative;
     left: 0px;
     right: 0px;
     min-height: 60px;
-    background-color: #252839;
+    background-color: white;
     text-align: center;
     font-size: 14px;
     font-weight: 200;
     padding: 5%;
-    color: #f3b733;
-    opacity: 0;
-    visibility: hidden;
+    color: #252839;
 }
 
 .instafeed:hover .feed-text {
     visibility: visible;
     opacity: 1;
-    bottom: 60px;
     transition: all ease-in 0.5s;
 }
 
+.display {
+    object-fit: cover;
+}
+
+div.polaroid {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 2px;
+}
 
 /* NAVBAR */
 
