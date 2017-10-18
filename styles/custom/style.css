@@ -221,6 +221,7 @@ div.social-media a {
 
 .display {
     object-fit: cover;
+    height: 300px;
 }
 
 div.polaroid {
