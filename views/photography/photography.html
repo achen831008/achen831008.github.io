@@ -1,18 +1,12 @@
-<div id="feed" class="col-xs-12 background-light">
+<!--  Loading  -->
+<div ng-include src="'views/partials/loading.html'"></div>
+
+<div ng-show="!vm.loading" id="feed" class="col-xs-12 background-light">
     <div class="header text-center">Photography</div>
     <div class="container bottom-space">
-        <div class="instafeed col-xs-12 col-sm-4 col-md-4" ng-repeat="feed in vm.instagram.feeds | limitTo: vm.instagram.limit">
-            <div class="polaroid">
-                <img class="display" ng-src="{{ feed.images.standard_resolution.url }}">
-                <a ng-href="{{feed.link}}">
-                    <p class="feed-text">{{ feed.caption.text }}</p>
-                </a>
-            </div>
-        </div>
 
-        <div class="col-xs-12 bottom-space">
-            <button class="btn btn-blue btn-center text-center" ng-click="vm.loadMoreFeeds()" ng-hide="vm.instagram.limit == vm.instagram.max">Load More</button>
-        </div>
+        <!-- Feeds -->
+        <div ng-include src="'views/photography/feed.html'"></div>
 
         <div class="col-xs-12 text-center ">
             <em>Data gathered from the <a href="https://www.instagram.com/developer/">Instagram</a> API.</em>

@@ -72,10 +72,6 @@
     border: 5px solid #f3b733;
 }
 
-.img-center {
-    margin: 0 auto;
-}
-
 .dashed {
     border: none;
     border-top: 5px dashed #f3b733;
@@ -401,4 +397,15 @@ body {
 
 .cursor-pt {
     cursor: pointer;
+}
+
+.loading-wrapper {
+    height: 100%;
+    margin-top: 30rem;
+}
+
+.img-center {
+    display: block;
+    margin: auto;
+    vertical-align: middle;
 }
