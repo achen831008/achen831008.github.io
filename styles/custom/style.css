@@ -283,6 +283,13 @@ div.polaroid {
 /*****************/
 /* COMMON STYLES */
 
+@font-face {
+    font-family: 'Beon';
+    src: url('/assets/fonts/Beon.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
    background-color: #f7f6f6;
 }
