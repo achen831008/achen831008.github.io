@@ -41,6 +41,12 @@
     font-family: Lato;
 }
 
+.code {
+    font-size: 25px;
+    font-weight: 200;
+    font-family: Lato;
+}
+
 .profile {
     min-height: 85vh;
 }
