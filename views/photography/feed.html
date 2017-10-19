@@ -1,6 +1,12 @@
 <div class="instafeed col-xs-12 col-sm-4 col-md-4" ng-repeat="feed in vm.instagram.feeds | limitTo: vm.instagram.limit">
     <div class="polaroid">
         <img class="display" ng-src="{{ feed.images.standard_resolution.url }}">
+        <div class="cover">
+            <p>
+                <i class="fa fa-heart" aria-hidden="true"></i> {{ feed.likes.count }}
+                <i class="fa fa-comment" aria-hidden="true"></i> {{ feed.comments.count }}
+            </p>
+        </div>
         <a ng-href="{{feed.link}}">
             <p class="feed-text">{{ feed.caption.text }}</p>
         </a>
