@@ -226,7 +226,7 @@ div.polaroid {
 }
 
 .polaroid:hover .display {
-    opacity: 0.3;
+    opacity: 0.2;
 }
 
 .polaroid:hover .cover {
@@ -307,6 +307,18 @@ div.polaroid {
     nav.navbar {
         background: #252839 !important;
     }
+}
+
+/* EXPERIENCE */
+
+.logo-resize {
+    height: 250px;
+}
+
+.cover-text {
+    font-family: Lato;
+    font-size: 3rem;
+    font-weight: 200;
 }
 
 /*****************/

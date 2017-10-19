@@ -1,0 +1,227 @@
+{
+    "experiences": [
+        {
+            "id": 1,
+            "organization": "DBRS, Inc.",
+            "link": "http://www.dbrs.com",
+            "logo": "/assets/img/logo/DBRS_logo.svg",
+            "role": "Software Engineering",
+            "location": "Toronto, Ontario, Canada",
+            "start": "2016-05-09",
+            "end": "2017-04-28",
+            "status": "Complete",
+            "industry": "Credit Rating",
+            "organizationDescription": "DBRS is an independent, privately held, globally recognized credit ratings agency with offices in Toronto, New York, London, Chicago and Mexico City. We strive to differentiate ourselves from competitors through a more pragmatic rather than mechanistic approach, in-depth research and unequalled mandate execution. Our approach and our size as the world's fourth-largest ratings agency allow us to be nimble enough to respond to customers' needs in their local markets, but large enough to provide the necessary expertise and resources they require. We build meaningful relations, which contribute to a convincing value proposition for investors and issuers to choose us a globally accepted alternative to other ratings agencies.",
+            "summary":
+            [
+                "Followed rapid development process to continuously deliver high-quality low-latency solution to clients",
+                "Built high-performance rating search that displays all historical rating and related data in a timeline stream",
+                "Limited number of jobs consumed by RabbitMQ to control the resource used by task/notification server",
+                "Implemented state machines and entity workflow processes for new rating management tool",
+                "Created document generator to process JSON/XML data into various data format for reporting",
+                "Set up daily process to sync platform usage data from Intercom to DOMO for data visualization and analysis",
+                "Set up a project for Helpdesk and customer success to help 'manage production web services' and 'manage production servers'"
+            ],
+            "projects":
+            [
+                {
+                    "name": "Entity Timeline",
+                    "language": ["C# API", "AngularJS", "SQL"],
+                    "summary": "Entity Timeline is a project build during the DBRS Data Visualization Hackathon. The purpose of this application is to help visualizing all elements and components such as rating actions, obligations, analysts, and data files associated with the entity. It helps to see all events attached to the rating with a great user interface."
+                },
+                {
+                    "name": "Document Generator",
+                    "language": ["C#.NET", "AngularJS", "OpenXML", "LibreOffice", "XML", "JSON"],
+                    "summary": "This project is to standardize the way the rating platform generate documents. The process takes a JSON object or an entity object as input, and then generate desired document based on the XML mapping template and document type."
+                },
+                {
+                    "name": "CMS Syncing Pipeline",
+                    "language": ["Python", "Contentful", "Elastic Search", "NodeJS"],
+                    "summary": "Built a syncing pipeline to process data from Contentful (Content Management System) API to Elastic Search. Then, hook up the search engine with the new company site."
+                },
+                {
+                    "name": "Entity State Machine Workflow",
+                    "language": ["C#.NET", "Stateless", "SQL"],
+                    "summary": "Introduce a standard way to link workflow process with existing entities. A open-source library, Stateless, is used to help configuring the state machines with permitted states. This workflow service has clear separation with all entities, so there is no dependencies with existing API services."
+                },
+                {
+                    "name": "Criteria Committee",
+                    "language": ["C# API", "AngularJS", "SQL"],
+                    "summary": "Built a new Angular app with C#.NET API as part of the DBRS rating platform to store all criteria committee meeting minutes and requirements. This new application is to help users having e-meetings and stop the paper work process."
+                },
+                {
+                    "name": "Intercom-DOMO Syncing Pipeline",
+                    "language": ["C# Console App", "SQL"],
+                    "summary": "The purpose of this project is to sync all DBRS rating platform usage data from Intercom (third party tool) to internal database on a daily basis. Moreover, setup DOMO to visualize data in various charts and reports by pushing the data set from SQL."
+                },
+                {
+                    "name": "Emergency Switch",
+                    "language": ["PowerShell", "TeamCity"],
+                    "summary": "This project is to help the helpdesk and customer support team handling emergency issues with DBRS rating platform by configuring a project in TeamCity for managing production web services and servers. A documentation is provided with proper instructions and steps on how to proceed the task."
+                },
+                {
+                    "name": "RabbitMQ Jobs Limitation",
+                    "language": ["C#", "RabbitMQ"],
+                    "summary": "This project is to limit amount of jobs picked up by the workers in the queue, so the worker does not pick up everything in the queue and process it all at once."
+                }
+            ],
+            "recommendation": "Current term was the second term Alex joined out team at DBRS. As with previous term Alex showed high level of professionalism and dependability. Throughout the term he worked on couple of critical deliverables with tight deadlines, as well as took part in research of experimental modules for our platform. I had a chance to personally work on the project with Alex during our end of the term hackathon / workathon, and was impressed with his ability to research complex systems independently and then work closely with the team to incorporate his findings with overall solution. He takes all the feedback he can get from our senior engineers and uses it to improve his technical skills, which tells me that he will be successful in any position in his future career.",
+            "recommendedRole": "Assisnt Vice President, Global Technology",
+            "recommendedBy": "Denys Besedynskyy"
+        },
+        {
+            "id": 2,
+            "organization": "Ashlin-BPG Marketing Inc.",
+            "link": "http://www.ashlinbpg.com",
+            "logo": "/assets/img/logo/ashlin.png",
+            "role": "eCommerce Developer",
+            "location": "Mississauga, Ontario, Canada",
+            "start": "2015-09-07",
+            "end": "2015-12-18",
+            "status": "Complete",
+            "industry": "e-Commerce",
+            "organizationDescription": "Ashlin BPG Marketing, Inc. was founded in 1989 in Oakville, Ontario, Canada. The “ASHLIN” brand was introduced during 1990 and has continued to be synonymous with exclusivity and the undeterred pursuit of excellence in leather. We are dedicated to continually improve our products and responding to your needs and requirements. Ashlin products are created with durability and classic styling.",
+            "summary":
+            [
+                "Developed a data warehouse system with ETL and EDI processes for data analysis and model integration",
+                "Implemented a multi-threaded syncing process to import bulk data from various platform and push data to postal services",
+                "Managed and provided support for P&L and forecasting analysis on site performance and inventory",
+                "Contributed to server and data migration project moving from MS Access to MS Azure",
+                "Increased the responsiveness of a core product's user interface, improving the overall user experience"
+            ],
+            "projects":
+            [
+                {
+                    "name": "Credential Manager",
+                    "language": ["C# WinForm", "MS Azure", "SQL"],
+                    "summary": "This application is designed for storing various eCommerce credentials. User is able to see his or her own credentials stored under company; moreover, certain permission is assigned to each user based on his or her authority. Also, Administrator can see the hierarchy relationship of users in the dashboard."
+                },
+                {
+                    "name": "Order Manager",
+                    "language": ["C# API", "HTML5", "CSS3", "JavaScript", "jQuery", "SQL"],
+                    "summary": "Order Manager is a Cloud Web Application in C#. It is integrated with various eCommerce APIs and postal service APIs. The Electronic Data Interexchange process is designed by sending HTTP Get/Post Request and stored data in MS Azure. There is various features designed such as analyzing profitability and top selling items, generating financial report, order dashboard."
+                },
+                {
+                    "name": "SKU Manager",
+                    "language": ["VBA", "Access", "SQL"],
+                    "summary": "SKU Manager is a tool built for managing data such as products specification, product design, color code, pricing model, inventory management, and barcode generator."
+                }
+            ],
+            "recommendation": "Alex has been involved in creating a very complex web applications for e-commerce. He is very good at multi-tasking on various projects, and has been a great contributor to our ASHLIN team. His work has been well documented for the next student that will be joining us. The application that he has developed has an excellent user interface. He is always very thorough in creating it, and mindful of the users interaction with the application.",
+            "recommendedRole": "Vice President",
+            "recommendedBy": "Juanne E. Kochhar"
+        },
+        {
+            "id": 3,
+            "organization": "BDO IT Solutions",
+            "link": "http://www.bdo.ca",
+            "logo": "/assets/img/logo/BDO_logo.jpg",
+            "role": "Solution Consultant",
+            "location": "Mississauga, Ontario, Canada",
+            "start": "2015-01-05",
+            "end": "2015-05-01",
+            "status": "Complete",
+            "industry": "Technology Consulting",
+            "organizationDescription": "At BDO IT Solutions, we understand the full magnitude of our client’s initiatives, and offer a diverse array of skills and expertise. We employ state-of-the-art tools and methodologies to deliver the highest level of service. BDO IT Solutions professionals share your core values and will work with your organization to help your projects succeed. As one of the top 1% of all Microsoft solution partners, BDO IT Solutions offers a full and unique end-to-end suite of services that includes Strategy & Planning, Development & Implementation, along with Managed Services all designed to help clients achieve outstanding value from their IT investments.",
+            "summary":
+            [
+                "Excellent understanding of Agile software development and Software Development Life Cycle (SDLC)",
+                "Interacted with various stakeholders (Project Manager, Delivery Manager, Dev lead) and team members to ensure quality and on-time delivery of project",
+                "Developed test plans and test cases of complex nature from business requirement analysis",
+                "Captured software defects in the system by using end-to-end, integration, regression, and user acceptance testing approach",
+                "Used SQL skill to compare mock-up data with client's real data in Microsoft SQL Server"
+            ],
+            "projects":
+            [
+                {
+                    "name": "DFO Milke Management System",
+                    "tools": "MS Visual Studio, TFS, MS SQL Server, and MS Test Manager.",
+                    "language": ["MVC.NET", "TFS", "SQL", "Test Manager"],
+                    "summary": "This application is built not only to replace the existing DFO Milk Management System but also for the 9 Provinces across Canada. There is different features based on users type (Producers/Transporter/Processor) such as Quota Exchange, Milk Inspection, etc."
+                }
+            ],
+            "recommendation": "Alex displayed excellent work ethic, was punctual and well-organized in completed his tasks, and proactively sought feedback and guidance to improve the qualify of his work. He showed willingness to follow instructions and was proactive in taking extra responsibilities to ensure deliverables are met.",
+            "recommendedRole": "Manager of Solutions Technology",
+            "recommendedBy": "Alex Ng"
+        },
+        {
+            "id": 4,
+            "organization": "Visual Photonic Expitaxy Co., Ltd",
+            "link": "http://www.vpec.com.tw",
+            "logo": "/assets/img/logo/VPEC_logo.png",
+            "role": "Financial Analyst and Developer",
+            "location": "Taoyuan County, Taiwan",
+            "start": "2014-05-05",
+            "end": "2014-08-29",
+            "status": "Complete",
+            "industry": "Technology",
+            "organizationDescription": "Visual Photonics Epitaxy Co., Ltd was founded on November 26th, 1996 by an excellent group of enterprising members. This energetic new company comprised of specialists in optoelectronics, electronic engineering, chemistry, and material science, all with industrial experience and theoretical knowledge in the III-V compound semiconductor field. These technical experts produce HBT, PHEMT, PIN Diode and solar cell epi wafer using MOCVD (Metal Organic Vapor Phase Epitaxy) technology. VPEC is capable of providing the total solution for wireless communications, optical fiber communications and solar cell applications.",
+            "summary":
+            [
+                "Designed and implemented a internal web application for User Profile, HR News, Meeting scheduling, Support and IT Maintenance Request",
+                "Created and managed SQL relational database, views, and stored procedures for building reporting tools",
+                "Created financial transactions including posting general ledgers from invoices to customers, cash receipts, and supplier invoices",
+                "Assisted in annual budging and forecasting processes and resolve the discrepancies between source data"
+            ],
+            "projects":
+            [
+                {
+                    "name": "VPEC Intranet",
+                    "tools": "IIS, Oracle Database, SQL Server, Notepad++",
+                    "language": ["HTML5", "CSS3", "JavaScript", "jQuery", "ASP", "MySQL", "IIS"],
+                    "summary": "VPEC Intranet is designed to improve organizational communication, internal service and management. There are various features implemented such as HR News Feed, IT News Feed, IT Service Request, Meeting Booking Request, and User Support."
+                }
+            ],
+            "recommendation": "Alex is a very positive and polite working partner. He was able to complete his work and project ahead of deadline. Also, his humble learning attitude and independency are what make him outstanding.",
+            "recommendedRole": "Manager, Engineering Department",
+            "recommendedBy": "Alex Chuang"
+        },
+        {
+            "id": 5,
+            "organization": "University of Waterloo",
+            "link": "https://uwaterloo.ca/",
+            "logo": "/assets/img/logo/uw.jpg",
+            "role": "Student",
+            "location": "Waterloo, Ontario, Canada",
+            "start": "2013-09-09",
+            "end": "2018-08-10",
+            "status": "In Progress",
+            "summary": [],
+            "industry": "University",
+            "organizationDescription": "Waterloo is a member of the U15, a group of research-intensive universities in Canada. University of Waterloo is most famous for its cooperative education (co-op) programs, which allow the students to integrate their education with applicable work experiences. University of Waterloo operates the largest post secondary co-op program of its kind in the world, with over 19,000 co-op students and 5,200 employers",
+            "projects":
+            [
+                {
+                    "name": "UW Monopoly",
+                    "language": ["C++", "Git", "Bash"],
+                    "summary": "UW Monopoly is built as part of School Project practicing C++ Object Oriented Programming and Design Pattern. This game follows the standard monopoly game rules; however, there is various features designed based on UW campus such as Timmy line up, Goose Nesting, etc."
+                },
+                {
+                    "name": "Chess",
+                    "language": ["C++", "Git", "Bash", "XWindows GUI"],
+                    "summary": "Chess is implemented using C++ MVC pattern. XWindows library is used to visualize the game movement. This game follows the standard chess game rules, and it keeps track the score of players. The computer player is implemented using randomized algorithm. It would calculate all possible moves and randomly pick one."
+                },
+                {
+                    "name": "WLP4 Compiler",
+                    "language": ["C++", "MIPS"],
+                    "summary": "WLP4 Compiler is a compiler, assembler and linker for C-like language. This school project is to practice and understand Parsing, Linking, DFA construction, Semantic Analysis, Context-free languages, code generation, memory management."
+                },
+                {
+                    "name": "Regression and Forecasting Method in Finance",
+                    "language": ["R", "Thompson Reuter", "Excel"],
+                    "summary": "The project is to test the Empirical Validity of the CAPM using SPTSX60 data using Stochastic Time Series Regression and Cross Section Regression. As part of this project, I construct ANOVA table by computing TSS, ESS, RSS and estimating the variance of error term. Lastly, test the existence of autocorrelation of order 1 (AR1) using Durbin-Watson test."
+                },
+                {
+                    "name": "TMX Options Trading Simulation",
+                    "language": ["Black-Scholes", "Investment Strategies", "Derivatives Securities"],
+                    "summary": "Managed a portfolio of derivatives securities and generated 15% return over 3 months of period. This project is mainly focusing on understanding Black-Scholes model and different trading strategies such as butterfly spread, straddle, strangle, and hedging."
+                },
+                {
+                    "name": "Stock Pitch - Rogers",
+                    "language": ["CAPM", "Forecasting", "Risk Analysis"],
+                    "summary": "Prepare a stock pitch by presenting Recommendation (Buy/Hold/Sell), Business and Industry Overview, Competitive Positioning, Revenues Distribution, DCF Mdoel and Forecast, Financial Analysis and Projection, and Investment Risks."
+                }
+            ]
+        }
+    ]
+}

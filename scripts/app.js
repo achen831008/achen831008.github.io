@@ -25,6 +25,11 @@
                 controller  : 'photographyController',
                 controllerAs: 'vm'
             })
+            .when('/experience', {
+                templateUrl : '/views/experience/landing.html',
+                controller  : 'experienceController',
+                controllerAs: 'vm'
+            })
             .when('/contact', {
                 templateUrl : '/views/contact/contact.html',
                 controller  : 'contactController',
