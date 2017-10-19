@@ -1,22 +1,7 @@
 <div id="info" class="row">
-    <div class="col-xs-6 col-sm-3 bottom-space">
-        <a href="abc">
-            <img class="contact-logo" src="/assets/img/icons/contact/gmail.png">
-        </a>
-    </div>
-    <div class="col-xs-6 col-sm-3 bottom-space">
-        <a href="abc">
-            <img class="contact-logo" src="/assets/img/icons/contact/github.png">
-        </a>
-    </div>
-    <div class="col-xs-6 col-sm-3">
-        <a href="abc">
-            <img class="contact-logo" src="/assets/img/icons/contact/linkedin.png">
-        </a>
-    </div>
-    <div class="col-xs-6 col-sm-3">
-        <a href="abc">
-            <img class="contact-logo" src="/assets/img/icons/contact/facebook.png">
+    <div class="col-xs-6 col-sm-3 bottom-space" ng-repeat="contact in vm.contacts">
+        <a ng-href="{{ contact.href }}">
+            <img class="contact-logo" ng-src="{{ contact.icon }}">
         </a>
     </div>
 </div>

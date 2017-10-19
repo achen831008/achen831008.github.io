@@ -26,7 +26,9 @@
                 controllerAs: 'vm'
             })
             .when('/contact', {
-                templateUrl : '/views/contact/contact.html'
+                templateUrl : '/views/contact/contact.html',
+                controller  : 'contactController',
+                controllerAs: 'vm'
             })
             .otherwise({
                 redirectTo: "/"
