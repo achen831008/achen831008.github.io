@@ -152,24 +152,9 @@
     text-align: right;
 }
 
-div.social-media {
-    display: table;
-    table-layout: fixed; 
-}
-
-div.social-media a {
-    display: table-cell;
-    text-align: center;
-}
-
-#contact {
-    margin-bottom: 0px;
-}
-
 .copyright {
     padding: 2%;
 }
-
 
 /* Github Projects */
 
@@ -246,6 +231,26 @@ div.polaroid {
 
 .polaroid:hover .cover {
     opacity: 1;
+}
+
+/* CONTACT */
+
+.contact-banner-header {
+    font-size: 7rem;
+    font-weight: 200;
+    color: dodgerblue;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 4rem;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.contact-logo {
+    width: 30%;
+    height: 30%;
 }
 
 /* NAVBAR */
@@ -378,34 +383,12 @@ body {
     border-right: 10px solid white;
 }
 
-.flex {
-    display: inline-flex;
-}
-
-.column {
-    flex: 1;
-}
-
 .underline {
     text-decoration: underline;
 }
 
 .float-right {
     float: right;
-}
-
-.yellow-badge {
-    background-color: #f3b733;
-    color: white;
-}
-
-.blue-badge {
-    background-color: #1e90ff;
-    color: white;
-}
-
-.badge-margin {
-    margin-right: 10px;
 }
 
 .text-small {
