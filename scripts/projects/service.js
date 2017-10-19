@@ -30,7 +30,12 @@
                 .catch(getReposError);
 
             function getReposSuccess(rsp) {
-                return rsp.data;
+                var repos = rsp.data;
+                _.each(repos, function(repo){
+                    repo.latest_push_date = repo.pushed_at.split('T')[0];
+                })
+
+                return repos;
             }
 
             function getReposError(error) {
