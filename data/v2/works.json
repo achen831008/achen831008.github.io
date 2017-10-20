@@ -1,0 +1,84 @@
+{
+    "works": [
+        {
+            "name": "Entity Timeline",
+            "tags": ["C# API", "AngularJS", "SQL"],
+            "summary": "Entity Timeline is a project build during the DBRS Data Visualization Hackathon. The purpose of this application is to help visualizing all elements and components such as rating actions, obligations, analysts, and data files associated with the entity. It helps to see all events attached to the rating with a great user interface."
+        },
+        {
+            "name": "Document Generator",
+            "tags": ["C#.NET", "AngularJS", "OpenXML", "LibreOffice", "XML", "JSON"],
+            "summary": "This project is to standardize the way the rating platform generate documents. The process takes a JSON object or an entity object as input, and then generate desired document based on the XML mapping template and document type."
+        },
+        {
+            "name": "Contentful Search",
+            "tags": ["Python", "Contentful", "Elastic Search", "NodeJS"],
+            "summary": "Built a syncing pipeline to process data from Contentful (Content Management System) API to Elastic Search. Then, hook up the search engine with the new company site."
+        },
+        {
+            "name": "Entity State Machine",
+            "tags": ["C#.NET", "Stateless", "SQL"],
+            "summary": "Introduce a standard way to link workflow process with existing entities. A open-source library, Stateless, is used to help configuring the state machines with permitted states. This workflow service has clear separation with all entities, so there is no dependencies with existing API services."
+        },
+        {
+            "name": "Criteria Committee",
+            "tags": ["C# API", "AngularJS", "SQL"],
+            "summary": "Built a new Angular app with C#.NET API as part of the DBRS rating platform to store all criteria committee meeting minutes and requirements. This new application is to help users having e-meetings and stop the paper work process."
+        },
+        {
+            "name": "Intercom-DOMO Syncing Pipeline",
+            "tags": ["C# Console App", "SQL"],
+            "summary": "The purpose of this project is to sync all DBRS rating platform usage data from Intercom (third party tool) to internal database on a daily basis. Moreover, setup DOMO to visualize data in various charts and reports by pushing the data set from SQL."
+        },
+        {
+            "name": "Credential Manager",
+            "tags": ["C# WinForm", "MS Azure", "SQL"],
+            "summary": "This application is designed for storing various eCommerce credentials. User is able to see his or her own credentials stored under company; moreover, certain permission is assigned to each user based on his or her authority. Also, Administrator can see the hierarchy relationship of users in the dashboard."
+        },
+        {
+            "name": "Order Manager",
+            "tags": ["C# API", "HTML5", "CSS3", "JavaScript", "jQuery", "SQL"],
+            "summary": "Order Manager is a Cloud Web Application in C#. It is integrated with various eCommerce APIs and postal service APIs. The Electronic Data Interexchange process is designed by sending HTTP Get/Post Request and stored data in MS Azure. There is various features designed such as analyzing profitability and top selling items, generating financial report, order dashboard."
+        },
+        {
+            "name": "SKU Manager",
+            "tags": ["VBA", "Access", "SQL"],
+            "summary": "SKU Manager is a tool built for managing data such as products specification, product design, color code, pricing model, inventory management, and barcode generator."
+        },
+        {
+            "name": "VPEC Intranet",
+            "tags": ["HTML5", "CSS3", "JavaScript", "jQuery", "ASP", "MySQL", "IIS"],
+            "summary": "VPEC Intranet is designed to improve organizational communication, internal service and management. There are various features implemented such as HR News Feed, IT News Feed, IT Service Request, Meeting Booking Request, and User Support."
+        },
+        {
+            "name": "UW Monopoly",
+            "tags": ["C++", "Git", "Bash"],
+            "summary": "UW Monopoly is built as part of School Project practicing C++ Object Oriented Programming and Design Pattern. This game follows the standard monopoly game rules; however, there is various features designed based on UW campus such as Timmy line up, Goose Nesting, etc."
+        },
+        {
+            "name": "Chess",
+            "tags": ["C++", "Git", "Bash", "XWindows GUI"],
+            "summary": "Chess is implemented using C++ MVC pattern. XWindows library is used to visualize the game movement. This game follows the standard chess game rules, and it keeps track the score of players. The computer player is implemented using randomized algorithm. It would calculate all possible moves and randomly pick one."
+        },
+        {
+            "name": "WLP4 Compiler",
+            "tags": ["C++", "MIPS"],
+            "summary": "WLP4 Compiler is a compiler, assembler and linker for C-like language. This school project is to practice and understand Parsing, Linking, DFA construction, Semantic Analysis, Context-free languages, code generation, memory management."
+        },
+        {
+            "name": "Regression and Forecasting Method in Finance",
+            "tags": ["R", "Thompson Reuter", "Excel"],
+            "summary": "The project is to test the Empirical Validity of the CAPM using SPTSX60 data using Stochastic Time Series Regression and Cross Section Regression. As part of this project, I construct ANOVA table by computing TSS, ESS, RSS and estimating the variance of error term. Lastly, test the existence of autocorrelation of order 1 (AR1) using Durbin-Watson test."
+        },
+        {
+            "name": "TMX Options Trading Simulation",
+            "tags": ["Black-Scholes", "Investment Strategies", "Derivatives Securities"],
+            "summary": "Managed a portfolio of derivatives securities and generated 15% return over 3 months of period. This project is mainly focusing on understanding Black-Scholes model and different trading strategies such as butterfly spread, straddle, strangle, and hedging."
+        },
+        {
+            "name": "Stock Pitch - Rogers",
+            "tags": ["CAPM", "Forecasting", "Risk Analysis"],
+            "summary": "Prepare a stock pitch by presenting Recommendation (Buy/Hold/Sell), Business and Industry Overview, Competitive Positioning, Revenues Distribution, DCF Mdoel and Forecast, Financial Analysis and Projection, and Investment Risks."
+        }
+    ]
+}
