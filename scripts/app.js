@@ -30,6 +30,11 @@
                 controller  : 'experienceController',
                 controllerAs: 'vm'
             })
+            .when('/experience/:experience_id', {
+                templateUrl : '/views/experience/experience.html',
+                controller  : 'experienceController',
+                controllerAs: 'vm'
+            })
             .when('/contact', {
                 templateUrl : '/views/contact/contact.html',
                 controller  : 'contactController',

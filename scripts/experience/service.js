@@ -8,7 +8,8 @@
 
     function experienceService($http) {
         return {
-            getExperiences: getExperiences
+            getExperiences: getExperiences,
+            getExperienceById: getExperienceById
         };
 
         function getExperiences() {
@@ -25,6 +26,14 @@
             function getExperiencesError(error) {
                 console.log(error);
             }
+        }
+
+        function getExperienceById(experiences, experience_id) {
+            var result = _.find(experiences, function(experience){
+                return experience.id == experience_id;
+            });
+
+            return result;
         }
     }
 })();

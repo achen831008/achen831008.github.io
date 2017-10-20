@@ -5,16 +5,21 @@
         .module('app')
         .controller('experienceController', experienceController);
 
-    experienceController.$inject = ['experienceService'];
+    experienceController.$inject = ['experienceService', '$routeParams'];
 
-    function experienceController(experienceService) {
+    function experienceController(experienceService, $routeParams) {
         var vm = this;
         init();
 
         function init() {
             vm.scroll = 0;
             vm.loading = true;
-            getExperiences();
+            return getExperiences().then(function() {
+                if($routeParams.experience_id) {
+                    vm.experience_id = $routeParams.experience_id;
+                    vm.experience = getExperienceById();
+                }
+            });
         };
 
         function getExperiences() {
@@ -23,6 +28,10 @@
                 vm.experiences = data.experiences;
                 return vm.experiences;
             });
+        }
+
+        function getExperienceById() {
+            return experienceService.getExperienceById(vm.experiences, vm.experience_id);
         }
     }
 })();
