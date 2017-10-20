@@ -8,32 +8,38 @@
 
     function experienceService($http) {
         return {
-            getExperiences: getExperiences,
-            getExperienceById: getExperienceById
+            getExperience: getExperience
         };
 
-        function getExperiences() {
+        function getExperience() {
             var url = '/data/v2/experience.json';
 
             return $http.get(url)
-                .then(getExperiencesSuccess)
-                .catch(getExperiencesError);
+                .then(getExperienceSuccess)
+                .catch(getExperienceError);
 
-            function getExperiencesSuccess(rsp) {
-                return rsp.data;
+            function getExperienceSuccess(rsp) {
+                var result = rsp.data;
+                result.educations_show_list = initShowList(result.educations.length);
+                result.jobs_show_list = initShowList(result.jobs.length);
+                result.awards_show_list = initShowList(result.awards.length);
+                result.recommendations_show_list = initShowList(result.recommendations.length);
+
+                return result;
             }
 
-            function getExperiencesError(error) {
+            function getExperienceError(error) {
                 console.log(error);
             }
-        }
 
-        function getExperienceById(experiences, experience_id) {
-            var result = _.find(experiences, function(experience){
-                return experience.id == experience_id;
-            });
+            function initShowList(list_length){
+                var myShowList = new Array(list_length);
+                for (var i = 0; i < myShowList.length; ++i) {
+                    myShowList[i] = true;
+                }
 
-            return result;
+                return myShowList;
+            }
         }
     }
 })();

@@ -1,1 +1,81 @@
-<div>{{ vm.experience.organization }}</div>
+<!--  Loading  -->
+<div ng-include src="'views/partials/loading.html'"></div>
+
+<div ng-show="!vm.loading" class="col-xs-12 background-light intro-content">
+    <div class="container experience-wrapper">
+        <div class="experience-table">
+            <div class="title">Education</div>
+        </div>
+        <div class="experience-table" ng-repeat="education in vm.experience.educations">
+            <div class="row table-row">
+                <div class="left-cell table-cell">{{education.start}} - {{education.end}}</div>
+                <div class="right-cell table-cell">
+                    <div ng-click="vm.toggleItem(vm.experience.educations_show_list, education.id)" class="cell-header">{{education.program}}</div>
+                    <div ng-show="vm.experience.educations_show_list[{{education.id}}]">
+                        <a class="cell-sub-header yellow" ng-href="{{education.link}}"><div>{{education.school}}</div></a>
+                        <ul class="circle-list">
+                            <li ng-repeat="point in education.summary">{{point}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container experience-wrapper">
+        <div class="experience-table">
+            <div class="title">Work Experience</div>
+        </div>
+        <div class="experience-table" ng-repeat="job in vm.experience.jobs">
+            <div class="row table-row">
+                <div class="left-cell table-cell">{{job.start}} - {{job.end}}</div>
+                <div class="right-cell table-cell">
+                    <div ng-click="vm.toggleItem(vm.experience.jobs_show_list, job.id)" class="cell-header">{{job.role}}</div>
+                    <div ng-show="vm.experience.jobs_show_list[{{job.id}}]">
+                        <a class="cell-sub-header yellow" ng-href="{{job.link}}"><div>{{job.organization}}</div></a>
+                        <div class="cell-sub-header">{{job.location}}</div>
+                        <ul class="circle-list">
+                            <li ng-repeat="point in job.summary">{{point}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container experience-wrapper">
+        <div class="experience-table">
+            <div class="title">Awards and Mentions</div>
+        </div>
+        <div class="experience-table" ng-repeat="award in vm.experience.awards">
+            <div class="row table-row">
+                <div class="left-cell table-cell">{{award.year}}</div>
+                <div class="right-cell table-cell">
+                    <div ng-click="vm.toggleItem(vm.experience.awards_show_list, award.id)" class="cell-header">{{award.name}}</div>
+                    <div ng-show="vm.experience.awards_show_list[{{award.id}}]">
+                        <div class="cell-sub-header yellow">{{award.contest}}</div>
+                        <div>{{award.description}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container experience-wrapper">
+        <div class="experience-table">
+            <div class="title">Recommendations</div>
+        </div>
+        <div class="experience-table" ng-repeat="recommendation in vm.experience.recommendations">
+            <div class="row table-row">
+                <div class="left-cell table-cell">{{recommendation.year}}</div>
+                <div class="right-cell table-cell">
+                    <div ng-click="vm.toggleItem(vm.experience.recommendations_show_list, recommendation.id)" class="cell-header">{{recommendation.recommender}}, {{recommendation.recommenderPosition}}</div>
+                    <div ng-show="vm.experience.recommendations_show_list[{{recommendation.id}}]">
+                        <div class="cell-sub-header yellow">{{recommendation.position}}</div>
+                        <div class="text-justify">{{recommendation.text}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

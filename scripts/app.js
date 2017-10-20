@@ -26,11 +26,6 @@
                 controllerAs: 'vm'
             })
             .when('/experience', {
-                templateUrl : '/views/experience/landing.html',
-                controller  : 'experienceController',
-                controllerAs: 'vm'
-            })
-            .when('/experience/:experience_id', {
                 templateUrl : '/views/experience/experience.html',
                 controller  : 'experienceController',
                 controllerAs: 'vm'

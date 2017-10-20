@@ -14,15 +14,14 @@
     color: #f3b733;
 }
 
-.intro-image {
-    background-color: rgba(0,0,0,.7);
-    min-width: 100%;
-    min-height: 120%;
-    width: auto;
-    height: auto;
-    z-index: -10;
-    left: 0;
-    bottom: 0;
+.profile-img {
+    width: 75%;
+    border-radius: 50%;
+    border: 5px solid #f3b733;
+}
+
+.profile {
+    min-height: 85vh;
 }
 
 .intro-content {
@@ -47,8 +46,12 @@
     font-family: Lato;
 }
 
-.profile {
-    min-height: 85vh;
+.tab {
+    margin-left: 2rem;
+}
+
+.tab-2 {
+    margin-left: 4rem;
 }
 
 @keyframes bounce {
@@ -67,93 +70,6 @@
     animation-name: bounce;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-}
-
-/*****************/
-/* SECTION ABOUT */
-
-.profile-img {
-    width: 75%;
-    border-radius: 50%;
-    border: 5px solid #f3b733;
-}
-
-.dashed {
-    border: none;
-    border-top: 5px dashed #f3b733;
-    height: 5px;
-    width: 90%;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
-
-.text-content {
-    padding-top: 5%;
-    font-weight: 200;
-    font-size: 2rem;
-    color: #9da7a6;
-}
-
-.sub-heading {
-    padding-bottom: 5rem;
-    font-weight: 200;
-    font-size: 3rem;
-    color: #3a4c4a;
-}
-
-.text-justify {
-    text-align: justify;
-}
-
-.icon {
-    width: auto;
-    height: 125px;
-}
-
-.btn-blue {
-    color: #1e90ff;
-    border: 2px solid #1e90ff;
-    border-radius: 3px;
-    background: #fff;
-}
-
-.btn-blue:hover {
-    color: #fff;
-    border: 2px solid #fff;
-    border-radius: 5px;
-    background: #1e90ff;
-}
-
-.btn-center {
-    display: block;
-    margin: 0 auto;
-}
-
-.bottom-space {
-    padding-bottom: 3%;
-}
-
-/**************************/
-/* SECTION RECOMMENDATION */
-
-.sm-text {
-    font-size: 14px;
-    font-weight: 200;
-    text-align: justify;
-    color: #3a4c4a;
-    font-style: italic;
-    padding-top: 10px;
-    border-top: 3px solid #fff;
-}
-
-.right-text {
-    font-size: 14px;
-    font-weight: 200;
-    text-align: right;
-}
-
-.copyright {
-    padding: 2%;
 }
 
 /* Github Projects */
@@ -231,6 +147,25 @@ div.polaroid {
 
 .polaroid:hover .cover {
     opacity: 1;
+}
+
+.btn-blue {
+    color: #1e90ff;
+    border: 2px solid #1e90ff;
+    border-radius: 3px;
+    background: #fff;
+}
+
+.btn-blue:hover {
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background: #1e90ff;
+}
+
+.btn-center {
+    display: block;
+    margin: 0 auto;
 }
 
 /* CONTACT */
@@ -321,6 +256,64 @@ div.polaroid {
     font-weight: 200;
 }
 
+.title {
+    font-size: 3rem;
+    font-family: Lato;
+    font-weight: 200;
+    color: #252839;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.experience-wrapper {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 3em;
+    background-color: white;
+}
+
+.experience-table {
+    display: table;
+    width: 100%;
+}
+
+.table-row {
+    display: table-row;
+}
+
+.table-cell {
+    display: table-cell;
+    border-top: 1px solid lightgrey;
+}
+
+.left-cell {
+    width: 25%;
+    vertical-align: middle;
+    font-size: 14px;
+    font-family: Lato;
+    font-style: italic;
+}
+
+.right-cell {
+    width: 75%;
+    padding: 1rem;
+/*    border-left: 5px solid black;*/
+}
+
+.cell-header {
+    font-size: 20px;
+    color: cornflowerblue;
+}
+
+.cell-sub-header {
+    font-size: 16px;
+}
+
+.circle-list {
+    list-style:circle;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+}
+
 /*****************/
 /* COMMON STYLES */
 
@@ -363,8 +356,19 @@ body {
     padding-bottom: 2rem;
 }
 
-.no-padding-bottom {
-    padding-bottom: 0px;
+.sub-heading {
+    padding-bottom: 5rem;
+    font-weight: 200;
+    font-size: 3rem;
+    color: #3a4c4a;
+}
+
+.bottom-space {
+    padding-bottom: 3%;
+}
+
+.text-justify {
+    text-align: justify;
 }
 
 .white, .white:hover {
@@ -387,32 +391,8 @@ body {
     color: darkorange;
 }
 
-.border-left {
-    border-left: 10px solid white;
-}
-
-.border-right {
-    border-right: 10px solid white;
-}
-
-.underline {
-    text-decoration: underline;
-}
-
-.float-right {
-    float: right;
-}
-
 .text-small {
     font-size: 14px;
-}
-
-.tab {
-    margin-left: 2rem;
-}
-
-.tab-2 {
-    margin-left: 4rem;
 }
 
 .margin-top-sm {

@@ -14,24 +14,20 @@
         function init() {
             vm.scroll = 0;
             vm.loading = true;
-            return getExperiences().then(function() {
-                if($routeParams.experience_id) {
-                    vm.experience_id = $routeParams.experience_id;
-                    vm.experience = getExperienceById();
-                }
-            });
+            vm.toggleItem = toggleItem;
+            getExperience();
         };
 
-        function getExperiences() {
-            return experienceService.getExperiences().then(function(data) {
+        function getExperience() {
+            return experienceService.getExperience().then(function(data) {
                 vm.loading = false;
-                vm.experiences = data.experiences;
-                return vm.experiences;
+                vm.experience = data;
+                return vm.experience;
             });
         }
 
-        function getExperienceById() {
-            return experienceService.getExperienceById(vm.experiences, vm.experience_id);
+        function toggleItem(list, id) {
+            list[id] = !list[id];
         }
     }
 })();
