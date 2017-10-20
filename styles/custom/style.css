@@ -257,7 +257,7 @@ div.polaroid {
 }
 
 .title {
-    font-size: 3rem;
+    font-size: 25px;
     font-family: Lato;
     font-weight: 200;
     color: #252839;
@@ -312,6 +312,10 @@ div.polaroid {
     list-style:circle;
     font-family: 'Open Sans', sans-serif;
     font-weight: 100;
+}
+
+.float-right {
+    float: right;
 }
 
 /*****************/

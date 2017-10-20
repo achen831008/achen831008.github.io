@@ -35,7 +35,7 @@
             function initShowList(list_length){
                 var myShowList = new Array(list_length);
                 for (var i = 0; i < myShowList.length; ++i) {
-                    myShowList[i] = true;
+                    myShowList[i] = false;
                 }
 
                 return myShowList;

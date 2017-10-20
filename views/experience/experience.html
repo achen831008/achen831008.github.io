@@ -4,7 +4,10 @@
 <div ng-show="!vm.loading" class="col-xs-12 background-light intro-content">
     <div class="container experience-wrapper">
         <div class="experience-table">
-            <div class="title">Education</div>
+            <div class="title">
+                Education
+                <button class="btn btn-blue text-center float-right" ng-click="vm.toggleAll(vm.experience.educations_show_list)">Show All</button>
+            </div>
         </div>
         <div class="experience-table" ng-repeat="education in vm.experience.educations">
             <div class="row table-row">
@@ -24,7 +27,10 @@
 
     <div class="container experience-wrapper">
         <div class="experience-table">
-            <div class="title">Work Experience</div>
+            <div class="title">
+                Work Experience
+                <button class="btn btn-blue text-center float-right" ng-click="vm.toggleAll(vm.experience.jobs_show_list)">Show All</button>
+            </div>
         </div>
         <div class="experience-table" ng-repeat="job in vm.experience.jobs">
             <div class="row table-row">
@@ -45,7 +51,10 @@
 
     <div class="container experience-wrapper">
         <div class="experience-table">
-            <div class="title">Awards and Mentions</div>
+            <div class="title">
+                Awards and Mentions
+                <button class="btn btn-blue text-center float-right" ng-click="vm.toggleAll(vm.experience.awards_show_list)">Show All</button>
+            </div>
         </div>
         <div class="experience-table" ng-repeat="award in vm.experience.awards">
             <div class="row table-row">
@@ -63,7 +72,10 @@
 
     <div class="container experience-wrapper">
         <div class="experience-table">
-            <div class="title">Recommendations</div>
+            <div class="title">
+                Recommendations
+                <button class="btn btn-blue text-center float-right" ng-click="vm.toggleAll(vm.experience.recommendations_show_list)">Show All</button>
+            </div>
         </div>
         <div class="experience-table" ng-repeat="recommendation in vm.experience.recommendations">
             <div class="row table-row">
