@@ -6,7 +6,16 @@
         <div class="experience-table">
             <div class="title">
                 Education
-                <button class="btn btn-blue text-center float-right" ng-click="vm.toggleAll(vm.experience.educations_show_list)">Show All</button>
+                <div class="float-right btn-group">
+                    <button type="button" class="btn btn-blue dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Action
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="cursor-pt"><a ng-click="vm.showAll(vm.experience.educations_show_list)">Show All</a></li>
+                        <li class="cursor-pt"><a ng-click="vm.hideAll(vm.experience.educations_show_list)">Hide All</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="experience-table" ng-repeat="education in vm.experience.educations">
@@ -29,7 +38,16 @@
         <div class="experience-table">
             <div class="title">
                 Work Experience
-                <button class="btn btn-blue text-center float-right" ng-click="vm.toggleAll(vm.experience.jobs_show_list)">Show All</button>
+                <div class="float-right btn-group">
+                    <button type="button" class="btn btn-blue dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Action
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="cursor-pt"><a ng-click="vm.showAll(vm.experience.jobs_show_list)">Show All</a></li>
+                        <li class="cursor-pt"><a ng-click="vm.hideAll(vm.experience.jobs_show_list)">Hide All</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="experience-table" ng-repeat="job in vm.experience.jobs">
@@ -53,7 +71,16 @@
         <div class="experience-table">
             <div class="title">
                 Awards and Mentions
-                <button class="btn btn-blue text-center float-right" ng-click="vm.toggleAll(vm.experience.awards_show_list)">Show All</button>
+                <div class="float-right btn-group">
+                    <button type="button" class="btn btn-blue dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Action
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="cursor-pt"><a ng-click="vm.showAll(vm.experience.awards_show_list)">Show All</a></li>
+                        <li class="cursor-pt"><a ng-click="vm.hideAll(vm.experience.awards_show_list)">Hide All</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="experience-table" ng-repeat="award in vm.experience.awards">
@@ -74,7 +101,16 @@
         <div class="experience-table">
             <div class="title">
                 Recommendations
-                <button class="btn btn-blue text-center float-right" ng-click="vm.toggleAll(vm.experience.recommendations_show_list)">Show All</button>
+                <div class="float-right btn-group">
+                    <button type="button" class="btn btn-blue dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Action
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="cursor-pt"><a ng-click="vm.showAll(vm.experience.recommendations_show_list)">Show All</a></li>
+                        <li class="cursor-pt"><a ng-click="vm.hideAll(vm.experience.recommendations_show_list)">Hide All</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="experience-table" ng-repeat="recommendation in vm.experience.recommendations">

@@ -15,7 +15,8 @@
             vm.scroll = 0;
             vm.loading = true;
             vm.toggleItem = toggleItem;
-            vm.toggleAll = toggleAll;
+            vm.showAll = showAll;
+            vm.hideAll = hideAll;
             getExperience();
         };
 
@@ -31,9 +32,15 @@
             list[id] = !list[id];
         }
 
-        function toggleAll(list) {
+        function showAll(list) {
             for (var i = 0; i < list.length; ++i) {
-                list[i] = !list[i];
+                list[i] = true;
+            }
+        }
+
+        function hideAll(list) {
+            for (var i = 0; i < list.length; ++i) {
+                list[i] = false;
             }
         }
     }

@@ -318,6 +318,11 @@ div.polaroid {
     float: right;
 }
 
+.dropdown-menu {
+    width: 90px;
+    min-width: 1px;
+}
+
 /*****************/
 /* COMMON STYLES */
 
