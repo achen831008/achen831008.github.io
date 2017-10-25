@@ -117,28 +117,28 @@
             "year": "2016",
             "contest": "DBRS Hack 2016",
             "name": "2nd Place in Data Visualization Hack",
-            "description": "Build a project with AngularJS frontend and C# backend during the DBRS Data Visualization Hackathon. "
+            "description": "Build a project to display entity related data in a timeline UI design. This project is implemented with an AngularJS frontend and C# API during the DBRS Data Visualization Hackathon."
         },
         {
             "id": 2,
             "year": "2013",
             "contest": "BC Senior High School Tennis Provincials",
             "name": "3rd Place in BC Provincials",
-            "description": "Compete..."
+            "description": "Represent Shawnigan Lake High Schoool to BC Tennis Provincials and get 3rd place out of top 12 selected school across BC."
         },
         {
             "id": 3,
             "year": "2013",
             "contest": "BC Senior Performing Arts Provincials",
             "name": "Honorable Mention",
-            "description": "Compete in ..."
+            "description": "Represent Cowichan Valley District to BC Performing Arts Provincials and get honorable mention in Senior Violin category."
         },
         {
             "id": 4,
             "year": "2012",
             "contest": "Fermat Math Contest",
             "name": "Honorable Mention",
-            "description": "Top 2% in Canada out of 15000 participants"
+            "description": "Top 2% in Canada out of 15000 participants."
         }
     ],
     "recommendations": [
