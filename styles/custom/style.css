@@ -302,6 +302,7 @@ div.polaroid {
 .cell-header {
     font-size: 20px;
     color: cornflowerblue;
+    cursor: pointer;
 }
 
 .cell-sub-header {

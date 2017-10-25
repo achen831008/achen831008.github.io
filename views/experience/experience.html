@@ -22,7 +22,15 @@
             <div class="row table-row">
                 <div class="left-cell table-cell">{{education.start}} - {{education.end}}</div>
                 <div class="right-cell table-cell">
-                    <div ng-click="vm.toggleItem(vm.experience.educations_show_list, education.id)" class="cell-header">{{education.program}}</div>
+                    <div ng-click="vm.toggleItem(vm.experience.educations_show_list, education.id)" class="cell-header">
+                        {{education.program}}
+                        <div class="float-right" ng-hide="vm.experience.educations_show_list[{{education.id}}]">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </div>
+                        <div class="float-right" ng-show="vm.experience.educations_show_list[{{education.id}}]">
+                            <i class="fa fa-angle-up" aria-hidden="true"></i>
+                        </div>
+                    </div>
                     <div ng-show="vm.experience.educations_show_list[{{education.id}}]">
                         <a class="cell-sub-header yellow" ng-href="{{education.link}}"><div>{{education.school}}</div></a>
                         <ul class="circle-list">
@@ -54,7 +62,15 @@
             <div class="row table-row">
                 <div class="left-cell table-cell">{{job.start}} - {{job.end}}</div>
                 <div class="right-cell table-cell">
-                    <div ng-click="vm.toggleItem(vm.experience.jobs_show_list, job.id)" class="cell-header">{{job.role}}</div>
+                    <div ng-click="vm.toggleItem(vm.experience.jobs_show_list, job.id)" class="cell-header">
+                        {{job.role}}
+                        <div class="float-right" ng-hide="vm.experience.jobs_show_list[{{job.id}}]">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </div>
+                        <div class="float-right" ng-show="vm.experience.jobs_show_list[{{job.id}}]">
+                            <i class="fa fa-angle-up" aria-hidden="true"></i>
+                        </div>
+                    </div>
                     <div ng-show="vm.experience.jobs_show_list[{{job.id}}]">
                         <a class="cell-sub-header yellow" ng-href="{{job.link}}"><div>{{job.organization}}</div></a>
                         <div class="cell-sub-header">{{job.location}}</div>
@@ -87,7 +103,15 @@
             <div class="row table-row">
                 <div class="left-cell table-cell">{{award.year}}</div>
                 <div class="right-cell table-cell">
-                    <div ng-click="vm.toggleItem(vm.experience.awards_show_list, award.id)" class="cell-header">{{award.name}}</div>
+                    <div ng-click="vm.toggleItem(vm.experience.awards_show_list, award.id)" class="cell-header">
+                        {{award.name}}
+                        <div class="float-right" ng-hide="vm.experience.awards_show_list[{{award.id}}]">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </div>
+                        <div class="float-right" ng-show="vm.experience.awards_show_list[{{award.id}}]">
+                            <i class="fa fa-angle-up" aria-hidden="true"></i>
+                        </div>
+                    </div>
                     <div ng-show="vm.experience.awards_show_list[{{award.id}}]">
                         <div class="cell-sub-header yellow">{{award.contest}}</div>
                         <div>{{award.description}}</div>
@@ -117,7 +141,15 @@
             <div class="row table-row">
                 <div class="left-cell table-cell">{{recommendation.year}}</div>
                 <div class="right-cell table-cell">
-                    <div ng-click="vm.toggleItem(vm.experience.recommendations_show_list, recommendation.id)" class="cell-header">{{recommendation.recommender}}, {{recommendation.recommenderPosition}}</div>
+                    <div ng-click="vm.toggleItem(vm.experience.recommendations_show_list, recommendation.id)" class="cell-header">
+                        {{recommendation.recommender}}, {{recommendation.recommenderPosition}}
+                        <div class="float-right" ng-hide="vm.experience.recommendations_show_list[{{recommendation.id}}]">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </div>
+                        <div class="float-right" ng-show="vm.experience.recommendations_show_list[{{recommendation.id}}]">
+                            <i class="fa fa-angle-up" aria-hidden="true"></i>
+                        </div>
+                    </div>
                     <div ng-show="vm.experience.recommendations_show_list[{{recommendation.id}}]">
                         <div class="cell-sub-header yellow">{{recommendation.position}}</div>
                         <div class="text-justify">{{recommendation.text}}</div>
