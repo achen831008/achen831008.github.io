@@ -1,4 +1,5 @@
-# Mechanics of Futures Markets
+Mechanics
+=====================
 
 > A trader who agreed to buy has a **long futures position** in one contract
 
