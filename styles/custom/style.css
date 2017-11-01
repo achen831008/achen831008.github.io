@@ -80,10 +80,14 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
     padding: 1rem;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    background-color: white;
 }
 
 .github-repo:hover {
-    border-left: 10px solid #252839;
+/*    border: 2px solid #252839;*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .description {
@@ -322,6 +326,18 @@ div.polaroid {
 .dropdown-menu {
     width: 90px;
     min-width: 1px;
+}
+
+
+/* Panel Border design */
+
+.panel-border-notes {
+    border-left: 5px solid cornflowerblue;
+}
+
+.panel-border-notes:hover {
+    border: 1px solid cornflowerblue;
+    border-left: 5px solid cornflowerblue;
 }
 
 /*****************/
