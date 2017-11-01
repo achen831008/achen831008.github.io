@@ -12,7 +12,7 @@
         };
 
         function getContacts() {
-            var url = '/data/v2/contact.json';
+            var url = '/data/contact.json';
 
             return $http.get(url)
                 .then(getContactsSuccess)

@@ -12,7 +12,7 @@
         };
 
         function getExperience() {
-            var url = '/data/v2/experience.json';
+            var url = '/data/experience.json';
 
             return $http.get(url)
                 .then(getExperienceSuccess)

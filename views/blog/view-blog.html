@@ -1,0 +1,9 @@
+<div ng-include src="'views/partials/loading.html'"></div>
+
+<div ng-show="!vm.loading" class="col-xs-12 background-light">
+    <div class="header text-center">{{ vm.blog.title }}</div>
+    <p class="text-small text-center grey">Created: {{ vm.blog.date }}</p>
+    <div class="container bottom-space">
+        <div class="col-xs-12" marked="vm.blog.content"></div>
+    </div>
+</div>

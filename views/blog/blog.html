@@ -1,0 +1,13 @@
+<!--  Loading  -->
+<div ng-include src="'views/partials/loading.html'"></div>
+
+<div ng-show="!vm.loading" id="blog" class="col-xs-12 background-light">
+    <div class="header text-center">Blog</div>
+    <div class="container bottom-space">
+        <div class="col-xs-12" ng-repeat="blog in vm.blogs">
+            <a ng-href="/#!/blog/{{blog.id}}"><h2 class="dark">{{ blog.title }}</h2></a>
+            <p class="text-small grey">Created: {{ blog.date }}</p>
+            <p class="text-small orange">Category: {{ blog.category }}</p>
+        </div>
+    </div>
+</div>

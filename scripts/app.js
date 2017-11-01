@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('app', ['ngRoute', 'ngAnimate'])
+        .module('app', ['ngRoute', 'ngAnimate', 'hc.marked'])
         .config(function($routeProvider) {
             $routeProvider
             .when('/', {
@@ -33,6 +33,16 @@
             .when('/contact', {
                 templateUrl : '/views/contact/contact.html',
                 controller  : 'contactController',
+                controllerAs: 'vm'
+            })
+            .when('/blog', {
+                templateUrl : '/views/blog/blog.html',
+                controller  : 'blogController',
+                controllerAs: 'vm'
+            })
+            .when('/blog/:blogId', {
+                templateUrl : '/views/blog/view-blog.html',
+                controller  : 'viewBlogController',
                 controllerAs: 'vm'
             })
             .otherwise({

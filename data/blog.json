@@ -1,0 +1,18 @@
+{
+    "blogs": [
+        {
+            "id": 1,
+            "title": "Futures Market",
+            "date": "2017-11-01",
+            "category": "Notes",
+            "url": "/data/blogs/futures_market.md"
+        },
+        {
+            "id": 2,
+            "title": "Futures Market",
+            "date": "2017-11-01",
+            "category": "Notes",
+            "url": "/data/blogs/futures_market.md"
+        }
+    ]
+}

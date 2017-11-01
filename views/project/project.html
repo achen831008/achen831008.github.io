@@ -6,7 +6,7 @@
     <div class="container bottom-space">
         <div class="text-center sub-heading">Weekly Commits: <b class="orange">{{ vm.github.commits.length }}</b></div>
 
-        <div class="col-xs-12 col-sm-6 github-repo" ng-repeat="repo in vm.github.repos | orderBy:'-pushed_at' | limitTo:6">
+        <div class="col-xs-12 col-sm-6 github-repo" ng-repeat="repo in vm.github.repos | orderBy:'-pushed_at' | limitTo:8">
             <a class="dark" ng-href="{{ repo.html_url }}">{{ repo.name }}</a>
             <div class="description yellow">{{ repo.description }}</div>
             <div class="">
