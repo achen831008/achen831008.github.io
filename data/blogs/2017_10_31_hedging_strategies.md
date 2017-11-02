@@ -68,8 +68,8 @@ Calculating the Minimum Variance Hedge Ratio
 --------------------------------------------
 The minimum variance hedge ratio depends on the relationship between changes in the spot price and changes in the futures price. Define:
 
- - $\delta$S: Change in spot price, S, during a period of time equal to the life of the hedge
- - $\delta$F: Change in futures price, F, during a period of time equal to the life of the hedge.
+ - $\delta S$: Change in spot price, S, during a period of time equal to the life of the hedge
+ - $\delta F$: Change in futures price, F, during a period of time equal to the life of the hedge.
 
 We will denote the minimum variance hedge ratio by h*.
 The formula for h* is:
@@ -84,17 +84,17 @@ To calculate the number of contracts that should be used in hedging, define:
 
  - $Q_A$: Size of position being hedged (units)
  - $Q_F$: Size of one futures contract (units)
- - N*: Optimal number of futures contracts for hedging.
+ - $N^*$: Optimal number of futures contracts for hedging.
 
-The futures contracts should be on h*$Q_A$ units of the asset. The number of futures contracts required is therefore given by
+The futures contracts should be on $h * Q_A$ units of the asset. The number of futures contracts required is therefore given by
 
-> $N^* = \frac{h^* Q_A}{Q_F}$
+> $$\frac {h^* Q_A}{Q_F}$$
 
 Tailing the Hedge
 -----------------
 When futures are used for hedging, a small adjustment, know as **tailing the hedge**, can be made to allow for the impact of daily settlement. In practice this means that:
 
-> $N^* = \frac {h^* V_A}{V_F}$
+> $$\frac {h^* V_A}{V_F}$$
 
 where $V_A$ is the dollar value of the position being hedged and $V_F$ is the dollar value of one futures contract.
 

@@ -482,3 +482,24 @@ a:hover {
     background-color: grey;
     padding: 5px;
 }
+
+#md th, #md td {
+    border: 1px solid white;
+    padding: 8px;
+    text-align: right;
+}
+
+
+#md th {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+#md td {
+    background-color: lightblue;
+    color: #252839;
+}
+
+#md table {
+    margin: 3rem 0;
+}
