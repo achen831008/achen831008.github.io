@@ -5,15 +5,16 @@
         .module('app')
         .controller('viewBlogController', viewBlogController);
 
-    viewBlogController.$inject = ['$routeParams', 'blogService'];
+    viewBlogController.$inject = ['$window', '$routeParams', 'blogService'];
 
-    function viewBlogController($routeParams, blogService) {
+    function viewBlogController($window, $routeParams, blogService) {
         var vm = this;
         init();
 
         function init() {
             vm.scroll = 0;
             vm.loading = true;
+            vm.backToBlog = backToBlog;
             vm.blog = {};
             vm.blogId = $routeParams.blogId;
             return getBlogById(vm.blogId).then(function(data) {
@@ -33,6 +34,10 @@
                 vm.blog.content = data;
                 vm.loading = false;
             });
+        }
+
+        function backToBlog(){
+            $window.location.href = '/#!/blog';
         }
     }
 })();
