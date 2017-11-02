@@ -4,7 +4,7 @@
             "id": 1,
             "title": "Futures Market",
             "date": "2017-10-31",
-            "category": "notes",
+            "category": "Notes",
             "description": "Mechanics of Futures Markets and Futures Contracts",
             "url": "/data/blogs/2017_10_31_futures_market.md"
         },
@@ -12,7 +12,7 @@
             "id": 2,
             "title": "Hedging Strategies Using Futures",
             "date": "2017-10-31",
-            "category": "notes",
+            "category": "Notes",
             "description": "Optimize number of futures contracts by using the Minimum Variance Hedge Ratio",
             "url": "/data/blogs/2017_10_31_hedging_strategies.md"
         },
@@ -20,7 +20,7 @@
             "id": 3,
             "title": "Forward and Futures Prices",
             "date": "2017-10-31",
-            "category": "notes",
+            "category": "Notes",
             "description": "Mechanics and calculations of forward and futures pricing",
             "url": "/data/blogs/2017_10_31_forward_future_prices.md"
         },
@@ -28,7 +28,7 @@
             "id": 4,
             "title": "Interest Rate Futures",
             "date": "2017-10-31",
-            "category": "notes",
+            "category": "Notes",
             "description": "Determining the Futures Price using cheapest-to-deliver bond, and optimizing number of contracts using duration-Based Hedging Strategies",
             "url": "/data/blogs/2017_10_31_interest_rate_futures.md"
         },
@@ -36,7 +36,7 @@
             "id": 5,
             "title": "Swaps",
             "date": "2017-10-31",
-            "category": "notes",
+            "category": "Notes",
             "description": "Mechanics and valuation of interest rate swap and currency swap",
             "url": "/data/blogs/2017_10_31_swaps.md"
         },
@@ -44,7 +44,7 @@
             "id": 6,
             "title": "Mechanics of Options Markets",
             "date": "2017-10-31",
-            "category": "notes",
+            "category": "Notes",
             "description": "Determining the payoffs of options in long/short position, and mechanics of stock splits and convertible bond",
             "url": "/data/blogs/2017_10_31_options_markets.md"
         },
@@ -52,7 +52,7 @@
             "id": 7,
             "title": "Properties of Stock Options",
             "date": "2017-10-31",
-            "category": "notes",
+            "category": "Notes",
             "description": "Factors Affecting Option Prices and Put-Call Parity",
             "url": "/data/blogs/2017_10_31_stock_options.md"
         },
@@ -60,7 +60,7 @@
             "id": 8,
             "title": "Binomial Tree Options Pricing",
             "date": "2017-10-31",
-            "category": "notes",
+            "category": "Notes",
             "description": "Pricing and valuation of options using binomial model",
             "url": "/data/blogs/2017_10_31_binomial_pricing.md"
         },
@@ -68,7 +68,7 @@
             "id": 9,
             "title": "Black-Scholes-Merton Model",
             "date": "2017-10-31",
-            "category": "notes",
+            "category": "Notes",
             "description": "Pricing and valuation of European options using Black-Scholes-Merton model",
             "url": "/data/blogs/2017_10_31_black_scholes_model.md"
         },
@@ -76,7 +76,7 @@
             "id": 10,
             "title": "Greek Letters",
             "date": "2017-10-31",
-            "category": "notes",
+            "category": "Notes",
             "description": "Hedging with Delta, Gamma, VEGA, Rho, and Theta",
             "url": "/data/blogs/2017_10_31_greek_letters.md"
         },
@@ -84,7 +84,7 @@
             "id": 11,
             "title": "Securitization and the Credit Crisis of 2007",
             "date": "2017-10-31",
-            "category": "notes",
+            "category": "Notes",
             "description": "Introduction to ABS, CDO, Subprime Mortgage Securitization, and the credit crisis",
             "url": "/data/blogs/2017_10_31_securitization.md"
         },
@@ -92,7 +92,7 @@
             "id": 12,
             "title": "Credit Derivatives",
             "date": "2017-10-31",
-            "category": "notes",
+            "category": "Notes",
             "description": "Mechanics of credit default swaps, total return swaps, and synthetic CDO",
             "url": "/data/blogs/2017_10_31_credit_derivatives.md"
         }

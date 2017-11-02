@@ -1,9 +1,20 @@
 <div ng-include src="'views/partials/loading.html'"></div>
 
 <div ng-show="!vm.loading" class="col-xs-12 background-light">
-    <div class="header text-center">{{ vm.blog.title }}</div>
-    <p class="text-small text-center grey">Created: {{ vm.blog.date }}</p>
-    <div class="container bottom-space">
-        <div class="col-xs-12 col-sm-6 col-sm-offset-3" marked="vm.blog.content"></div>
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+        <div class="header">{{ vm.blog.title.toUpperCase() }}</div>
+        <p class="text-small grey">
+            Posted on {{ vm.blog.date }} by <a href="/#!/home">Alex Chen</a>
+        </p>
+        <hr>
     </div>
+
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3 bottom-space" marked="vm.blog.content"></div>
+    <div class="col-xs-12 bottom-space">
+        <a href="/#!/blog">
+            <button class="btn btn-blue btn-center text-center">Back to Blog</button>
+        </a>
+    </div>
+
+    <div ng-include src="'views/partials/footer.html'"></div>
 </div>
