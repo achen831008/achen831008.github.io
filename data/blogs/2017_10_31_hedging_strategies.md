@@ -42,9 +42,9 @@ From the definition of the basis, we have
 
 **Note:** basis risk can lead to an improvement or a worsening of a hedger’s position. 
 
-Consider a **short** hedge. If the basis **strengthens** (i.e., increases) unexpectedly, the hedger’s position **improves**; if the basis **weakens** (i.e., decreases) unexpectedly, the hedger’s position **worsens**.
+Consider a **short** hedge. If the basis **strengthens** [i.e., increases] unexpectedly, the hedger’s position **improves**; if the basis **weakens** [i.e., decreases] unexpectedly, the hedger’s position **worsens**.
 
-By hedging, a company ensures that the price that will be paid (or received) for the asset is
+By hedging, a company ensures that the price that will be paid [or received] for the asset is
 
     S2 + F1 - F2
 
@@ -71,30 +71,30 @@ The minimum variance hedge ratio depends on the relationship between changes in 
  - $\delta S$: Change in spot price, S, during a period of time equal to the life of the hedge
  - $\delta F$: Change in futures price, F, during a period of time equal to the life of the hedge.
 
-We will denote the minimum variance hedge ratio by h*.
-The formula for h* is:
+We will denote the minimum variance hedge ratio by h.
+The formula for h is:
 
-> $h^* = p \times \frac {\sigma_S}{\sigma_F} $
+$$h^* = p \times \frac {\sigma_S}{\sigma_F} $$
 
-where $\sigma_S$ is the standard deviation of $\delta$S, $\sigma_F$ is the standard deviation of $\delta$F, and p is the coefficient of correlation between the two.
+where $\sigma_S$ is the standard deviation of $\delta S$, $\sigma_F$ is the standard deviation of $\delta F$, and p is the coefficient of correlation between the two.
 
 Optimal Number of Contracts
 ---------------------------
 To calculate the number of contracts that should be used in hedging, define:
 
- - $Q_A$: Size of position being hedged (units)
- - $Q_F$: Size of one futures contract (units)
+ - $Q_A$: Size of position being hedged [units]
+ - $Q_F$: Size of one futures contract [units]
  - $N^*$: Optimal number of futures contracts for hedging.
 
 The futures contracts should be on $h * Q_A$ units of the asset. The number of futures contracts required is therefore given by
 
-> $$\frac {h^* Q_A}{Q_F}$$
+$$\frac {h^* Q_A}{Q_F}$$
 
 Tailing the Hedge
 -----------------
 When futures are used for hedging, a small adjustment, know as **tailing the hedge**, can be made to allow for the impact of daily settlement. In practice this means that:
 
-> $$\frac {h^* V_A}{V_F}$$
+$$\frac {h^* V_A}{V_F}$$
 
 where $V_A$ is the dollar value of the position being hedged and $V_F$ is the dollar value of one futures contract.
 
@@ -110,26 +110,26 @@ Stock Indices
 
 The **Dow Jones Industrial Average** is based on a portfolio consisting of 30 blue-chip stocks in the United States. The weights given to the stocks are proportional to their prices.
 
-The **Standard & Poor’s 500** (S&P 500) Index is based on a portfolio of 500 different stocks: 400 industrials, 40 utilities, 20 transportation companies, and 40 financial institutions. The weights of the stocks in the portfolio at any given time are proportional to their market capitalizations.
+The **Standard & Poor’s 500** [S&P 500] Index is based on a portfolio of 500 different stocks: 400 industrials, 40 utilities, 20 transportation companies, and 40 financial institutions. The weights of the stocks in the portfolio at any given time are proportional to their market capitalizations.
 
-The **Russell 1000 Index** is an index of the prices of the 1,000 largest capitalization stocks in the United States. The US Dollar Index is a trade-weighted index of the values of six foreign currencies (the euro, yen, pound, Canadian dollar, Swedish krona, and Swiss franc).
+The **Russell 1000 Index** is an index of the prices of the 1,000 largest capitalization stocks in the United States. The US Dollar Index is a trade-weighted index of the values of six foreign currencies [the euro, yen, pound, Canadian dollar, Swedish krona, and Swiss franc].
 
 Hedging an Equity Portfolio
 ---------------------------
 **Stock index futures** can be used to hedge a well-diversified equity portfolio. Define: 
 
  - $V_A$: Current value of the portfolio
- - $V_F$: Current value of one futures contract (the futures price times the contract size). 
+ - $V_F$: Current value of one futures contract [the futures price times the contract size].
 
 If the portfolio mirrors the index, the optimal hedge ratio, $h^*$, equals 1.0 and shows that the number of futures contracts that should be shorted is
 
-> $N^* = \frac {V_A}{V_F}$
+$$N^* = \frac {V_A}{V_F}$$
 
 When the portfolio does not exactly mirror the index, we can use the **capital asset pricing model**. The parameter beta ($\beta$) from the capital asset pricing model is the **slope** of the best-fit line obtained when excess return on the portfolio over the risk-free rate is regressed against the excess return of the index over the risk-free rate.
 
 In general,
 
-> $N^* = \beta \frac {V_A}{V_F}$
+$$N^* = \beta \frac {V_A}{V_F}$$
 
 This formula assumes that the maturity of the futures contract is close to the maturity of the hedge.
 

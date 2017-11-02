@@ -86,7 +86,6 @@
 }
 
 .github-repo:hover {
-/*    border: 2px solid #252839;*/
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -454,6 +453,10 @@ a:hover {
     margin-top: 2rem;
 }
 
+.margin-top-lg {
+    margin-top: 5rem;
+}
+
 .cursor-pt {
     cursor: pointer;
 }
@@ -483,6 +486,15 @@ a:hover {
     padding: 5px;
 }
 
+
+/* Markdown custom style */
+
+#md {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    padding: 4rem;
+}
+
 #md th, #md td {
     border: 1px solid white;
     padding: 8px;
@@ -502,4 +514,34 @@ a:hover {
 
 #md table {
     margin: 3rem 0;
+}
+
+#md p {
+    font-size: 14px;
+    font-family: Lato;
+    font-weight: 100;
+    padding: 5px 0;
+    color: #3D484E;
+}
+
+#md h2 {
+    font-size: 2rem;
+    padding-top: 1rem;
+    color: #252839;
+}
+
+#md h1 {
+    font-size: 3rem;
+    padding-top: 2rem;
+    color: #252839;
+}
+
+#md strong {
+    color: orange;
+}
+
+#md pre {
+    background-color: antiquewhite;
+    color: #252839;
+    border: 1px solid lightgrey;
 }

@@ -35,7 +35,8 @@ Forward Price For An Investment Asset
 
 Consider a forward contract on an investment asset with price $S_0$ that provides no income. Using our notation, $T$ is the time to maturity, $r$ is the risk-free rate, and $F_0$ is the forward price. The relationship between $F_0$ and $S_0$ is
 
-> $F_0 = S_0 e^{rT}$
+
+$$F_0 = S_0 e^{rT}$$
 
 No Income
 ---------
@@ -79,14 +80,14 @@ Known Income
 
 When an investment asset will provide income with a present value of $I$ during the life of a forward contract, we have
 
-> $F_0 = (S_0 - I) e^{rT}$
+$$F_0 = (S_0 - I) e^{rT}$$
 
 If $F_0 (S_0 - I) e^{rT}$, arbitrageurs can buy the asset and short forward contracts on the asset. If $F_0$ < $(S_0 - I) e^{rT}$, they can short the asset and enter into long forward contracts on it.
 
 Known Yield
 ===========
 
-> $F_0 = S_0 e^{(r-q) T}$
+$$F_0 = S_0 e^{(r-q) T}$$
 
 where $q$ is the average yield per annum on an asset during the life of a forward contract with continuous compounding.
 
@@ -117,28 +118,31 @@ Long forward contracts:
 Futures on Commodities
 ======================
 
-**Income and Storage Costs**
+Income and Storage Costs
+-----------------------
 
-> $F_0 = (S_0 + U)e^{rT} = S_0 e^{(r+u) T}$
+$$F_0 = (S_0 + U)e^{rT} = S_0 e^{(r+u) T}$$
 
  - $U$ is the present value of all the storage costs
  - $u$ denotes the storage costs per annum as a proportion of the spot price net of any yield earned on the asset
 
-**Consumption Commodities**
+Consumption Commodities
+-----------------------
 
-If **$F_0 > (S_0 + U) e^{rT}$**
+If $F_0 > (S_0 + U) e^{rT}$
 
  1. Borrow an amount $S_0 + U$ at the risk-free rate and use it to purchase one unit of the commodity ad to pay storage costs
  2. Short a futures contract on one unit of the commodity
 
-If **$F_0 < (S_0 + U)e^{rT}$**
+If $F_0 < (S_0 + U)e^{rT}$
 
  1. Sell the commodity, save the storage costs, and invest the proceeds at the risk-free interest rate
  2. Take a long position in a futures contract
 
-**Convenience Yields**
+Convenience Yields
+-----------------------
 
-> $F_0 = S_0 e^{(r + u - y)T}$
+$$F_0 = S_0 e^{(r + u - y)T}$$
 
 where y is the convenience yield.
 

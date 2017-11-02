@@ -11,24 +11,27 @@ The date specified in the contract is known as the **expiration** date. The pric
 
 **European** Options can be exercised only on the expiration date itself.
 
-**Note**: Buyer pays seller (writer) fees.
+**Note**: Buyer pays seller [or writer] fees.
 
 Payoffs
 =======
 
-**European call option**
+European call option
+---------
 
-Long position: $max(S_T - K, 0)$
+Long position: $$max(S_T - K, 0)$$
 
-Short position: $min(K - S_T, 0)$
+Short position: $$min(K - S_T, 0)$$
 
-**European put option**
+European put option
+---------
 
-Long position: $max(K - S_T, 0)$
+Long position: $$max(K - S_T, 0)$$
 
-Short position: $min(S_T - K, 0)$
+Short position: $$min(S_T - K, 0)$$
 
-**Upper bound**
+Upper bound
+---------
 
 $C = S_T$
 
@@ -36,13 +39,15 @@ $P = Ke^{-rT}$ for European option
 
 $P = K$ for American option
 
-**Lower bound**
+Lower bound
+---------
 
 $C = S_T - Ke^{-rT} - PV(Div)$
 
 $P = Ke^{-rT} - S_T + PV(Div)$
 
-**Factors that would affect Option Value**
+Factors that would affect Option Value
+---------
 
 An increase in the following list of factor would change the value of option.
 
@@ -61,12 +66,16 @@ Dividends and Stock Splits
 
 In general,  an n-for-m stock split cause the strike price reduced to m/n of its previous value, and the number of shares covered by one contract is increased to n/m of its previous value.
 
-**Stock Splits Example**
+Stock Splits Example
+--------------
+
 Consider a call option to buy 100 shares of a company for \$30 per share. Suppose the company makes a 2-for-1 stock split. The terms of the option contract are then
 changed so that it gives the holder the right to purchase 200 shares for \$15 per share.
 
-**Dividends Example**
-Consider a put option to sell 100 shares of a company for \$15 per share. Suppose the company declares a 25\% stock dividend. This is equivalent to a 5-for-4 stock split. The terms of the option contract are changed so that it gives the holder the right to sell 125 shares for $12.
+Dividends Example
+--------------
+
+Consider a put option to sell 100 shares of a company for \$15 per share. Suppose the company declares a 25% stock dividend. This is equivalent to a 5-for-4 stock split. The terms of the option contract are changed so that it gives the holder the right to sell 125 shares for $12.
 
 Warrants, Employee Stock Options, and Convertibles
 ==================================================
@@ -77,7 +86,7 @@ Warrants, Employee Stock Options, and Convertibles
 
 **Employee stock options** are call options issued to employees by their company to motivate them to act in the best interests of the company's shareholders. They are usually at the money at the time of issue.
 
-Convertible bonds are bonds issued by a company that can be converted into equity at certain times using a predetermined exchange ratio. They are therefore bonds with an embedded call option on the company's stock.
+**Convertible bonds** are bonds issued by a company that can be converted into equity at certain times using a predetermined exchange ratio. They are therefore bonds with an embedded call option on the company's stock.
 
 
 

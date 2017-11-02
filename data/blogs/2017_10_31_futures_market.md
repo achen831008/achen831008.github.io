@@ -12,7 +12,7 @@ Closing Out Positions
 
 Most of the traders choose to close out their positions prior to the delivery period specified in the contract. Closing out a position means entering into the **opposite trade to the original one**.
 
-For example, the New York investor who bought a July corn futures contract on March 5 can close out the position by selling (i.e., shorting) one July corn futures contract on, say, April 20. The Kansas investor who sold (i.e., shorted) a July contract on March 5 can close out the position by buying one July contract on, say, May 25. In each case, the investor’s total gain or loss is determined by the change in the futures price between March 5 and the day when the contract is closed out.
+For example, the New York investor who bought a July corn futures contract on March 5 can close out the position by selling [i.e., shorting] one July corn futures contract on, say, April 20. The Kansas investor who sold [i.e., shorted] a July contract on March 5 can close out the position by buying one July contract on, say, May 25. In each case, the investor’s total gain or loss is determined by the change in the futures price between March 5 and the day when the contract is closed out.
 
 Specification of a Futures Contract
 ===================================
@@ -26,7 +26,7 @@ The exchange must specify:
  - Price quotes
  - Price limits and position limits
 
-As a general rule, it is the party with the *short position* that chooses what will happen when alternatives are specified by the exchange. When the party with the *short position* is ready to deliver, it files a *notice of intention to deliver* with the exchange.
+As a general rule, it is the party with the **short position** that chooses what will happen when alternatives are specified by the exchange. When the party with the **short position** is ready to deliver, it files a **notice of intention to deliver** with the exchange.
 
 Convergence of Futures Price to Spot Price
 ==========================================
@@ -34,7 +34,7 @@ Convergence of Futures Price to Spot Price
 As the delivery period for a futures contract is approached, the futures price converges to the spot price of the underlying asset. When the delivery period is reached, the futures price equals, or is very close to, the spot price.
 
 To see why this is so, we first suppose that the futures price is above the spot price during the delivery period. Traders then have a clear arbitrage opportunity:
-1. Sell (i.e., short) a futures contract 
+1. Sell a futures contract 
 2. Buy the asset
 3. Make delivery.
 These steps are certain to lead to a profit equal to the amount by which the futures price exceeds the spot price. As traders exploit this arbitrage opportunity, the futures price will fall. 
@@ -48,7 +48,7 @@ In general, the broker will require the investor to deposit funds in a margin ac
 
 At the end of each trading day, the margin account is adjusted to reflect the investor's gain or loss. This practice is referred to as **daily settlement** or **marking to market**.
 
-For example, by the end of the first day, the futures price has dropped by \$9 from \$1,250 to \$1,241. (2 contracts, each contract size is 100 ounces) The investor has a loss of \$1,800 (= 200 x \$9), because the 200 ounces of December gold, which the investor contracted to buy at \$1,250, can now be sold for only \$1,241.
+For example, by the end of the first day, the futures price has dropped by \$9 from \$1,250 to \$1,241. [2 contracts, each contract size is 100 ounces] The investor has a loss of \$1,800 [= 200 x \$9], because the 200 ounces of December gold, which the investor contracted to buy at \$1,250, can now be sold for only \$1,241.
 
 **Note:** The balance in the margin account would therefore be reduced by \$1,800 to \$10,200.
 
@@ -61,7 +61,7 @@ The Clearing House and Clearing Margins
 
 Market Quotes
 ========================
-Futures quotes are available from exchanges and from several online sources (see, for example, futures.tradingcharts.com/marketquotes).
+Futures quotes are available from exchanges and from several online sources [link](http://futures.tradingcharts.com/marketquotes/).
 
 Prices
 ------
@@ -71,7 +71,7 @@ Prices
 
 Settlement Price
 ----------------
-This is the price used for calculating daily gains and losses and margin requirements. It is usually calculated as the price at which the contract traded immediately before the end of a day’s trading session (1:30 p.m. for gold).
+This is the price used for calculating daily gains and losses and margin requirements. It is usually calculated as the price at which the contract traded immediately before the end of a day’s trading session [1:30 p.m. for gold].
 
 The Change in the Settlement price is the delta of today's and previous day's settlement price.
 
@@ -109,7 +109,7 @@ Foreign Exchange Quotes
 
 > **Futures prices** where one currency is the USD are always quoted as **the number of USD per unit of the foreign currency**.
 
-> **Forward prices** are always quoted in the same way as spot prices. For `the British pound`, `the euro`, `the Australian dollar`, and `the New Zealand dollar`, the forward quotes show **the number of US dollars per unit of the foreign currency** and are directly comparable with futures quotes. For `other major currencies`, forward quotes show **the number of units of the foreign currency per US dollar** (USD). 
+> **Forward prices** are always quoted in the same way as spot prices. For `the British pound`, `the euro`, `the Australian dollar`, and `the New Zealand dollar`, the forward quotes show **the number of US dollars per unit of the foreign currency** and are directly comparable with futures quotes. For `other major currencies`, forward quotes show **the number of units of the foreign currency per US dollar** [USD]. 
 
-For example, consider the Canadian dollar (CAD). A futures price quote of 0.9500 USD per CAD corresponds to a forward price quote of 1.0526 CAD per USD (1.0526 = 1/0.9500).
+For example, consider the Canadian dollar [CAD]. A futures price quote of 0.9500 USD per CAD corresponds to a forward price quote of 1.0526 CAD per USD [1.0526 = 1/0.9500].
 

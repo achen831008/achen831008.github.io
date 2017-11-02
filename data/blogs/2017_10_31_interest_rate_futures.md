@@ -10,22 +10,24 @@ Day Count Conventions:
 Price Quotations of US Treasury Bills
 -------------------------------------
 
-$P = \frac{360}{n} * (100 - Y)$
+$$P = \frac{360}{n} * (100 - Y)$$
 
 where $P$ is quoted price, $Y$ is cash price, and $n$ is the remaining life of the Treasury bill.
 
 Price Quotations of US Treasury Bonds
 -------------------------------------
 
-> Treasury bond prices in US are quoted in dollars and thirty-seconds of a dollar. The quoted price is for a bond with a face value of \$100. Thus a quote of 90-05 indicates that the quoted price for a bond with a face value of \$100,000 is \$90,156.25.
+Treasury bond prices in US are quoted in dollars and thirty-seconds of a dollar. The quoted price is for a bond with a face value of \$100. Thus a quote of 90-05 indicates that the quoted price for a bond with a face value of \$100,000 is \$90,156.25.
 
-> Quoted price is referred to as the clean price
+Quoted price is referred to as the clean price
 
-> Cash price is referred to as the dirty price
+Cash price is referred to as the dirty price
 
-Cash price = Quoted price + Accrued interest since last coupon date
+> Cash price = Quoted price + Accrued interest since last coupon date
 
-**Example**
+Example
+--------
+
 - Today: March 5, 2010
 - Coupon: 11% annually, paid semiannually
 - Maturity: July 10, 2018
@@ -53,14 +55,14 @@ Treasury bond and Treasury note futures contracts are quoted in dollars and thir
 Conversion Factors
 ------------------
 
-> When a particular bond is delivered, a parameter known as its **conversion factor** defines the price received for the bond by the party with the short position.
+When a particular bond is delivered, a parameter known as its **conversion factor** defines the price received for the bond by the party with the short position.
 
-> The cash received for each \$100 face value of the bond delivered is [most recent settlement price * Conversion factor] + Accrued interest
+The cash received for each \$100 face value of the bond delivered is [most recent settlement price * Conversion factor] + Accrued interest
 
 Cheapest-to-Deliver Bond
 ------------------------
 
-> The cheapest-to-deliver bond is the one for which
+The cheapest-to-deliver bond is the one for which
 `Quoted bond price - (Most recent settlement price * Conversion Factor)`
 is least.
 
