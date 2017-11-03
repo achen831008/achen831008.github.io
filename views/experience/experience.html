@@ -2,6 +2,8 @@
 <div ng-include src="'views/partials/loading.html'"></div>
 
 <div ng-show="!vm.loading" class="col-xs-12 background-light intro-content">
+
+    <!--  EDUCATION  -->
     <div class="container experience-wrapper">
         <div class="experience-table">
             <div class="title">
@@ -42,6 +44,7 @@
         </div>
     </div>
 
+    <!--  WORK  -->
     <div class="container experience-wrapper">
         <div class="experience-table">
             <div class="title">
@@ -83,6 +86,7 @@
         </div>
     </div>
 
+    <!--  AWARDS  -->
     <div class="container experience-wrapper">
         <div class="experience-table">
             <div class="title">
@@ -114,13 +118,14 @@
                     </div>
                     <div ng-show="vm.experience.awards_show_list[{{award.id}}]">
                         <div class="cell-sub-header yellow">{{award.contest}}</div>
-                        <div>{{award.description}}</div>
+                        <div class="experience-description">{{award.description}}</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!--  Recommendations  -->
     <div class="container experience-wrapper">
         <div class="experience-table">
             <div class="title">
@@ -152,7 +157,7 @@
                     </div>
                     <div ng-show="vm.experience.recommendations_show_list[{{recommendation.id}}]">
                         <div class="cell-sub-header yellow">{{recommendation.position}}</div>
-                        <div class="text-justify">{{recommendation.text}}</div>
+                        <div class="experience-description text-justify">{{recommendation.text}}</div>
                     </div>
                 </div>
             </div>
