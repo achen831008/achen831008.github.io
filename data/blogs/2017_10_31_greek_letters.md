@@ -20,17 +20,17 @@ This is referred to as **dynamic hedging**.
 Delta of European Stock Options
 -------------------------------
 
-**long**
+In **long** position,
 
-$\delta (call) = N(d_1)$
+$$\delta (call) = N(d_1)$$
 
-$\delta (put) = N(d_1) - 1$
+$$\delta (put) = N(d_1) - 1$$
 
-**Short**
+In **short** position,
 
-$\delta (call) = -N(d_1)$
+$$\delta (call) = -N(d_1)$$
 
-$\delta (put) = 1 - N(d_1)$
+$$\delta (put) = 1 - N(d_1)$$
 
 
 Delta is negative, which means that a long position in a put option should be hedged with a long position in the underlying stock, and a short position in a put option should be hedged with a short position in the underlying stock.
@@ -48,28 +48,32 @@ date in 5 months. The delta of each option is 0.468.
 3. A short position in 50,000 put options with strike price \$56 and an expiration date
 in 2 months. The delta of each option is -0.508.
 
-The delta of the whole portfolio is 100,000 * 0.533 - 200,000 * 0.468 - 50,000 * (-0.508) = -14,900
+The delta of the whole portfolio is $100,000 \times 0.533 - 200,000 \times 0.468 - 50,000 \times (-0.508) = -14,900$
 
 
 Gamma
 =====
 
-The gamma ($\gamma$) of a portfolio of options on an underlying asset is the rate of change of the portfolio's delta with respect to the price of the underlying asset.
+The gamma $\gamma$ of a portfolio of options on an underlying asset is the rate of change of the portfolio's delta with respect to the price of the underlying asset.
 
 If gamma is small, delta changes slowly, and adjustments to keep a portfolio delta neutral need to be made only relatively infrequently.
 
 
 Making a Portfolio Gamma Neutral
 --------------------------------
-Suppose that a portfolio is delta neutral and has a gamma of -3,000. The **delta** and **gamma** of a particular traded call option are **0.62** and **1.50**, respectively. The portfolio can be made gamma neutral by including in the portfolio a long position of $\frac {3,000} {1.5} = 2,000$ in the call option. However, the delta of the portfolio will change from zero to $2000 * 0.62 = 1,240$. Therefore, 1,240 unit of underlying asset must be **sold** from the portfolio to keep it **delta neutral**.
+Suppose that a portfolio is delta neutral and has a gamma of -3,000. The **delta** and **gamma** of a particular traded call option are **0.62** and **1.50**, respectively. 
+
+The portfolio can be made gamma neutral by including in the portfolio a long position of $$\frac {3,000} {1.5} = 2,000$$ in the call option. However, the delta of the portfolio will change from zero to $$2000 \times 0.62 = 1,240$$. Therefore, 1,240 unit of underlying asset must be **sold** from the portfolio to keep it **delta neutral**.
 
 
 Calculation of Gamma
 --------------------
 
-$\gamma = \frac {N'(d_1)} {S_0 \sigma \sqrt{T}}$
+$$\gamma = \frac {N'(d_1)} {S_0 \sigma \sqrt{T}}$$
 
-Consider a call option on a non-dividend-paying stock where the stock price is \$49, the strike price is \$50, the risk-free rate is 5%, the time to maturity is 20 weeks (= 0.3846 years), and the volatility is 20%. In this case, $S_0 = 49, K = 50, r = 0.05, \sigma = 0.2, and T = 0.3846$
+Consider a call option on a non-dividend-paying stock where the stock price is \$49, the strike price is \$50, the risk-free rate is 5%, the time to maturity is 20 weeks [= 0.3846 years], and the volatility is 20%. 
+
+In this case, $S_0 = 49, K = 50, r = 0.05, \sigma = 0.2, T = 0.3846$
 
 The option's gamma is 0.066.
 
@@ -81,7 +85,7 @@ The vega of a portfolio of derivatives, $\nu$, is the rate of change of the valu
 
 If vega is highly positive or negative, the portfolio's value is very sensitive to small changes in volatility. If it is close to zero, volatility changes have relatively little impact on the value of the portfolio.
 
-$\nu = S_0 \sqrt{T} N'(d_1)$
+$$\nu = S_0 \sqrt{T} N'(d_1)$$
 
 
 Theta
@@ -89,9 +93,9 @@ Theta
 
 The $\theta$ of a portfolio of options is the rate of change of the value of the portfolio with respect to the passage of time with all else remaining the same. Theta is sometimes referred to as the time decay of the portfolio. 
 
-$\theta(call) = - \frac {S_0N'(d_1)\sigma} {2\sqrt{T}} - rKe^{-rT} N(d_2)$
+$$\theta(call) = - \frac {S_0N'(d_1)\sigma} {2\sqrt{T}} - rKe^{-rT} N(d_2)$$
 
-$\theta(put) = - \frac {S_0N'(d_1)\sigma} {2\sqrt{T}} + rKe^{-rT} N(-d_2)$
+$$\theta(put) = - \frac {S_0N'(d_1)\sigma} {2\sqrt{T}} + rKe^{-rT} N(-d_2)$$
 
 Theta is usually negative for an option. This is because, as time passes with all else remaining the same, the option tends to become less valuable.
 
@@ -101,8 +105,14 @@ RHO
 
 The $rho$ of a portfolio of options is the rate of change of the value of the portfolio with respect to the interest rate. It measures the sensitivity of the value of a portfolio to a change in the interest rate.
 
-For a European call option on a non-dividend-paying stock, rho(call) = $KTe^{-rT} N(d_2)$
+For a European call option on a non-dividend-paying stock, $$rho(call) = KTe^{-rT} N(d_2)$$
 
-For a European put option, rho(put) = $-KTe^{-rT} N(-d_2)$
+For a European put option, $$rho(put) = -KTe^{-rT} N(-d_2)$$
 
 If option's rho is 8.91, this means that a 1% increase in the risk-free rate increases the value of the option approximately 8.91%.
+
+
+
+
+
+

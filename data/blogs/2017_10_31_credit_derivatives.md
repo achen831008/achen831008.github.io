@@ -9,7 +9,7 @@ The buyer of the CDS makes periodic payments to the seller until the end of the 
 
 The total amount paid per year, as a percent of the notional principal, to buy protection is known as the **CDS spread**.
 
-CDS bond basis = CDS spread - Asset swap spread
+    CDS bond basis = CDS spread - Asset swap spread
 
 
 Total Return Swaps
