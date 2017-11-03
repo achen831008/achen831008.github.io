@@ -193,6 +193,10 @@ div.polaroid {
 
 /* NAVBAR */
 
+.navbar-header {
+    min-height: 60px;
+}
+
 .navbar-custom {
     color: white;
     font-family: Lato;
@@ -486,6 +490,24 @@ a:hover {
     padding: 5px;
 }
 
+
+@keyframes myChange {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    } to {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+}
+
+.loading-animation {
+    margin-top: 60px;
+    border: 1.5px solid dodgerblue;
+    opacity: 0;
+    animation-name: myChange;
+    animation-duration: 2s;
+}
 
 /* Markdown custom style */
 
