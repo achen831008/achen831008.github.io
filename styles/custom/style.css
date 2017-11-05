@@ -185,6 +185,25 @@ div.polaroid {
 
 /* CONTACT */
 
+@keyframes changeColor {
+    0% {
+        color: dodgerblue;
+        font-size: 7rem;
+    }
+    25% {
+        color: #f3b733;
+        font-size: 6rem;
+    }
+    50% {
+        color: #252839;
+        font-size: 7rem;
+    }
+    75% {
+        color: darkorange;
+        font-size: 6rem;
+    }
+}
+
 .contact-banner-header {
     font-size: 7rem;
     font-weight: 200;
@@ -196,6 +215,9 @@ div.polaroid {
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
+    animation-name: changeColor;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 
 .contact-logo {
