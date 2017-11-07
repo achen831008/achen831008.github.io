@@ -95,6 +95,14 @@
             "category": "Notes",
             "description": "Mechanics of credit default swaps, total return swaps, and synthetic CDO",
             "url": "/data/blogs/2017_10_31_credit_derivatives.md"
+        },
+        {
+            "id": 13,
+            "title": "Authentication and Authorization",
+            "date": "2017-11-06",
+            "category": "Notes",
+            "description": "Basic knowledge of authentication/authorization, and application integration with third-party OAuth",
+            "url": "data/blogs/2017_11_6_oauth.md"
         }
     ]
 }
