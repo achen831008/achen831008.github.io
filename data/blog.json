@@ -103,6 +103,14 @@
             "category": "Notes",
             "description": "Basic knowledge of authentication/authorization, and application integration with third-party OAuth",
             "url": "data/blogs/2017_11_6_oauth.md"
+        },
+        {
+            "id": 14,
+            "title": "R Basics",
+            "date": "2017-11-08",
+            "category": "Notes",
+            "description": "Introduction to R syntax and basic foundation of R programming",
+            "url": "data/blogs/2017_11_8_r_basics.md"
         }
     ]
 }
