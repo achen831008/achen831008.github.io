@@ -111,6 +111,14 @@
             "category": "Notes",
             "description": "Learn the layout and basic commands of R, practice writing basic R scripts, and inspect data sets in RStudio",
             "url": "data/blogs/2017_11_8_r_basics.md"
+        },
+        {
+            "id": 15,
+            "title": "Exploratory data analysis with one variable",
+            "date": "2017-11-09",
+            "category": "Notes",
+            "description": "Learn how to quantify and visualize individual variables within a data set using histograms, boxplots, and transforms",
+            "url": "data/blogs/2017_11_9_one_variable.md"
         }
     ]
 }
