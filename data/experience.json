@@ -41,13 +41,9 @@
             "start": "2016",
             "end": "2017",
             "summary": [
-                "Followed rapid development process to continuously deliver high-quality low-latency solution to clients",
-                "Built high-performance rating search that displays all historical rating and related data in a timeline stream",
-                "Limited number of jobs consumed by RabbitMQ to control the resource used by task/notification server",
-                "Implemented state machines and entity workflow processes for new rating management tool",
-                "Created document generator to process JSON/XML data into various data format for reporting",
-                "Set up daily process to sync platform usage data from Intercom to DOMO for data visualization and analysis",
-                "Set up a project for Helpdesk and customer success to help 'manage production web services' and 'manage production servers'"
+                "Created high-performance tools with AngularJS, C#, RabbitMQ, and MongoDB that allowed 1k+ analysts to accelerate process of financial rating",
+                "Built a ETL pipeline in Python to extract data from Contentful API and Amazon S3 to Elasticsearch used by DBRS.com search engine in Node.js",
+                "Developed document generation service in C# that converted entity objects in JSON/XML to various reporting documents"
             ]
         },
         {
@@ -55,22 +51,20 @@
             "organization": "Ashlin-BPG Marketing Inc.",
             "link": "http://www.ashlinbpg.com",
             "logo": "/assets/img/logo/ashlin.png",
-            "role": "eCommerce Developer",
+            "role": "E-Commerce Developer",
             "location": "Mississauga, Ontario, Canada",
             "start": "2015",
             "end": "2015",
             "summary":
             [
-                "Developed a data warehouse system with ETL and EDI processes for data analysis and model integration",
-                "Implemented a multi-threaded syncing process to import bulk data from various platform and push data to postal services",
-                "Managed and provided support for P&L and forecasting analysis on site performance and inventory",
-                "Contributed to server and data migration project moving from MS Access to MS Azure",
-                "Increased the responsiveness of a core product's user interface, improving the overall user experience"
+                "Built a multi-threaded syncing process in C# that centralized orders from ecommerce platforms and reduced order processing time",
+                "Architected a C#.NET desktop application for ecommerce team to manage product design and specification, SKU code, and barcode generations",
+                "Migrated existing server and data to MS Azure allowing business expansion overseas"
             ]
         },
         {
             "id": 2,
-            "organization": "BDO IT Solutions",
+            "organization": "BDO Canada",
             "link": "http://www.bdo.ca",
             "logo": "/assets/img/logo/BDO_logo.jpg",
             "role": "Solution Consultant",
@@ -79,11 +73,8 @@
             "end": "2015",
             "summary":
             [
-                "Excellent understanding of Agile software development and Software Development Life Cycle (SDLC)",
-                "Interacted with various stakeholders (Project Manager, Delivery Manager, Dev lead) and team members to ensure quality and on-time delivery of project",
-                "Developed test plans and test cases of complex nature from business requirement analysis",
-                "Captured software defects in the system by using end-to-end, integration, regression, and user acceptance testing approach",
-                "Used SQL skill to compare mock-up data with client's real data in Microsoft SQL Server"
+                "Interacted with various stakeholders and engineers to ensure software quality, performance, and on-time delivery of project",
+                "Implemented SQL store proc that resolved the discrepancies between mock-up data with client's real data to ensure reliability of data for QAs"
             ]
         },
         {
@@ -91,16 +82,14 @@
             "organization": "Visual Photonic Expitaxy Co., Ltd",
             "link": "http://www.vpec.com.tw",
             "logo": "/assets/img/logo/VPEC_logo.png",
-            "role": "Financial Analyst and Developer",
+            "role": "Software Developer",
             "location": "Taoyuan County, Taiwan",
             "start": "2014",
             "end": "2014",
             "summary":
             [
-                "Designed and implemented a internal web application for User Profile, HR News, Meeting scheduling, Support and IT Maintenance Request",
-                "Created and managed SQL relational database, views, and stored procedures for building reporting tools",
-                "Created financial transactions including posting general ledgers from invoices to customers, cash receipts, and supplier invoices",
-                "Assisted in annual budging and forecasting processes and resolve the discrepancies between source data"
+                "Created an Intranet application with JavaScript, Bootstrap, and ASP.NET used by 300+ employees to publish internal news, schedule meeting, and request IT maintenance",
+                "Assisted in building predictive model in Python to forecast company’s wafer sales based on historical data and market demand with an accuracy of 90%"
             ]
         }
     ],
@@ -165,6 +154,14 @@
             "text": "\"Alex displayed excellent work ethic, was punctual and well-organized in completed his tasks, and proactively sought feedback and guidance to improve the qualify of his work. He showed willingness to follow instructions and was proactive in taking extra responsibilities to ensure deliverables are met.\"",
             "recommender": "Alex Ng",
             "recommenderPosition": "Manager of Solution Technology, BDO Canada."
+        },
+        {
+            "id": 3,
+            "year": "2014",
+            "position": "Software Developer",
+            "text": "\"Alex is a very positive and polite employee. He was able to participate and complete projects with high quality of code. Alex displayed his strong learning skills, as he was able to quickly pick up a new language and contribute to the team.\"",
+            "recommender": "Alex Chuang",
+            "recommenderPosition": "Manager of Software Engineering."
         }
     ]
 }
