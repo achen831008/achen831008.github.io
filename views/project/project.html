@@ -2,9 +2,9 @@
 <div ng-include src="'views/partials/loading.html'"></div>
 
 <div ng-show="!vm.loading" id="project" class="col-xs-12 background-light">
-    <div class="header text-center">Recent Projects</div>
+    <div class="header text-center"></div>
     <div class="container bottom-space">
-        <div class="text-center sub-heading">Weekly Commits: <b class="orange">{{ vm.github.commits.length }}</b></div>
+<!--        <div class="text-center sub-heading">Weekly Commits: <b class="orange">{{ vm.github.commits.length }}</b></div>-->
 
         <div class="col-xs-12 col-sm-6 col-sm-offset-3 github-repo text-center" ng-repeat="repo in vm.github.repos | orderBy:'-pushed_at' | limitTo:8">
             <a class="dark" ng-href="{{ repo.html_url }}">{{ repo.name }}</a>
