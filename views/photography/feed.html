@@ -1,4 +1,4 @@
-<div class="instafeed col-xs-12 col-sm-4 col-md-4" ng-repeat="feed in vm.instagram.feeds | limitTo: vm.instagram.limit">
+<div class="instafeed col-xs-12 col-sm-4" ng-repeat="feed in vm.instagram.feeds | limitTo: vm.instagram.limit">
     <div class="polaroid">
         <img class="display" ng-src="{{ feed.images.standard_resolution.url }}">
         <div class="cover">
