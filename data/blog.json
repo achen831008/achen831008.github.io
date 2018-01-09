@@ -119,6 +119,22 @@
             "category": "Notes",
             "description": "Learn how to quantify and visualize individual variables within a data set using histograms, boxplots, and transforms",
             "url": "data/blogs/2017_11_9_one_variable.md"
+        },
+        {
+            "id": 16,
+            "title": "CS449 Human-Computer Interaction",
+            "date": "2018-01-04",
+            "category": "Notes",
+            "description": "Human-Computer Interaction teaches the fundamental issues that underlie the creation and evaluation of usable and useful computational artifacts.",
+            "url": "data/blogs/2018_01_04_cs449.md"
+        },
+        {
+            "id": 17,
+            "title": "AFM423 Data Science for FinTech Applications",
+            "date": "2018-01-09",
+            "category": "Notes",
+            "description": "Data Science for FinTech Applications",
+            "url": "data/blogs/2018_01_09_afm423.md"
         }
     ]
 }
