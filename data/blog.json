@@ -135,6 +135,14 @@
             "category": "Notes",
             "description": "Data Science for FinTech Applications",
             "url": "data/blogs/2018_01_09_afm423.md"
+        },
+        {
+            "id": 18,
+            "title": "AFM424 Equity Investment",
+            "date": "2018-01-09",
+            "category": "Notes",
+            "description": "Equity Investment",
+            "url": "data/blogs/2018_01_09_afm424.md"
         }
     ]
 }
