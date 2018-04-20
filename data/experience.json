@@ -3,93 +3,58 @@
         {
             "id": 0,
             "school": "University of Waterloo",
-            "program": "Bachelor of Computing and Financial Management",
-            "link": "https://uwaterloo.ca/",
-            "location": "Waterloo, Ontario, Canada",
-            "start": "2013",
-            "end": "present",
-            "summary": [
-                "University of Waterloo President's Scholarship",
-                "UW Intramural Basketball Champions in Advanced Level"
-            ]
-        },
-        {
-            "id": 1,
-            "school": "Shawnigan Lake School",
-            "program": "Dogwood Diploma",
-            "link": "https://www.shawnigan.ca/",
-            "location": "Shawnigan Lake, BC, Canada",
-            "start": "2008",
-            "end": "2013",
-            "summary": [
-                "Dean's Honour List for all 5 years",
-                "Top 1 in AP Calculus AB 12",
-                "Top 2 in AP Computer Science 12",
-                "BC District Dogwood Scholarship",
-                "Mike Little Award Scholarship"
-            ]
+            "program": "Bachelor of Computing and Financial Management, Honours Co-op Program",
+            "class": "Class of 2018",
+            "link": "https://uwaterloo.ca/computing-financial-management/",
+            "location": "Waterloo, Ontario, Canada"
         }
     ],
-    "jobs": [
+    "skills": [
         {
-            "id": 0,
-            "organization": "DBRS, Inc.",
-            "link": "http://www.dbrs.com",
-            "logo": "/assets/img/logo/DBRS_logo.svg",
-            "role": "Software Engineering",
-            "location": "Toronto, Ontario, Canada",
-            "start": "2016",
-            "end": "2017",
-            "summary": [
-                "Created high-performance tools with AngularJS, C#, RabbitMQ, and MongoDB that allowed 1k+ analysts to accelerate process of financial rating",
-                "Built a ETL pipeline in Python to extract data from Contentful API and Amazon S3 to Elasticsearch used by DBRS.com search engine in Node.js",
-                "Developed document generation service in C# that converted entity objects in JSON/XML to various reporting documents"
+            "group": "Languages",
+            "list": [
+                "Python",
+                "C#",
+                "JavaScript",
+                "C++",
+                "Java",
+                "SQL"
             ]
         },
         {
-            "id": 1,
-            "organization": "Ashlin-BPG Marketing Inc.",
-            "link": "http://www.ashlinbpg.com",
-            "logo": "/assets/img/logo/ashlin.png",
-            "role": "E-Commerce Developer",
-            "location": "Mississauga, Ontario, Canada",
-            "start": "2015",
-            "end": "2015",
-            "summary":
-            [
-                "Built a multi-threaded syncing process in C# that centralized orders from ecommerce platforms and reduced order processing time",
-                "Architected a C#.NET desktop application for ecommerce team to manage product design and specification, SKU code, and barcode generations",
-                "Migrated existing server and data to MS Azure allowing business expansion overseas"
+            "group": "Web Development",
+            "list": [
+                "AngularJS",
+                "Node.js",
+                "Flask",
+                "MVC.NET",
+                "Entity Framework",
+                "MS Azure",
+                "AWS",
+                "RabbitMQ",
+                "MongoDB",
+                "Git"
             ]
         },
         {
-            "id": 2,
-            "organization": "BDO Canada",
-            "link": "http://www.bdo.ca",
-            "logo": "/assets/img/logo/BDO_logo.jpg",
-            "role": "Solution Consultant",
-            "location": "Mississauga, Ontario, Canada",
-            "start": "2014",
-            "end": "2015",
-            "summary":
-            [
-                "Interacted with various stakeholders and engineers to ensure software quality, performance, and on-time delivery of project",
-                "Implemented SQL store proc that resolved the discrepancies between mock-up data with client's real data to ensure reliability of data for QAs"
+            "group": "Data Science",
+            "list": [
+                "Scikit-learn",
+                "Pandas",
+                "NumPy",
+                "SciPy",
+                "Matplotlib",
+                "Tableau",
+                "R"
             ]
         },
         {
-            "id": 3,
-            "organization": "Visual Photonic Expitaxy Co., Ltd",
-            "link": "http://www.vpec.com.tw",
-            "logo": "/assets/img/logo/VPEC_logo.png",
-            "role": "Software Developer",
-            "location": "Taoyuan County, Taiwan",
-            "start": "2014",
-            "end": "2014",
-            "summary":
-            [
-                "Created an Intranet application with JavaScript, Bootstrap, and ASP.NET used by 300+ employees to publish internal news, schedule meeting, and request IT maintenance",
-                "Assisted in building predictive model in Python to forecast company’s wafer sales based on historical data and market demand with an accuracy of 90%"
+            "group": "Design",
+            "list": [
+                "Sketch",
+                "Invision",
+                "Adobe Photoshop",
+                "Moqups"
             ]
         }
     ],
@@ -111,23 +76,103 @@
         {
             "id": 2,
             "year": "2013",
-            "contest": "BC Senior High School Tennis Provincials",
+            "contest": "BC Senior High School Tennis Provincials 2013",
             "name": "3rd Place in BC Provincials",
             "description": "Represent Shawnigan Lake High Schoool to BC Tennis Provincials and get 3rd place out of top 12 selected school across BC."
         },
         {
             "id": 3,
             "year": "2013",
-            "contest": "BC Senior Performing Arts Provincials",
+            "contest": "BC Senior Performing Arts Provincials 2013",
             "name": "Honorable Mention",
             "description": "Represent Cowichan Valley District to BC Performing Arts Provincials and get honorable mention in Senior Violin category."
         },
         {
             "id": 4,
             "year": "2012",
-            "contest": "Fermat Math Contest",
+            "contest": "Fermat Math Contest 2012",
             "name": "Honorable Mention",
             "description": "Top 2% in Canada out of 15000 participants."
+        }
+    ],
+    "jobs": [
+        {
+            "id": 0,
+            "organization": "DBRS, Inc.",
+            "link": "http://www.dbrs.com",
+            "logo": "/assets/img/logo/DBRS_logo.svg",
+            "role": "Software Engineering",
+            "location": "Toronto, Ontario, Canada",
+            "start": "May 2016",
+            "end": "Apr. 2017",
+            "summary": [
+                "Created high-performance tools with AngularJS, C#, RabbitMQ, and MongoDB that allowed 1k+ analysts to accelerate process of financial rating",
+                "Built a ETL pipeline in Python to extract data from Contentful API and Amazon S3 to Elasticsearch used by DBRS.com search engine in Node.js",
+                "Developed document generation service in C# that converted entity objects in JSON/XML to various reporting documents"
+            ]
+        },
+        {
+            "id": 1,
+            "organization": "Ashlin-BPG Marketing Inc.",
+            "link": "http://www.ashlinbpg.com",
+            "logo": "/assets/img/logo/ashlin.png",
+            "role": "E-Commerce Developer",
+            "location": "Mississauga, Ontario, Canada",
+            "start": "Sep. 2015",
+            "end": "Dec. 2015",
+            "summary":
+            [
+                "Built a multi-threaded syncing process in C# that centralized orders from ecommerce platforms and reduced order processing time",
+                "Architected a C#.NET desktop application for ecommerce team to manage product design and specification, SKU code, and barcode generations",
+                "Migrated existing server and data to MS Azure allowing business expansion overseas"
+            ]
+        },
+        {
+            "id": 2,
+            "organization": "BDO Canada",
+            "link": "http://www.bdo.ca",
+            "logo": "/assets/img/logo/BDO_logo.jpg",
+            "role": "Solution Consultant",
+            "location": "Mississauga, Ontario, Canada",
+            "start": "Jan. 2015",
+            "end": "Apr. 2015",
+            "summary":
+            [
+                "Interacted with various stakeholders and engineers to ensure software quality, performance, and on-time delivery of project",
+                "Implemented SQL store proc that resolved the discrepancies between mock-up data with client's real data to ensure reliability of data for QAs"
+            ]
+        },
+        {
+            "id": 3,
+            "organization": "Visual Photonic Expitaxy Co., Ltd",
+            "link": "http://www.vpec.com.tw",
+            "logo": "/assets/img/logo/VPEC_logo.png",
+            "role": "Software Developer",
+            "location": "Taoyuan County, Taiwan",
+            "start": "May 2014",
+            "end": "Aug. 2014",
+            "summary":
+            [
+                "Created an Intranet application with JavaScript, Bootstrap, and ASP.NET used by 300+ employees to publish internal news, schedule meeting, and request IT maintenance",
+                "Assisted in building predictive model in Python to forecast company’s wafer sales based on historical data and market demand with an accuracy of 90%"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "Finalytics",
+            "description": "Built an application with Flask to visualize and analyze equity data from Yahoo Finance and BlackRock Aladdin API on a dashboard and optimize portfolios using SciPy",
+            "link": "https://devpost.com/software/finalytics"
+        },
+        {
+            "name": "Supervised Breast Cancer Model",
+            "description": "Trained supervised model with University of Wisconsin Hospitals dataset using SciKit-learn, NumPy, and Pandas to diagnose patients with breast cancer with 97.5% accuracy",
+            "link": "https://github.com/achen831008/Breast-Cancer-Prediction"
+        },
+        {
+            "name": "TMX Options Trading Simulation",
+            "description": "Generated 15% return on a portfolio of derivatives securities over 3 months of timespan by applying Black-Scholes model and trading strategies such as butterfly spread, straddle, strangle, and hedging",
+            "link": "#"
         }
     ],
     "recommendations": [

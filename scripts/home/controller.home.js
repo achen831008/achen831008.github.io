@@ -5,15 +5,24 @@
         .module('app')
         .controller('homeController', homeController);
 
-//    homeController.$inject = [];
+    homeController.$inject = ['contactService', 'utilityService'];
 
-    function homeController() {
+    function homeController(contactService, utilityService) {
         var vm = this;
-        vm.init = init;
-        vm.init();
+        init();
+
+        function getContacts() {
+            return contactService.getContacts().then(function(data) {
+                return data;
+            });
+        }
 
         function init() {
-            vm.scroll = 0;
-        };
+            vm.utility = utilityService;
+
+            return getContacts().then(function(data) {
+                vm.contacts = data;
+            });
+        }
     }
 })();

@@ -1,7 +1,19 @@
-<div id="home" class="text-center background-light">
-    <!--    Profile   -->
-    <div ng-include src="'views/home/profile.html'"></div>
+<!-- NAVBAR -->
+<div ng-include src="'views/partials/navbar.html'"></div>
 
-    <!--    Intro   -->
-    <div ng-include src="'views/home/intro.html'"></div>
+<!-- MAIN -->
+<div id="main" class="block">
+    <button class="btn btn-lg hide-button" ng-click="vm.utility.open()">&#9776;</button>
+    <div class="table">
+        <div class="cell">
+            <div class="inner-cell wide right-align padding-rt-5">
+                <p class="name">ALE<span class="name-last">X</span> <b class="name">CHE<span class="name-last">N</span></b></p>
+                <p class="sub-title">Quantitative Trading | Full Stack Developer</p>
+                <p class="sub-title">Taiwan. Vancouver. Toronto.</p>
+                <a class="a-style padding-lt-10" ng-href="{{contact.href}}" ng-repeat="contact in vm.contacts">
+                    <img class="contact" ng-src="{{contact.icon}}">
+                </a>
+            </div>
+        </div>
+    </div>
 </div>

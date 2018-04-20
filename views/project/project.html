@@ -1,21 +1,19 @@
-<!--  Loading  -->
+<!-- NAVBAR -->
 <div ng-include src="'views/partials/loading.html'"></div>
 
-<div ng-show="!vm.loading" id="project" class="col-xs-12 background-light">
-    <div class="header text-center"></div>
-    <div class="container bottom-space">
-<!--        <div class="text-center sub-heading">Weekly Commits: <b class="orange">{{ vm.github.commits.length }}</b></div>-->
+<!-- NAVBAR -->
+<div ng-show="!vm.loading" ng-include src="'views/partials/navbar.html'"></div>
 
-        <div class="col-xs-12 col-sm-6 col-sm-offset-3 github-repo text-center" ng-repeat="repo in vm.github.repos | orderBy:'-pushed_at' | limitTo:8">
-            <a class="dark" ng-href="{{ repo.html_url }}">{{ repo.name }}</a>
-            <div class="description yellow">{{ repo.description }}</div>
-            <div class="">
-                <p class="text-small grey">Last updated: {{ repo.latest_push_date }}</p>
+<!-- MAIN -->
+<div ng-show="!vm.loading" id="main" class="block">
+    <button class="btn btn-lg hide-button" ng-click="vm.utility.open()">&#9776;</button>
+    <div class="table">
+        <div class="cell">
+            <div class="inner-cell wide right-align padding-rt-5" ng-repeat="repo in vm.github.repos | orderBy:'-pushed_at' | limitTo:10">
+                <a class="a-style repo" ng-href="{{ repo.html_url }}">{{ repo.name }}</a>
+                <div class="sub-title">{{ repo.description }}</div>
+                <div class="sub-title">{{ repo.latest_push_date }}</div>
             </div>
-        </div>
-
-        <div class="col-xs-12 text-center">
-            <em>Data gathered from the <a href="https://developer.github.com/v3/">Github</a> API.</em>
         </div>
     </div>
 </div>

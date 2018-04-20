@@ -1,0 +1,55 @@
+<!-- TOP SECTION -->
+<div class="col-xs-12 text-center blue-background padding-2">
+    <p class="name white-text">ALEX CHEN</p>
+    <p class="sub-title ms-text">Quantitative Trading | Full Stack Developer</p>
+    <a class="a-style white-text padding-lr-1" href="mailto:achen831008@gmail.com">achen831008@gmail.com</a>
+    <a class="a-style white-text padding-lr-1" href="http://ymachen.me">www.ymachen.me</a>
+    <a class="a-style white-text padding-lr-1" href="tel:+1(416)-706-0268">416-706-0268</a>
+</div>
+
+<div class="col-xs-12" style="height:15px"></div>
+
+
+<!-- LEFT COLUMN -->
+<div class="col-xs-12 col-sm-8">
+    <div class="category grey-background text-center">EXPERIENCE</div>
+    <div class="" ng-repeat="job in vm.experience.jobs">
+        <a class="a-style lg-text" href="{{ job.link }}">{{ job.organization }}</a>
+        <div class="sub-title md-text all-cap">{{ job.role }}</div>
+        <div class="sub-title sm-text all-cap">{{ job.start }} &raquo; {{ job.end }}</div>
+        <ul>
+            <li class="sm-text" ng-repeat="bullet in job.summary">{{ bullet }}</li>
+        </ul>
+    </div>
+
+    <div class="category grey-background text-center">PROJECTS</div>
+    <div class="padding-bottom-1" ng-repeat="project in vm.experience.projects">
+        <a class="a-style lg-text" href="{{ project.link }}">{{ project.name }}</a>
+        <div class="sm-text">{{ project.description }}</div>
+    </div>
+</div>
+
+
+<!-- RIGHT COLUMN -->
+<div class="col-xs-12 col-sm-4">
+    <div class="grey-background category text-center">EDUCATION</div>
+    <div class="grey-background padding-1 sm-col-background" ng-repeat="education in vm.experience.educations">
+        <a class="a-style lg-text" href="{{ education.link }}">{{ education.school }}</a>
+        <div class="ms-text">{{ education.program }}</div>
+        <div class="sm-col-color ms-text">{{ education.class }}</div>
+    </div>
+
+    <div class="grey-background category text-center">SKILLS</div>
+    <div class="grey-background padding-1 sm-col-background" ng-repeat="skill in vm.experience.skills">
+        <div class="a-style lg-text">{{ skill.group }}</div>
+        <div>
+            <span class="label label-default skill-label" ng-repeat="item in skill.list">{{ item }}</span>
+        </div>
+    </div>
+
+    <div class="grey-background category text-center">AWARDS</div>
+    <div class="grey-background padding-1 sm-col-background" ng-repeat="award in vm.experience.awards">
+        <div class="a-style md-text">{{ award.name }}</div>
+        <div class="sm-col-color ms-text all-cap">{{ award.contest }}</div>
+    </div>
+</div>

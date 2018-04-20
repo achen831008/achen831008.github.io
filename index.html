@@ -20,60 +20,36 @@
         <meta name="author" content="Alex Yu-Ming Chen">
 
         <title>Alex Chen</title>
-<!--        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon/favicon.ico">-->
         <link rel="icon" type="image/png" href="/assets/img/favicon/logo.png" />
 
         <!-- CSS -->
         <link href="styles/common/bootstrap.min.css" rel="stylesheet">
         <link href="styles/custom/style.css" rel="stylesheet">
 
-        <!-- Custom Fonts -->
+        <!-- Fonts -->
         <link href="styles/common/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
-        <!-- Library -->
+        <!-- JS Library -->
         <script src="scripts/lib/jquery-min.js"></script>
         <script src="scripts/lib/bootstrap.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
-        <script src="https://code.angularjs.org/1.6.6/angular-animate.min.js"></script>
+        <script src="scripts/lib/angular.min.js"></script>
         <script src="scripts/lib/angular-route.min.js"></script>
         <script src="scripts/lib/underscore-min.js"></script>
-        <script src="scripts/lib/marked.js"></script>
-        <script src="scripts/lib/angular-marked.js"></script>
-        <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-            tex2jax: {
-                inlineMath: [ ['$','$'] ],
-                processEscapes: true
-            }
-        });
-        </script>
-        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
         
-        <!-- js files -->
+        <!-- JS Files -->
         <script src="scripts/app.js"></script>
+        <script src="scripts/utils/service.js"></script>
         <script src="scripts/home/controller.home.js"></script>
-        <script src="scripts/home/directive.js"></script>
+        <script src="scripts/home/service.js"></script>
+        <script src="scripts/resume/controller.resume.js"></script>
+        <script src="scripts/resume/service.js"></script>
         <script src="scripts/project/controller.project.js"></script>
         <script src="scripts/project/service.js"></script>
-        <script src="scripts/photography/controller.photography.js"></script>
-        <script src="scripts/photography/service.js"></script>
-        <script src="scripts/contact/controller.contact.js"></script>
-        <script src="scripts/contact/service.js"></script>
-        <script src="scripts/experience/controller.experience.js"></script>
-        <script src="scripts/experience/service.js"></script>
-        <script src="scripts/blog/controller.blog.js"></script>
-        <script src="scripts/blog/service.js"></script>
-        <script src="scripts/blog/controller.viewBlog.js"></script>
     </head>
 
     <body ng-controller="homeController">
-        
-        <!--    NAVBAR    -->
-        <div ng-include src="'/views/partials/navbar.html'"></div>
-
         <div ng-view></div>
-    
     </body>
 </html>
