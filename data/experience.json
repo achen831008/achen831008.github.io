@@ -98,6 +98,19 @@
     "jobs": [
         {
             "id": 0,
+            "organization": "BMO Capital Markets",
+            "link": "https://www.bmocm.com/",
+            "logo": "",
+            "role": "Quantitative Analyst",
+            "location": "Toronto, Ontario, Canada",
+            "start": "Apr. 2018",
+            "end": "Present",
+            "summary": [
+                "Incoming intern working on global structured product desk"
+            ]
+        },
+        {
+            "id": 1,
             "organization": "DBRS, Inc.",
             "link": "http://www.dbrs.com",
             "logo": "/assets/img/logo/DBRS_logo.svg",
@@ -112,7 +125,7 @@
             ]
         },
         {
-            "id": 1,
+            "id": 2,
             "organization": "Ashlin-BPG Marketing Inc.",
             "link": "http://www.ashlinbpg.com",
             "logo": "/assets/img/logo/ashlin.png",
@@ -128,7 +141,7 @@
             ]
         },
         {
-            "id": 2,
+            "id": 3,
             "organization": "BDO Canada",
             "link": "http://www.bdo.ca",
             "logo": "/assets/img/logo/BDO_logo.jpg",
@@ -143,7 +156,7 @@
             ]
         },
         {
-            "id": 3,
+            "id": 4,
             "organization": "Visual Photonic Expitaxy Co., Ltd",
             "link": "http://www.vpec.com.tw",
             "logo": "/assets/img/logo/VPEC_logo.png",
