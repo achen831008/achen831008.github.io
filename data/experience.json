@@ -24,16 +24,21 @@
         {
             "group": "Web Development",
             "list": [
+                "React",
                 "AngularJS",
                 "Node.js",
                 "Flask",
+                "Django",
                 "MVC.NET",
                 "Entity Framework",
+                "MongoDB",
+                "PostgreSQL",
+                "SQLite",
+                "Docker",
                 "MS Azure",
                 "AWS",
-                "RabbitMQ",
-                "MongoDB",
-                "Git"
+                "Git",
+                "RabbitMQ"
             ]
         },
         {
@@ -106,7 +111,8 @@
             "start": "Apr. 2018",
             "end": "Present",
             "summary": [
-                "Created a containerized vega bucket reporting tool with ReactJS, Python, PostgreSQL, and Docker that analyzed various trading products position for quantitative traders"
+                "Created high-volume trading analytics web tools for Fixed Income Derivatives with React, Flask, PostgreSQL, and Docker that provided critical insights to traders",
+                "Built modern applications following MicroServices architecture to continuously deliver scalable solutions"
             ]
         },
         {
@@ -172,6 +178,11 @@
         }
     ],
     "projects": [
+        {
+            "name": "Credit Card Fraud Detection",
+            "description": "Performed exploratory data analysis and applied statistical learning models such as random forest, support vector model, and generalized boosted model to identify fraudulent transactions.",
+            "link": "https://github.com/achen831008/Credit-Card-Fraud-Detection/blob/master/credit_card_fraud_detection.md"
+        },
         {
             "name": "Finalytics",
             "description": "Built an application with Flask to visualize and analyze equity data from Yahoo Finance and BlackRock Aladdin API on a dashboard and optimize portfolios using SciPy",
