@@ -39,8 +39,8 @@
                 "MongoDB",
                 "SQLite",
                 "MS Azure",
-                "AWS",,
-                "RabbitMQ"
+                "AWS",
+                "RabbitMQ",
                 "Docker",
                 "Git"
             ]
