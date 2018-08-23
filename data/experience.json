@@ -24,21 +24,25 @@
         {
             "group": "Web Development",
             "list": [
-                "React",
+                "React/Redux",
                 "AngularJS",
                 "Node.js",
+                "jQuery",
+                "Material UI",
+                "Bootstrap",
                 "Flask",
-                "Django",
-                "MVC.NET",
+                "C#.NET",
                 "Entity Framework",
-                "MongoDB",
+                "MSSQL",
                 "PostgreSQL",
                 "SQLite",
-                "Docker",
+                "MongoDB",
+                "SQLite",
                 "MS Azure",
-                "AWS",
-                "Git",
+                "AWS",,
                 "RabbitMQ"
+                "Docker",
+                "Git"
             ]
         },
         {
@@ -80,20 +84,34 @@
         },
         {
             "id": 2,
+            "year": "2015",
+            "contest": "University of Waterloo",
+            "name": "Intramural Basketball Champs",
+            "description": ""
+        },
+        {
+            "id": 3,
+            "year": "2013",
+            "contest": "University of Waterloo",
+            "name": "President's Scholarship",
+            "description": ""
+        },
+        {
+            "id": 4,
             "year": "2013",
             "contest": "BC Senior High School Tennis Provincials 2013",
             "name": "3rd Place in BC Provincials",
             "description": "Represent Shawnigan Lake High Schoool to BC Tennis Provincials and get 3rd place out of top 12 selected school across BC."
         },
         {
-            "id": 3,
+            "id": 5,
             "year": "2013",
             "contest": "BC Senior Performing Arts Provincials 2013",
             "name": "Honorable Mention",
             "description": "Represent Cowichan Valley District to BC Performing Arts Provincials and get honorable mention in Senior Violin category."
         },
         {
-            "id": 4,
+            "id": 6,
             "year": "2012",
             "contest": "Fermat Math Contest 2012",
             "name": "Honorable Mention",
@@ -109,10 +127,12 @@
             "role": "Quantitative Analyst",
             "location": "Toronto, Ontario, Canada",
             "start": "Apr. 2018",
-            "end": "Present",
+            "end": "Aug. 2018",
+            "language": ["React/Redux", "Python", "C# MVC", "PostgreSQL", "SQLite", "MongoDB", "Docker", "Git"],
             "summary": [
-                "Created high-volume trading analytics web tools for Fixed Income Derivatives with React, Flask, PostgreSQL, and Docker that provided critical insights to traders",
-                "Built modern applications following MicroServices architecture to continuously deliver scalable solutions"
+                "Created high-volume trading analytics tools for Fixed Income Derivatives that provided data-driven insights and hedging recommendations to traders and stakeholders",
+                "Developed multi-processing pricing models for convertible and equity swaps that used machine learning techniques to train based on credit risk, counterparty risk, and issuer risk",
+                "Built modern applications with cutting-edge technology following MicroServices architecture to continuously deliver high-quality and high-performance solutions at scale"
             ]
         },
         {
@@ -124,10 +144,11 @@
             "location": "Toronto, Ontario, Canada",
             "start": "May 2016",
             "end": "Apr. 2017",
+            "language": ["AngularJS", "Node.js", "C#", "Python", "MS SQL", "MongoDB", "RabbitMQ", "AWS", "ElasticSearch", "Git"],
             "summary": [
-                "Created high-performance tools with AngularJS, C#, RabbitMQ, and MongoDB that allowed 1k+ analysts to accelerate process of financial rating",
-                "Built a ETL pipeline in Python to extract data from Contentful API and Amazon S3 to Elasticsearch used by DBRS.com search engine in Node.js",
-                "Developed document generation service in C# that converted entity objects in JSON/XML to various reporting documents"
+                "Created high-performance credit rating and reporting tools that allowed 1k+ financial analysts to accelerate process of financial rating across North America",
+                "Built an ETL pipeline to extract data from 3rd Party API and Amazon S3 to ElasticSearch that is used by DBRS.com search engine to serve 100k+ users",
+                "Implemented document generation service that converted entity objects in JSON/XML format to various reporting documents for internal users and stakeholders"
             ]
         },
         {
@@ -139,11 +160,10 @@
             "location": "Mississauga, Ontario, Canada",
             "start": "Sep. 2015",
             "end": "Dec. 2015",
-            "summary":
-            [
-                "Built a multi-threaded syncing process in C# that centralized orders from ecommerce platforms and reduced order processing time",
-                "Architected a C#.NET desktop application for ecommerce team to manage product design and specification, SKU code, and barcode generations",
-                "Migrated existing server and data to MS Azure allowing business expansion overseas"
+            "language": ["C#.NET", "Bash/Batch", "MS Azure"],
+            "summary": [
+                "Architected ecommerce applications for product design and finance team to manage product design and specification, barcode generation, marketing strategies, and financial reports",
+                "Built a multi-threaded EDI process that centralized orders from various ecommerce platforms to reduce order processing time and improve internal control"
             ]
         },
         {
@@ -155,10 +175,10 @@
             "location": "Mississauga, Ontario, Canada",
             "start": "Jan. 2015",
             "end": "Apr. 2015",
-            "summary":
-            [
-                "Interacted with various stakeholders and engineers to ensure software quality, performance, and on-time delivery of project",
-                "Implemented SQL store proc that resolved the discrepancies between mock-up data with client's real data to ensure reliability of data for QAs"
+            "language": ["C#", "MS SQL"],
+            "summary": [
+                "Interacted with stakeholders and engineers to ensure software quality and performance, validity of requirements, and on-time delivery of nationwide projects in Canada",
+                "Implemented SQL stored procedures that resolved discrepancies between mock-up data and client's real data to validate reliability of data for QAs"
             ]
         },
         {
@@ -170,10 +190,10 @@
             "location": "Taoyuan County, Taiwan",
             "start": "May 2014",
             "end": "Aug. 2014",
-            "summary":
-            [
-                "Created an Intranet application with JavaScript, Bootstrap, and ASP.NET used by 300+ employees to publish internal news, schedule meeting, and request IT maintenance",
-                "Assisted in building predictive model in Python to forecast company’s wafer sales based on historical data and market demand with an accuracy of 90%"
+            "language": ["JavaScript", "Bootstrap", "ASP.NET", "Python"],
+            "summary": [
+                "Created an Intranet application used by 300+ employees with features of news publishing, employee management, meeting scheduling, and IT support requests",
+                "Assisted in building predictive models to forecast company’s wafer sales based on historical data and market demand with an accuracy of 90%"
             ]
         }
     ],
@@ -185,7 +205,7 @@
         },
         {
             "name": "Finalytics",
-            "description": "Built an application with Flask to visualize and analyze equity data from Yahoo Finance and BlackRock Aladdin API on a dashboard and optimize portfolios using SciPy",
+            "description": "Built a modern web application with Flask to visualize, analyze, and optimize portfolios with financial data provided from Yahoo Finance and BlackRock Aladdin API",
             "link": "https://devpost.com/software/finalytics"
         },
         {
@@ -202,6 +222,14 @@
     "recommendations": [
         {
             "id": 0,
+            "year": "2018",
+            "position": "Quantitative Analyst",
+            "text": "\"Alex's performance exceeded our expectations at every turn. He quickly picked up ReactJS and worked as a full-stack developer, delivering three fully functional applications which will be used for day-to-day trading operations. Also, he works well independently and is able to quickly readjust when priorities changes. We have been impressed by both the quality of his work, and how much he was able to get done in less than four months.\"",
+            "recommender": "Siavash Aslanbeigi",
+            "recommenderPosition": "VP of Global Structured Projects"
+        },
+        {
+            "id": 1,
             "year": "2017",
             "position": "Software Engineering",
             "text": "\"Current term was the second term Alex joined out team at DBRS. As with previous term Alex showed high level of professionalism and dependability. Throughout the term he worked on couple of critical deliverables with tight deadlines, as well as took part in research of experimental modules for our platform. I had a chance to personally work on the project with Alex during our end of the term hackathon / workathon, and was impressed with his ability to research complex systems independently and then work closely with the team to incorporate his findings with overall solution. He takes all the feedback he can get from our senior engineers and uses it to improve his technical skills, which tells me that he will be successful in any position in his future career.\"",
@@ -209,7 +237,7 @@
             "recommenderPosition": "AVP of Global Technology, DBRS Inc."
         },
         {
-            "id": 1,
+            "id": 2,
             "year": "2016",
             "position": "eCommerce Developer",
             "text": "\"Alex has been involved in creating a very complex web applications for e-commerce. He is very good at multi-tasking on various projects, and has been a great contributor to our ASHLIN team. His work has been well documented for the next student that will be joining us. The application that he has developed has an excellent user interface. He is always very thorough in creating it, and mindful of the users interaction with the application.\"",
@@ -217,7 +245,7 @@
             "recommenderPosition": "VP of Ashlin-BPG Marketing Inc."
         },
         {
-            "id": 2,
+            "id": 3,
             "year": "2015",
             "position": "Solution Consultant",
             "text": "\"Alex displayed excellent work ethic, was punctual and well-organized in completed his tasks, and proactively sought feedback and guidance to improve the qualify of his work. He showed willingness to follow instructions and was proactive in taking extra responsibilities to ensure deliverables are met.\"",
@@ -225,7 +253,7 @@
             "recommenderPosition": "Manager of Solution Technology, BDO Canada."
         },
         {
-            "id": 3,
+            "id": 4,
             "year": "2014",
             "position": "Software Developer",
             "text": "\"Alex is a very positive and polite employee. He was able to participate and complete projects with high quality of code. Alex displayed his strong learning skills, as he was able to quickly pick up a new language and contribute to the team.\"",
