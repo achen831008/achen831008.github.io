@@ -1,0 +1,9 @@
+# Project related folder
+node_modules
+.cache
+public
+
+# Mac OS
+.DS_Store
+.DS_Store?
+._*
