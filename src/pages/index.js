@@ -1,83 +1,41 @@
 import React from "react";
-import { graphql, Link } from "gatsby";
-import { Grid } from '@material-ui/core';
-
+import { graphql } from "gatsby";
+import PostLink from "../components/post-link";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Logo from "../components/logo";
+import Styles from "../components/styles";
 
-const styles = {
-  outer: {
-    width: '100%',
-    marginTop: '4rem'
-  },
-  inner: {
-    display: 'table',
-    margin: '0 auto',
-    textAlign: 'center'
-  }
-}
+const HomePage = ({data: { allMarkdownRemark: { edges }}}) => {
+  const Posts = edges.map(edge => <PostLink key={edge.node.id} post={edge.node} />)
 
-const listViews = [
-  {
-    name: "Blog",
-    link: "/blog"
-  },
-  {
-    name: "Photos",
-    link: "/photos"
-  },
-  {
-    name: "Contact",
-    link: "/contact"
-  }
-]
-
-const IndexPage = ({data}) => (
-  <Layout>
+  return <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <div style={styles.outer}>
-      <div style={styles.inner}>
-        <Logo />
-        <h1>{data.site.siteMetadata.title}</h1>
-        <p>{data.site.siteMetadata.position}</p>
-        <p>{data.site.siteMetadata.description}</p>
-        <Grid container>
-          <Grid item xs={12}>
-            <Grid
-              container
-              spacing={16}
-              alignItems={"center"}
-              direction={"row"}
-              justify={"center"}
-            >
-              {listViews.map(view => (
-                <Grid key={view.name} item>
-                  <Link to={view.link}>{view.name}</Link>
-                </Grid>
-              ))}
-            </Grid>
-          </Grid>
-        </Grid>
-        {/* <Link to="/page-2/">Go to page 2</Link> */}
+    <div style={Styles.outer}>
+      <div style={Styles.inner}>
+        {Posts}
       </div>
     </div>
   </Layout>
-)
+}
 
-export const indexQuery = graphql`
-  query IndexQuery {
-    site {
-      siteMetadata {
-        title
-        position
-        description
-        email
-        github
-        linkedin
+export default HomePage
+
+export const HomeQuery = graphql`
+  query HomeQuery {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            description
+          }
+        }
       }
     }
   }
 `
-
-export default IndexPage

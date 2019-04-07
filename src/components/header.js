@@ -1,41 +1,60 @@
-// import { Link } from "gatsby"
-import PropTypes from "prop-types";
 import React from "react";
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
-import TypoGraphy from '@material-ui/core/Typography';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
-const Header = ({ siteTitle }) => (
-  <div>
-    <List component="nav">
-      <ListItem component="div">
-          <ListItemText inset>
-              <TypoGraphy color="inherit" variant="title">
-                  Home
-          </TypoGraphy>
-          </ListItemText>
-          <ListItemText inset>
-              <TypoGraphy color="inherit" variant="title">
-                  Posts
-          </TypoGraphy>
-          </ListItemText>
-          <ListItemText inset>
-              <TypoGraphy color="inherit" variant="title">
-                  Contact
-          </TypoGraphy>
-          </ListItemText>
-      </ListItem >
-    </List>
-  </div>
-)
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+const Options = () => {
+  return <UncontrolledDropdown nav inNavbar>
+    <DropdownToggle nav caret>
+      Options
+    </DropdownToggle>
+    <DropdownMenu right>
+      <DropdownItem>
+        Option 1
+      </DropdownItem>
+      <DropdownItem>
+        Option 2
+      </DropdownItem>
+      <DropdownItem divider />
+      <DropdownItem>
+        Reset
+      </DropdownItem>
+    </DropdownMenu>
+  </UncontrolledDropdown>
 }
 
-Header.defaultProps = {
-  siteTitle: ``,
+class Header extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      isOpen: false
+    };
+  }
+
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
+
+  render() {
+    return (
+      <div>
+        <Navbar color="light" light expand="md">
+          <NavbarBrand href="/">{this.props.siteTitle}</NavbarBrand>
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav className="ml-auto" navbar>
+              <NavItem>
+                <NavLink href="/about">About</NavLink>
+              </NavItem>
+              {/* <Options/> */}
+            </Nav>
+          </Collapse>
+        </Navbar>
+      </div>
+    );
+  }
 }
 
 export default Header
